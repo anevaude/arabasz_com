@@ -1,27 +1,15 @@
-# arabasz_com
+# arabasz.com
 
-The best project ever.
+This is the code for my portfolio website, http://arabasz.com
 
-## Getting Started
-Install the module with: `npm install arabasz_com`
-
-```javascript
-var arabasz_com = require('arabasz_com');
-arabasz_com.awesome(); // "awesome"
-```
-
-## Documentation
-_(Coming soon)_
-
-## Examples
-_(Coming soon)_
-
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
-
-## Release History
-_(Nothing yet)_
+## What's Inside?
+I am using these nifty tools:
+* Sass (http://sass-lang.com)
+* Susy (http://susy.oddbird.net)
+* Grunt (http://gruntjs.com)
+* Font Awesome (http://fontawesome.io)
+* Normalize CSS (https://necolas.github.io/normalize.css)
 
 ## License
-Copyright (c) 2015 Annette Arabasz  
+Copyright (c) 2016 Annette Arabasz  
 Licensed under the MIT license.
