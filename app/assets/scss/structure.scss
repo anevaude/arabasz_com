@@ -140,6 +140,9 @@ nav {
 
 	> section {
 		padding-bottom: 2rem;
+	}
+
+	.about {
 		width: 90%;
 	}
 
@@ -151,24 +154,35 @@ nav {
 	h3 {
 		font-size: 1.33rem;
 	}
-
 }
 
-ul.project-list {
-	list-style: none;
-	padding: 0;
-	-webkit-margin-before: 0;
+.projects-container {
+	@include container(12);
 
-	li {
-		@include span(12);
-		@media (min-width: 700px) {
-			@include span(6);
-		}				
-		margin: 0 0 1rem 0;
+	figure {
+		display: block;
+		margin: 0 0 1rem;
 		padding: 0;
-		img {
-			margin-bottom: 1rem;
-			width: 100%;
+		@include span(4 of 12);		
+
+		.img-container {
+			background: #666;
+			border: 1px #ccc solid;
+			@media (min-width: 700px) {
+				overflow: hidden;
+			}
+			img {
+				height: 150px;
+				width: 200px;
+				// TODO: Adjust thumbnail IMG to these dimensions
+			}
 		}
-	}			
+
+		figcaption {
+			padding: 1.5rem 0.5rem;
+			@media (min-width: 700px) {
+				@include span(8);
+			}		
+		}
+	}
 }
