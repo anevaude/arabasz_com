@@ -367,16 +367,16 @@ body {
   line-height: 1; }
 
 h1, .h1 {
-  font-size: 2.25rem; }
-
-h2, .h2 {
   font-size: 2rem; }
 
+h2, .h2 {
+  font-size: 1.5rem; }
+
 h3, .h3 {
-  font-size: 1.75rem; }
+  font-size: 1.25rem; }
 
 h4, .h4 {
-  font-size: 1.25rem; }
+  font-size: 1rem; }
 
 h5, .h5 {
   font-size: 1rem; }
@@ -459,11 +459,12 @@ header {
     font-size: 3.75rem;
     font-weight: 300;
     margin-bottom: .5rem; }
-  header h2 {
-    font-size: 1.2rem;
-    font-weight: 300;
-    letter-spacing: 1px;
-    margin-bottom: 0; }
+    header h1 span {
+      display: block;
+      font-size: 1.2rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+      margin: 0.5rem 0 0; }
 
 nav {
   padding: 3rem 0; }
@@ -540,13 +541,17 @@ nav {
     clear: both; }
   .projects-container figure {
     display: block;
-    margin: 0 0 1rem;
+    margin: 0 0 0.5rem;
     padding: 0;
-    width: 33.33333%;
+    padding-right: 1.5rem;
+    width: 50%;
     float: left; }
+    .projects-container figure:nth-child(3) {
+      clear: left; }
     .projects-container figure .img-container {
-      background: #666;
-      border: 1px #ccc solid; }
+      background: #f6f6f6;
+      border: 1px #ccc solid;
+      min-height: 150px; }
       @media (min-width: 700px) {
         .projects-container figure .img-container {
           overflow: hidden; } }
@@ -554,10 +559,29 @@ nav {
         height: 150px;
         width: 200px; }
     .projects-container figure figcaption {
-      padding: 1.5rem 0.5rem; }
-      @media (min-width: 700px) {
-        .projects-container figure figcaption {
-          width: 66.66667%;
-          float: left; } }
+      padding: 1rem 0.5rem; }
+      .projects-container figure figcaption h4 {
+        margin-bottom: 0.5rem;
+        text-transform: none; }
+      .projects-container figure figcaption p {
+        font-size: .85rem;
+        line-height: 1.5em; }
+
+.list-tags {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0; }
+  .list-tags li {
+    background: #666;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    font-family: arial, sans-serif;
+    font-size: .65rem;
+    letter-spacing: 1px;
+    margin: 0 1px 1px 0;
+    padding: 4px 8px;
+    text-transform: uppercase;
+    white-space: nowrap; }
 
 /*# sourceMappingURL=styles.css.map */
