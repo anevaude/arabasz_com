@@ -1,7 +1,8 @@
 $base-font-size: 18px;
 $base-font-weight: 300;
-$font-for-headers: 'pathway gothic one', arial, sans-serif;
-$font-for-body: "droid-serif", sans-serif;
+$font-for-headers: 'Droid Sans Serif', arial, sans-serif;
+$font-for-body: 'Droid Serif', Georgia, serif;
+$font-for-logo: 'Pathway Gothic One', arial, sans-serif;
 
 /* Typography */
 html {
@@ -29,7 +30,6 @@ h5, .h5 {
 	font-weight: 700;
 	line-height: 1;
 	margin: 0 0 1rem;
-	text-transform: uppercase;
 	}
 p { 
 	font-size: 1rem; 
@@ -38,6 +38,5 @@ p {
 }
 
 nav {
-	font-family: 'Roboto';
-	text-transform: uppercase;
+	font-family: $font-for-headers;
 }

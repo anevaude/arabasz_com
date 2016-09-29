@@ -2,26 +2,33 @@
 
 $susy: (
   columns: 12, 
-  container: 64rem,
+  container: 1153px,
   global-box-sizing: border-box,
-  gutters: 0
+  gutters: 0,
+  debug: (image: hide)
  );
 
+$color-2: #B548A6;
+$color-3: #820D71;
+
+
 @include border-box-sizing;
+
 
 body {
 	background: #f4f4f4;
 	color: #333;
+
 }
 
 a:link,
 a:visited {
-	color: #987D0F;
+	color: $color-3;
 }
 
 a:hover,
 a:active {
-	color: #726A1C;
+	color: $color-2;
 }
 
 .bar {
@@ -37,7 +44,8 @@ a:active {
 .wrapper {
 	@include container;
 	background: transparent;
-	margin: 5rem auto 0;
+	margin: 5rem auto;
+	@include show-grid(12);
 }
 
 .sidebar {
@@ -46,7 +54,7 @@ a:active {
 
 	@media (min-width: 700px) {
 		@include span(3);
-		padding: 0 3rem;
+		padding: 0 2.5rem;
 	}	
 }
 
@@ -57,6 +65,7 @@ header {
 	text-transform: uppercase;
 
 	h1 {
+		font-family: $font-for-logo;
 		font-size: 3.75rem;
 		font-weight: 300;
 		margin-bottom: .5rem;
@@ -73,7 +82,7 @@ header {
 
 nav {
 
-	padding: 3rem 0;
+	padding: 2.5rem 0;
 
 	.links {
 		display: block;
@@ -83,19 +92,19 @@ nav {
 		li {
 			color: #333;
 			display: block;
-			font-size: 1.33rem;
-			line-height: 1.75rem;
+			font-size: 1.25rem;
+			line-height: 1.5rem;
 			margin-bottom: 1rem;
 			overflow: hidden;
 
 			.circle {
-				background: #d2b748;
+				background: #77c08d;
 				border-radius: 100%;
 				color: #fff;
 				float: left;
 				font-size: 1.25rem;
 				height: 1.5rem;
-				margin: 0 .52rem 0 0;
+				margin: 0 .75rem 0 0;
 				overflow: hidden;
 				position: relative;
 				text-align: center;
@@ -120,7 +129,7 @@ nav {
 				text-decoration: none;
 
 				.circle {
-					background-color: #b1972c;
+					background-color: #41b865;
 				}				
 			}			
 		}
@@ -130,15 +139,22 @@ nav {
 .content {
 
 	background: #fff;
+	position: relative; 
+
 	@include span(12);
 	@media (min-width: 700px) {
 		@include span(last 9);
 		min-height: 40rem;
-		padding: 3.6rem 3rem 3rem;
+		padding: 3.5rem 2.5rem 2.5rem;
 	}		
 
 	> section {
 		padding-bottom: 2rem;
+	}
+
+	> section + section {
+		border-top: 1px #ccc solid;
+		padding-top: 2rem;		
 	}
 
 	.about {
@@ -158,11 +174,10 @@ nav {
 .projects-container {
 	@include container(12);
 
-	figure {
+	.project {
 		display: block;
 		margin: 0 0 0.5rem;
-		padding: 0;
-		padding-right: 1.5rem;	
+		padding: 0;	
 
 		@include span(6 of 12);	
 
@@ -170,10 +185,14 @@ nav {
 			clear: left;
 		}
 
+		figure {
+			margin: 0 12% 0 0;
+		}
+
 		.img-container {
 			background: #f6f6f6;
 			border: 1px #ccc solid;
-			min-height: 150px;
+			min-height: 200px;
 			@media (min-width: 700px) {
 				overflow: hidden;
 			}
@@ -185,7 +204,7 @@ nav {
 		}
 
 		figcaption {
-			padding: 1rem 0.5rem;		
+			padding: 1.5rem .5rem .5rem;		
 
 			h4 {
 				margin-bottom: 0.5rem;
@@ -212,9 +231,15 @@ nav {
 		font-family: arial, sans-serif;
 		font-size: .65rem;
 		letter-spacing: 1px;
-		margin: 0 1px 1px 0;
+		margin: 0 1px 4px 0;
 		padding: 4px 8px;
 		text-transform: uppercase;
 		white-space: nowrap;
 	}
+}
+
+
+.secret-page-corner {
+  height: 69px;
+  width: 69px;
 }
