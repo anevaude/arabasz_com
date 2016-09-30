@@ -208,6 +208,10 @@ nav {
 
 		@media (min-width: $medium-screen) {
 			@include span(6 of 12);
+
+			&:nth-child(3n) {
+				clear: left;
+			}
 		}
 
 		figure {
