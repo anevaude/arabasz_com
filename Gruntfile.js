@@ -55,6 +55,13 @@ module.exports = function(grunt) {
         tasks: ['jshint:test', 'nodeunit']
       },
     },
+    handlebars: {
+        all: {
+            files: {
+                "js/templates.js": ["templates/**/*.hbs"]
+            }
+        }
+    }    
   });
 
   // These plugins provide necessary tasks.
@@ -62,7 +69,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-serve');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-sass');    
+  grunt.loadNpmTasks('grunt-contrib-sass');   
+  grunt.loadNpmTasks('grunt-contrib-handlebars');   
 
   // Default task.
   grunt.registerTask('default', [

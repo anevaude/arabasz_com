@@ -8,6 +8,11 @@ $susy: (
   debug: (image: hide)
  );
 
+$small-screen: 400px;
+$medium-screen: 600px;
+$large-screen: 940px;
+$x-large-screen: 1200px;
+
 $color-2: #B548A6;
 $color-3: #820D71;
 
@@ -43,16 +48,21 @@ a:active {
 
 .wrapper {
 	@include container;
-	background: transparent;
-	margin: 5rem auto;
 	@include show-grid(12);
+
+	background: transparent;
+	margin: 0 auto;
+
+	@media (min-width: $medium-screen) {
+		margin: 5rem auto;
+	}
 }
 
 .sidebar {
 	@include span(12);
 
 
-	@media (min-width: 700px) {
+	@media (min-width: $medium-screen) {
 		@include span(3);
 		padding: 0 2.5rem;
 	}	
@@ -60,15 +70,23 @@ a:active {
 
 header {
 	color: #fff;
-	height: 16rem;
-	padding: 3rem 0;
+	padding: 1rem;
 	text-transform: uppercase;
 
+	@media (min-width: $medium-screen) {
+		height: 16rem;
+		padding: 3rem 0;
+	}
+
 	h1 {
-		font-family: $font-for-logo;
-		font-size: 3.75rem;
+		font-size: 3rem;
 		font-weight: 300;
-		margin-bottom: .5rem;
+		margin-bottom: .25rem;
+
+		@media (min-width: $medium-screen) {
+			font-size: 3.75rem;
+			margin-bottom: .5rem;
+		}
 
 		span {
 			display: block;
@@ -81,8 +99,13 @@ header {
 }
 
 nav {
+	background: #f4f4f4;
+	padding: 1rem;
 
-	padding: 2.5rem 0;
+	@media (min-width: $medium-screen) {
+		background: transparent;
+		padding: 2.5rem 0;
+	}
 
 	.links {
 		display: block;
@@ -96,6 +119,10 @@ nav {
 			line-height: 1.5rem;
 			margin-bottom: .75rem;
 			overflow: hidden;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 
 			.circle {
 				background: #77c08d;
@@ -139,10 +166,11 @@ nav {
 .content {
 
 	background: #fff;
+	padding: 2rem 1rem 1rem;
 	position: relative; 
 
 	@include span(12);
-	@media (min-width: 700px) {
+	@media (min-width: $medium-screen) {
 		@include span(last 9);
 		min-height: 40rem;
 		padding: 3.5rem 2.5rem 2.5rem;
@@ -178,21 +206,23 @@ nav {
 		margin: 0 0 0.5rem;
 		padding: 0;	
 
-		@include span(6 of 12);	
-
-		&:nth-child(3) {
-			clear: left;
+		@media (min-width: $medium-screen) {
+			@include span(6 of 12);
 		}
 
 		figure {
-			margin: 0 12% 0 0;
-		}
+			margin: 0;
+
+			@media (min-width: $medium-screen) {
+				margin-right: 12%;
+			}
+		}		
 
 		.img-container {
 			background: #f6f6f6;
 			border: 1px #ccc solid;
 			min-height: 200px;
-			@media (min-width: 700px) {
+			@media (min-width: $medium-screen) {
 				overflow: hidden;
 			}
 			img {
