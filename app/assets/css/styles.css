@@ -386,7 +386,7 @@ h2, .h2,
 h3, .h3,
 h4, .h4,
 h5, .h5 {
-  font-family: "Droid Sans Serif", arial, sans-serif;
+  font-family: "Droid Sans", arial, sans-serif;
   font-weight: 700;
   line-height: 1;
   margin: 0 0 1rem; }
@@ -397,7 +397,7 @@ p {
   margin: 0 0 1rem; }
 
 nav {
-  font-family: "Droid Sans Serif", arial, sans-serif; }
+  font-family: "Droid Sans", arial, sans-serif; }
 
 /* Structure */
 *, *:before, *:after {
@@ -411,11 +411,11 @@ body {
 
 a:link,
 a:visited {
-  color: #820D71; }
+  color: #B548A6; }
 
 a:hover,
 a:active {
-  color: #B548A6; }
+  color: #820D71; }
 
 .bar {
   background: #3c0e62 url("../img/bg-mountains.jpg") no-repeat 0 bottom;
@@ -477,7 +477,7 @@ nav {
       display: block;
       font-size: 1.25rem;
       line-height: 1.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: .75rem;
       overflow: hidden; }
       nav .links li .circle {
         background: #77c08d;
@@ -529,8 +529,7 @@ nav {
   .content .about {
     width: 90%; }
   .content h1, .content h2, .content h3, .content h4, .content h5 {
-    color: #230739;
-    font-family: "droid sans"; }
+    color: #230739; }
   .content h3 {
     font-size: 1.33rem; }
 
@@ -570,6 +569,8 @@ nav {
       .projects-container .project figcaption p {
         font-size: .85rem;
         line-height: 1.5em; }
+        .projects-container .project figcaption p a .fa {
+          margin-left: .5rem; }
 
 .list-tags {
   list-style: none;

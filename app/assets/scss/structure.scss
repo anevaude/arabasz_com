@@ -23,12 +23,12 @@ body {
 
 a:link,
 a:visited {
-	color: $color-3;
+	color: $color-2;
 }
 
 a:hover,
 a:active {
-	color: $color-2;
+	color: $color-3;
 }
 
 .bar {
@@ -94,7 +94,7 @@ nav {
 			display: block;
 			font-size: 1.25rem;
 			line-height: 1.5rem;
-			margin-bottom: 1rem;
+			margin-bottom: .75rem;
 			overflow: hidden;
 
 			.circle {
@@ -163,7 +163,6 @@ nav {
 
 	h1, h2, h3, h4, h5 {
 		color: #230739;
-		font-family: 'droid sans'
 	}
 
 	h3 {
@@ -213,6 +212,10 @@ nav {
 			p {
 				font-size: .85rem;
 				line-height: 1.5em;
+
+				a .fa {
+					margin-left: .5rem;
+				}
 			}
 		}
 	}
