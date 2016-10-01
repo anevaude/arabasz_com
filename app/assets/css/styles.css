@@ -393,7 +393,7 @@ a:active {
     content: " ";
     display: block;
     clear: both; }
-  @media (min-width: 600px) {
+  @media (min-width: 940px) {
     .wrapper {
       margin: 5rem auto; } }
 
@@ -402,7 +402,7 @@ a:active {
   float: left;
   margin-left: 0;
   margin-right: 0; }
-  @media (min-width: 600px) {
+  @media (min-width: 940px) {
     .sidebar {
       width: 25%;
       float: left;
@@ -412,7 +412,7 @@ header {
   color: #fff;
   padding: 1rem;
   text-transform: uppercase; }
-  @media (min-width: 600px) {
+  @media (min-width: 940px) {
     header {
       height: 16rem;
       padding: 3rem 0; } }
@@ -420,7 +420,7 @@ header {
     font-size: 3rem;
     font-weight: 300;
     margin-bottom: .25rem; }
-    @media (min-width: 600px) {
+    @media (min-width: 940px) {
       header h1 {
         font-size: 3.75rem;
         margin-bottom: .5rem; } }
@@ -434,7 +434,7 @@ header {
 nav {
   background: #f4f4f4;
   padding: 1rem; }
-  @media (min-width: 600px) {
+  @media (min-width: 940px) {
     nav {
       background: transparent;
       padding: 2.5rem 0; } }
@@ -453,7 +453,7 @@ nav {
       nav .links li:last-child {
         margin-bottom: 0; }
       nav .links li .circle {
-        background: #77c08d;
+        background: #5bab7d;
         border-radius: 100%;
         color: #fff;
         float: left;
@@ -478,7 +478,7 @@ nav {
         text-decoration: none; }
         nav .links li a:hover .circle,
         nav .links li a:active .circle {
-          background-color: #41b865; }
+          background-color: #15a652; }
 
 .content {
   background: #fff;
@@ -488,11 +488,12 @@ nav {
   float: left;
   margin-left: 0;
   margin-right: 0; }
-  @media (min-width: 600px) {
+  @media (min-width: 940px) {
     .content {
       width: 75%;
       float: right;
       margin-right: 0;
+      box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.05);
       min-height: 40rem;
       padding: 3.5rem 2.5rem 2.5rem; } }
   .content > section {
@@ -500,12 +501,12 @@ nav {
   .content > section + section {
     border-top: 1px #ccc solid;
     padding-top: 2rem; }
-  .content .about {
-    width: 90%; }
-  .content h1, .content h2, .content h3, .content h4, .content h5 {
-    color: #230739; }
-  .content h3 {
-    font-size: 1.33rem; }
+  @media (min-width: 940px) {
+    .content .about,
+    .content .skills-group {
+      padding-right: 10%; } }
+  .content h1, .content h2, .content h3 {
+    color: #820D71; }
 
 .projects-container {
   max-width: 1153px;
@@ -519,7 +520,7 @@ nav {
     display: block;
     margin: 0 0 0.5rem;
     padding: 0; }
-    @media (min-width: 600px) {
+    @media (min-width: 940px) {
       .projects-container .project {
         width: 50%;
         float: left; }
@@ -527,29 +528,48 @@ nav {
           clear: left; } }
     .projects-container .project figure {
       margin: 0; }
-      @media (min-width: 600px) {
+      @media (min-width: 940px) {
         .projects-container .project figure {
           margin-right: 12%; } }
     .projects-container .project .img-container {
-      background: #f6f6f6;
-      border: 1px #ccc solid;
-      min-height: 200px; }
-      @media (min-width: 600px) {
+      background: red;
+      border: 1px #ccc solid; }
+      @media (min-width: 940px) {
         .projects-container .project .img-container {
           overflow: hidden; } }
       .projects-container .project .img-container img {
-        height: 150px;
-        width: 200px; }
+        vertical-align: middle;
+        width: 100%; }
     .projects-container .project figcaption {
       padding: 1.5rem .5rem .5rem; }
       .projects-container .project figcaption h4 {
+        font-size: 1rem;
         margin-bottom: 0.5rem;
         text-transform: none; }
       .projects-container .project figcaption p {
         font-size: .85rem;
         line-height: 1.5em; }
         .projects-container .project figcaption p a .fa {
-          margin-left: .5rem; }
+          margin-left: .25rem; }
+
+.skills .skills-group {
+  border-top: 1px #ccc solid;
+  padding-top: 2rem;
+  margin-bottom: 3rem; }
+  .skills .skills-group h4 {
+    font-size: 1rem;
+    margin-bottom: .25rem; }
+  .skills .skills-group .company-name {
+    display: block;
+    margin-bottom: .25rem;
+    font-size: 1.25rem; }
+  .skills .skills-group ul {
+    font-size: .85rem;
+    line-height: 1.5em; }
+  .skills .skills-group table td {
+    vertical-align: top; }
+  .skills .skills-group.work-experience h4, .skills .skills-group.languages h4 {
+    margin-bottom: 1rem; }
 
 .list-tags {
   list-style: none;
@@ -592,19 +612,23 @@ h2, .h2 {
   font-size: 1.5rem; }
 
 h3, .h3 {
-  font-size: 1.25rem; }
+  font-size: 1.5rem; }
 
 h4, .h4 {
-  font-size: 1rem; }
+  font-size: 1.25rem; }
 
 h5, .h5 {
+  font-size: 1.25rem; }
+
+h6, .h6 {
   font-size: 1rem; }
 
 h1, .h1,
 h2, .h2,
 h3, .h3,
 h4, .h4,
-h5, .h5 {
+h5, .h5,
+h6, .h6 {
   font-family: "Droid Sans", arial, sans-serif;
   font-weight: 700;
   line-height: 1;
@@ -614,6 +638,15 @@ p {
   font-size: 1rem;
   line-height: 1.5rem;
   margin: 0 0 1rem; }
+
+ul,
+ol {
+  line-height: 1.5rem;
+  margin: 0 0 1rem; }
+
+ul li,
+ol li {
+  margin: 0 0 .5rem; }
 
 header h1 {
   font-family: "Pathway Gothic One", arial, sans-serif; }
