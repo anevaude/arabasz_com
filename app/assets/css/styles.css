@@ -505,8 +505,6 @@ nav {
     .content .about,
     .content .skills-group {
       padding-right: 10%; } }
-  .content h1, .content h2, .content h3 {
-    color: #820D71; }
 
 .projects-container {
   max-width: 1153px;
@@ -551,6 +549,46 @@ nav {
         line-height: 1.5em; }
         .projects-container .project figcaption p a .fa {
           margin-left: .25rem; }
+
+.project-details-container .project {
+  max-width: 1153px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin: 0 0 0.5rem;
+  padding: 0; }
+  .project-details-container .project:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .project-details-container .project figure {
+    margin: 0; }
+    @media (min-width: 940px) {
+      .project-details-container .project figure {
+        margin-right: 12%; } }
+  .project-details-container .project .img-container {
+    border: 1px #ccc solid;
+    width: 33.33333%;
+    float: left; }
+    @media (min-width: 940px) {
+      .project-details-container .project .img-container {
+        overflow: hidden; } }
+    .project-details-container .project .img-container img {
+      vertical-align: middle;
+      width: 100%; }
+  .project-details-container .project figcaption {
+    padding: 1.5rem;
+    width: 66.66667%;
+    float: left; }
+    .project-details-container .project figcaption h4 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      text-transform: none; }
+    .project-details-container .project figcaption p {
+      font-size: .85rem;
+      line-height: 1.5em; }
+      .project-details-container .project figcaption p a .fa {
+        margin-left: .25rem; }
 
 .skills .skills-group {
   border-top: 1px #ccc solid;
@@ -633,6 +671,12 @@ h6, .h6 {
   font-weight: 700;
   line-height: 1;
   margin: 0 0 1rem; }
+
+.header-tags {
+  color: #000;
+  font-size: .85rem;
+  margin: 0 0 .25rem;
+  text-transform: uppercase; }
 
 p {
   font-size: 1rem;
