@@ -501,10 +501,6 @@ nav {
   .content > section + section {
     border-top: 1px #ccc solid;
     padding-top: 2rem; }
-  @media (min-width: 940px) {
-    .content .about,
-    .content .skills-group {
-      padding-right: 10%; } }
 
 .projects-container {
   max-width: 1153px;
@@ -530,11 +526,17 @@ nav {
         .projects-container .project figure {
           margin-right: 12%; } }
     .projects-container .project .img-container {
-      background: red;
+      background: #fff;
       border: 1px #ccc solid; }
       @media (min-width: 940px) {
         .projects-container .project .img-container {
           overflow: hidden; } }
+      .projects-container .project .img-container a:hover,
+      .projects-container .project .img-container a:active {
+        opacity: .8;
+        transition: opacity .55s ease-in-out;
+        -moz-transition: opacity .55s ease-in-out;
+        -webkit-transition: opacity .55s ease-in-out; }
       .projects-container .project .img-container img {
         vertical-align: middle;
         width: 100%; }
@@ -550,45 +552,12 @@ nav {
         .projects-container .project figcaption p a .fa {
           margin-left: .25rem; }
 
-.project-details-container .project {
-  max-width: 1153px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin: 0 0 0.5rem;
-  padding: 0; }
-  .project-details-container .project:after {
-    content: " ";
-    display: block;
-    clear: both; }
-  .project-details-container .project figure {
-    margin: 0; }
-    @media (min-width: 940px) {
-      .project-details-container .project figure {
-        margin-right: 12%; } }
-  .project-details-container .project .img-container {
-    border: 1px #ccc solid;
-    width: 33.33333%;
-    float: left; }
-    @media (min-width: 940px) {
-      .project-details-container .project .img-container {
-        overflow: hidden; } }
-    .project-details-container .project .img-container img {
-      vertical-align: middle;
-      width: 100%; }
-  .project-details-container .project figcaption {
-    padding: 1.5rem;
-    width: 66.66667%;
-    float: left; }
-    .project-details-container .project figcaption h4 {
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
-      text-transform: none; }
-    .project-details-container .project figcaption p {
-      font-size: .85rem;
-      line-height: 1.5em; }
-      .project-details-container .project figcaption p a .fa {
-        margin-left: .25rem; }
+.project-screenshot {
+  border: 1px #ccc solid;
+  margin: 0; }
+  .project-screenshot img {
+    max-width: 100%;
+    vertical-align: middle; }
 
 .skills .skills-group {
   border-top: 1px #ccc solid;
@@ -614,7 +583,7 @@ nav {
   margin: 0 0 1rem;
   padding: 0; }
   .list-tags li {
-    background: #666;
+    background: #645389;
     border-radius: 2px;
     color: #fff;
     display: inline-block;
@@ -622,13 +591,34 @@ nav {
     font-size: .65rem;
     letter-spacing: 1px;
     margin: 0 1px 4px 0;
-    padding: 4px 8px;
+    padding: 0 8px;
     text-transform: uppercase;
     white-space: nowrap; }
 
 .secret-page-corner {
   height: 69px;
   width: 69px; }
+
+.icon-margin-right:before {
+  margin-right: 10px; }
+
+footer {
+  clear: both;
+  padding: 1rem 0;
+  text-align: center;
+  width: 100%;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  @media (min-width: 940px) {
+    footer {
+      width: 75%;
+      float: right;
+      margin-right: 0; } }
+  footer p {
+    font-size: .75rem;
+    margin: 0; }
 
 /* Typography */
 html {
@@ -650,7 +640,7 @@ h2, .h2 {
   font-size: 1.5rem; }
 
 h3, .h3 {
-  font-size: 1.5rem; }
+  font-size: 1.25rem; }
 
 h4, .h4 {
   font-size: 1.25rem; }
@@ -697,5 +687,9 @@ header h1 {
 
 nav {
   font-family: "Droid Sans", arial, sans-serif; }
+
+@media (min-width: 940px) {
+  .pad-right {
+    padding-right: 10%; } }
 
 /*# sourceMappingURL=styles.css.map */
