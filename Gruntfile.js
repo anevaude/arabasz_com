@@ -14,7 +14,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          '_build/templates/pages/index.html': '_source/templates/pages/index.mustache'
+          '_build/index.html': '_source/templates/pages/index.mustache'
         }
       }
     },    
