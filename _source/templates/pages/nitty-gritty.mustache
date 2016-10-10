@@ -1,0 +1,64 @@
+{{> partials/html-head }}
+
+<body>
+
+	<div class="bar"></div>
+
+	<div class="wrapper">	
+
+		<div class="sidebar">
+
+			<header>
+				<h1>Annette Arabasz <span>Front End Developer</span></h1>
+			</header>	
+
+			{{> partials/nav }}
+
+		</div>		
+
+		<div class="content">
+
+			<h2>Nitty Gritty Details</h2>	
+			<p>Since you're here, you must be curious about how I built this website. Or you just like clicking tiny, obscure links. Here are some details about how I built this thing:</p>
+			<br>
+			<h3>Technologies</h3>
+			<ul>
+				<li>I'm using HTML 5 and CSS 3.</li>
+				<li>The site is built with responsive practices, because it would be totally rude of me to assume you're on a desktop computer.</li>
+				<li>To help support older browsers, I use a PostCSS plugin called <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> to parse my CSS and add vendor prefixes. I think it's magic.</li>
+				<li>Pages are split up into templates with <a href="https://mustache.github.io/">Mustache</a>. It just seems silly to re-type a footer dozens of times if you can easily avoid it.</li>			
+				<li>I like to use SCSS whenever I can, because it's easy to use and saves me tons of time. I have no diehard feelings between SCSS and LESS. I use SCSS because it works well and does what I need it to do.</li>
+				<li>I use <a href="http://susy.oddbird.net">SUSY</a> tools to get a head start on responsive grids. I like it because it is lightweight and gives me full control over the look and feel of my site.</li>
+				<li>My other favorite CSS tool is <a href="http://bourbon.io">Bourbon</a>, but I kept SUSY because that's what I started to build this site with before I knew about Bourbon.</li>
+				<li>I used Grunt to compile my SCSS, my templates, and get the site all buttoned up for launch.</li>
+				<li>My text editor is Sublime Text 2.</li>
+			</ul>
+
+			<br>
+			<h3>Old and Scary Stuff</h3>
+			<p>Here are past versions of my portfolio site. I like keeping these around because frankly they make me laugh. But in all seriousness, I think it's healthy to keep old versions of your code so you can understand not only how much <em>you've</em> changed, but also to be reminded of how quickly technology changes.</p>
+			<br>
+
+			<div class="projects-container">
+				<div class="project">
+					<figure>
+						<div class="img-container">
+							<a href="http://arabasz.com/archive-03"><img src="assets/img/projects/tb-arabasz-01.jpg" alt="Old arabasz.com thumbnail image"></a>
+						</div>
+						<figcaption>
+							<h4>Online from 2010-2016</h4>			  				
+							<p><a href="project-espn.html">View archived site<span class="fa fa-arrow-circle-right"></span></a></p>			  				
+						</figcaption>
+					</figure>			  			
+				</div>
+
+			</div>			
+
+		</div>
+
+		{{> partials/footer }}
+
+	</div>
+
+</body>
+</html>

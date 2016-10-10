@@ -20,7 +20,7 @@
 
 			<section class="about">
 				<h2>About Me</h2>
-			  	<p>My name is Annette Arabasz and I am a Front End Developer in Boston. My background is in visual design, so I love the projects where I can dig into aesthetics and usability. I currently work at <a href="http://madpow.com" target="_blank">Mad*Pow</a> as a managing director and developer.</p>
+			  	<p>My name is Annette Arabasz and I am a Front End Developer in Boston. My background is in visual design, so I love projects where I can dig into aesthetics and usability. I currently work at <a href="http://madpow.com" target="_blank">Mad*Pow</a> as a managing director and developer.</p>
 			  	<p>Some of my other interests are beer sampling, collecting absurdly hot sauces and hiking with <a href="http://instagram.com/starbuck_the_corgi" target="_blank">Starbuck</a>, my awesome Corgi.</p>
 			  	<p>For details about my skills and experience, click <a href="#">here</a>.</p>
 			</section>
@@ -29,58 +29,11 @@
 			  	<h2>Projects</h2>
 			  	<p>Below are two projects that I have worked on recently. To see more projects, click <a href="projects.html">here</a>.</p>
 			  	<br>
-			  	<div class="projects-container">
-			  		<div class="project">
-				  		<figure>
-				  			<div class="img-container">
-				  				<a href="project-espn.html"><img src="assets/img/projects/tb-espn-01.jpg" alt="ESPN website thumbnail image"></a>
-				  			</div>
-				  			<figcaption>
-				  				<h4>ESPN Event Wrap-Ups</h4>
-				  				<ul class="list-tags" style="display: none">
-				  					<li>HTML</li>
-				  					<li>CSS</li>
-				  					<li>jQuery</li>
-				  					<li>Expression Engine</li>
-				  				</ul>
-				  				<p>A series of websites for ESPN's annual events, including the X Games and the ESPYs Awards.</p>				  				
-				  				<p><a href="project-espn.html">Project Details<span class="fa fa-arrow-circle-right"></span></a></p>			  				
-				  			</figcaption>
-				  		</figure>			  			
-			  		</div>
-
-			  		<div class="project">
-				  		<figure>
-				  			<div class="img-container">
-				  				<a href="project-hxr.html"><img src="assets/img/projects/tb-hxr-01.jpg" alt="HXR website thumbnail image"></a>				  				
-				  			</div>			  
-							<figcaption>
-				  				<h4>HXD Conference</h4>
-				  				<ul class="list-tags" style="display: none">
-				  					<li>HTML</li>
-				  					<li>CSS</li>
-				  					<li>Squarespace</li>
-				  				</ul>			  	
-				  				<p>Website for the annual Healthcare Experience Design (HXR) Conference.</p>			  								  				
-				  				<p><a href="#">Project Details<span class="fa fa-arrow-circle-right"></span></a></p>			  				
-				  			</figcaption>
-				  		</figure>			  			
-			  		</div>
-			  	</div>		
+			  	{{> partials/projects }}		
 			</section>
-
-			<section class="contact">
-			  	<h2>Contact</h2>
-			  	<p>Email will go here soon.</p>
-			</section>
-
-			<a class="secret-page-corner"></a>
-
 		</div>
 
-		<footer>
-			<p>All contents of this site, unless otherwise noted, are ©2003-2016 Annette Arabasz</p>
-		</footer>
+		{{> partials/footer }}
 
 	</div>
 
