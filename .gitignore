@@ -6,4 +6,4 @@ test
 .sass-cache
 .jshintrc
 dest
-src
+_build

@@ -6,12 +6,12 @@ $font-for-logo: 'Pathway Gothic One', arial, sans-serif;
 
 /* Typography */
 html {
-	font-size: 16px;
+	font-size: 16px; 
 
 	@media (min-width: $medium-screen) {
 		font-size: 18px;
 	}
-}
+} 
 
 body {
 	font-family: $font-for-body;

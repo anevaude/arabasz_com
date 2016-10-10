@@ -5,6 +5,19 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+
+    // Renders the partials into whole pages
+    mustache_render: {
+      options: {
+        data: '_source/templates/data/data.json',
+        directory: '_source/templates'
+      },
+      dist: {
+        files: {
+          '_build/templates/pages/index.html': '_source/templates/pages/index.mustache'
+        }
+      }
+    },    
     sass: {
       options: {
         require: 'susy',
@@ -16,67 +29,87 @@ module.exports = function(grunt) {
       },
       compile: {
         files: {
-          'app/assets/css/styles.css': 'app/assets/scss/styles.scss'
+          '_source/assets/css/styles.css': '_source/assets/scss/styles.scss'
         }
       }            
     },        
-    nodeunit: {
-      files: ['test/**/*_test.js'],
-    },   
-    jshint: {
-      options: {
-        jshintrc: '.jshintrc'
+    // Copies files from Source (developer) to Build (deliverable)
+    copy: {
+      templates: {
+        files: [
+          {
+            cwd: '_source/templates/',
+            src: ['**/*.html','**/*.json'],
+            dest: '_build/templates/',
+            expand: true
+          }
+        ]
+      },      
+      css: {
+        files: [
+          {
+            cwd: '_source/styles/',
+            src: ['**/*.css'],
+            dest: '_build/styles/',
+            expand: true
+          }
+        ]
       },
-      gruntfile: {
-        src: 'Gruntfile.js'
+      js: {
+        files: [
+          {
+            cwd: '_source/scripts/',
+            src: ['**/*'],
+            dest: '_build/scripts/',
+            expand: true
+          }
+        ]
       },
-      lib: {
-        src: ['lib/**/*.js']
+      assets: {
+        files: [
+          {
+            cwd: '_source/assets/',
+            src: ['**/*'],
+            dest: '_build/assets/',
+            expand: true
+          }
+        ]
       },
-      test: {
-        src: ['test/**/*.js']
-      },
+      vendor: {
+        files: [
+          {
+            cwd: '_source/vendor/',
+            src: ['**/*'],
+            dest: '_build/vendor/',
+            expand: true
+          }
+        ]
+      }             
     },
-    watch: {
-      gruntfile: {
-        files: '<%= jshint.gruntfile.src %>',
-        tasks: ['jshint:gruntfile']
-      },
+    watch: {     
       sass: {
-          files: 'app/**/*.{scss,sass}',
+          files: '_source/**/*.{scss,sass}',
           tasks: ['sass']
       },
-      lib: {
-        files: '<%= jshint.lib.src %>',
-        tasks: ['jshint:lib', 'nodeunit']
-      },      
-      test: {
-        files: '<%= jshint.test.src %>',
-        tasks: ['jshint:test', 'nodeunit']
-      },
-    },
-    handlebars: {
-        all: {
-            files: {
-                "js/templates.js": ["templates/**/*.hbs"]
-            }
-        }
+      mustache_render: {
+          files: '_source/**/*.mustache',
+          tasks: ['mustache_render']
+      }      
     }    
   });
 
   // These plugins provide necessary tasks.
-  grunt.loadNpmTasks('grunt-contrib-nodeunit');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-serve');
+  grunt.loadNpmTasks('grunt-mustache-render');  
+  grunt.loadNpmTasks('grunt-contrib-sass');    
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-sass');   
-  grunt.loadNpmTasks('grunt-contrib-handlebars');   
+  grunt.loadNpmTasks('grunt-contrib-copy');      
 
   // Default task.
   grunt.registerTask('default', [
-    'nodeunit',
-    'jshint',
     'watch',
-    'sass'    
+    'sass',
+    'mustache_render',
+    'copy'
   ]);
 };
