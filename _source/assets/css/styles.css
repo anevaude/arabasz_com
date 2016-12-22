@@ -447,6 +447,7 @@ nav {
       color: #333;
       display: block;
       font-size: 1.25rem;
+      font-weight: 700;
       line-height: 1.5rem;
       margin-bottom: .75rem;
       overflow: hidden; }
@@ -533,10 +534,10 @@ nav {
           overflow: hidden; } }
       .projects-container .project .img-container a:hover,
       .projects-container .project .img-container a:active {
-        opacity: .8;
-        transition: opacity .55s ease-in-out;
-        -moz-transition: opacity .55s ease-in-out;
-        -webkit-transition: opacity .55s ease-in-out; }
+        opacity: .66;
+        transition: opacity .3s ease-in-out;
+        -moz-transition: opacity .3s ease-in-out;
+        -webkit-transition: opacity .3s ease-in-out; }
       .projects-container .project .img-container img {
         vertical-align: middle;
         width: 100%; }
@@ -558,6 +559,52 @@ nav {
   .project-screenshot img {
     max-width: 100%;
     vertical-align: middle; }
+
+.clients-container {
+  max-width: 1153px;
+  margin-left: auto;
+  margin-right: auto; }
+  .clients-container:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .clients-container .client {
+    display: block;
+    margin: 0 0 0.5rem;
+    padding: 0; }
+    @media (min-width: 940px) {
+      .clients-container .client {
+        width: 25%;
+        float: left; }
+        .clients-container .client:nth-child(4n+4) {
+          clear: left; } }
+    .clients-container .client figure {
+      margin: 0; }
+      @media (min-width: 940px) {
+        .clients-container .client figure {
+          margin-right: 12%; } }
+    .clients-container .client .img-container {
+      background: #fff;
+      border: 1px #ccc solid; }
+      @media (min-width: 940px) {
+        .clients-container .client .img-container {
+          overflow: hidden; } }
+      .clients-container .client .img-container a:hover,
+      .clients-container .client .img-container a:active {
+        opacity: .66;
+        transition: opacity .3s ease-in-out;
+        -moz-transition: opacity .3s ease-in-out;
+        -webkit-transition: opacity .3s ease-in-out; }
+      .clients-container .client .img-container img {
+        vertical-align: middle;
+        width: 100%; }
+    .clients-container .client figcaption {
+      padding: .5rem .5rem .5rem;
+      text-align: center; }
+      .clients-container .client figcaption h4 {
+        font-size: .8rem;
+        margin-bottom: 0.5rem;
+        text-transform: none; }
 
 .skills .skills-group {
   border-top: 1px #ccc solid;
