@@ -14,3 +14,6 @@ I am using these nifty tools. Thanks to the authors for making these open source
 ## License
 Copyright (c) 2016 Annette Arabasz  
 Licensed under the MIT license.
+
+## Run notes
+* Grunt
