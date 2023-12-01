@@ -16,13 +16,9 @@ I am using these nifty tools. Thanks to the authors for making these open source
 * Font Awesome (http://fontawesome.io)
 * Normalize CSS (https://necolas.github.io/normalize.css)
 
-## License
-Copyright (c) 2023 Annette Arabasz  
-Licensed under the MIT license.
-
 ## How to run this project locally
 * Make sure grunt is installed. `npm install -g grunt-cli`
 * Run `grunt`. This will spin up the Watch task.
 * Ready to prep files for production? Run `grunt copy`, which will create a `/_build` folder.
 * To view pages, open the `/_build` folder and open `index.html`.
-* No server is required because no server was needed. 
+* No server is required because no server was needed.
