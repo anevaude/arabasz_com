@@ -16,4 +16,6 @@ Copyright (c) 2016 Annette Arabasz
 Licensed under the MIT license.
 
 ## Run notes
-* Grunt
+* Make sure grunt is installed. `npm install -g grunt-cli`
+* Run `grunt`. This will spin up the Watch task.
+* Ready to create files for production? That's `grunt mustache_render`
