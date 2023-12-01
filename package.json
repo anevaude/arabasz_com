@@ -5,22 +5,22 @@
   "homepage": "https://github.com/aarabasz/arabasz_com",
   "author": {
     "name": "Annette Arabasz",
-    "email": "aarabasz@madpow.net"
+    "email": "annettea+website@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/aarabasz/arabasz_com.git"
+    "url": "git://github.com/aarabasz/arabasz_com_2016.git"
   },
   "bugs": {
-    "url": "https://github.com/aarabasz/arabasz_com/issues"
+    "url": "https://github.com/aarabasz/arabasz_com_2016/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/aarabasz/arabasz_com/blob/master/LICENSE-MIT"
+      "url": "https://github.com/aarabasz/arabasz_com_2016/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "lib/arabasz_com",
+  "main": "lib/arabasz_com_2016",
   "engines": {
     "node": ">= 0.8.0"
   },
@@ -39,6 +39,8 @@
   },
   "keywords": [],
   "dependencies": {
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-mustache-render": "^1.9.2",
     "handlebars": "^4.0.5"
   }
 }
