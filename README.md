@@ -1,6 +1,8 @@
 # arabasz.com v2016
 
-This is the code for my portfolio website, http://arabasz.com. The technologies listed below reflect what was modern at the time (2016). So if you're reading this in the year 2050, you might find some of this tech amusing!
+This is the code for my portfolio website, http://arabasz.com. 
+
+The technologies listed below reflect what was modern at the time (2016). So if you're reading this in the year 2050, you might find some of this tech amusing!
 
 ## What's Inside?
 I am using these nifty tools. Thanks to the authors for making these open source!
