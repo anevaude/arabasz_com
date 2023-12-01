@@ -1,4 +1,4 @@
-# arabasz.com v2016
+# arabasz.com
 
 This is the code for my portfolio website, http://arabasz.com. 
 
@@ -24,4 +24,5 @@ Licensed under the MIT license.
 * Make sure grunt is installed. `npm install -g grunt-cli`
 * Run `grunt`. This will spin up the Watch task.
 * Ready to prep files for production? Run `grunt copy`, which will create a `/_build` folder.
-* To view pages, open the `/_build` folder and open `index.html`. No server is required because no server was needed. 
+* To view pages, open the `/_build` folder and open `index.html`.
+* No server is required because no server was needed. 
