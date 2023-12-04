@@ -368,11 +368,11 @@ body {
 
 a:link,
 a:visited {
-  color: #B548A6; }
+  color: #b548a6; }
 
 a:hover,
 a:active {
-  color: #820D71; }
+  color: #820d71; }
 
 .bar {
   background: #3c0e62 url("../img/bg-mountains.jpg") no-repeat 0 bottom;
@@ -419,11 +419,11 @@ header {
   header h1 {
     font-size: 3rem;
     font-weight: 300;
-    margin-bottom: .25rem; }
+    margin-bottom: 0.25rem; }
     @media (min-width: 940px) {
       header h1 {
         font-size: 3.75rem;
-        margin-bottom: .5rem; } }
+        margin-bottom: 0.5rem; } }
     header h1 span {
       display: block;
       font-size: 1.2rem;
@@ -444,12 +444,12 @@ nav {
     margin: 0;
     padding: 0; }
     nav .links li {
-      color: #333;
+      color: #000;
       display: block;
       font-size: 1.25rem;
       font-weight: 700;
       line-height: 1.5rem;
-      margin-bottom: .75rem;
+      margin-bottom: 0.75rem;
       overflow: hidden; }
       nav .links li:last-child {
         margin-bottom: 0; }
@@ -458,25 +458,25 @@ nav {
         border-radius: 100%;
         color: #fff;
         float: left;
-        font-size: 1.25rem;
+        font-size: 1rem;
         height: 1.5rem;
-        margin: 0 .75rem 0 0;
+        margin: 0 0.75rem 0 0;
         overflow: hidden;
         position: relative;
         text-align: center;
         width: 1.5rem; }
         nav .links li .circle:before {
           position: relative;
-          left: 1px;
-          top: 1px; }
+          left: 0;
+          top: 4px; }
       nav .links li a:link,
       nav .links li a:visited {
-        color: #666;
+        color: #000;
         text-decoration: none; }
       nav .links li a:hover,
       nav .links li a:active {
         color: #000;
-        text-decoration: none; }
+        text-decoration: underline; }
         nav .links li a:hover .circle,
         nav .links li a:active .circle {
           background-color: #15a652; }
@@ -503,62 +503,99 @@ nav {
     border-top: 1px #ccc solid;
     padding-top: 2rem; }
 
-.projects-container {
+.project .img-container {
+  align-self: start;
+  background: #fff;
+  border: 1px #ccc solid; }
+  @media (min-width: 940px) {
+    .project .img-container {
+      overflow: hidden; } }
+  .project .img-container a:hover,
+  .project .img-container a:active {
+    opacity: 0.66;
+    transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out; }
+  .project .img-container img {
+    vertical-align: middle;
+    width: 100%; }
+.project figcaption {
+  padding: 1.5rem 0.5rem 0.5rem; }
+  .project figcaption h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    text-transform: none; }
+  .project figcaption p {
+    font-size: 0.85rem;
+    line-height: 1.5em; }
+    .project figcaption p a .fa {
+      margin-left: 0.25rem; }
+
+.project-list {
   max-width: 1153px;
   margin-left: auto;
-  margin-right: auto; }
-  .projects-container:after {
+  margin-right: auto;
+  display: flex;
+  flex-direction: column; }
+  .project-list:after {
     content: " ";
     display: block;
     clear: both; }
-  .projects-container .project {
+  .project-list .project {
+    border-bottom: 1px #ececec solid;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem; }
+    .project-list .project > figure {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 0px;
+      margin: 0; }
+      .project-list .project > figure figcaption {
+        grid-column: 2 / 5;
+        padding: 0 1rem; }
+        @media (min-width: 940px) {
+          .project-list .project > figure figcaption {
+            padding: 0 1.5rem; } }
+        .project-list .project > figure figcaption p:last-child {
+          margin-bottom: 0; }
+
+.project-highlights {
+  max-width: 1153px;
+  margin-left: auto;
+  margin-right: auto; }
+  .project-highlights:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .project-highlights .project {
     display: block;
     margin: 0 0 0.5rem;
     padding: 0; }
     @media (min-width: 940px) {
-      .projects-container .project {
+      .project-highlights .project {
         width: 50%;
         float: left; }
-        .projects-container .project:nth-child(3n) {
+        .project-highlights .project:nth-child(3n) {
           clear: left; } }
-    .projects-container .project figure {
+    .project-highlights .project figure {
       margin: 0; }
       @media (min-width: 940px) {
-        .projects-container .project figure {
+        .project-highlights .project figure {
           margin-right: 12%; } }
-    .projects-container .project .img-container {
-      background: #fff;
-      border: 1px #ccc solid; }
-      @media (min-width: 940px) {
-        .projects-container .project .img-container {
-          overflow: hidden; } }
-      .projects-container .project .img-container a:hover,
-      .projects-container .project .img-container a:active {
-        opacity: .66;
-        transition: opacity .3s ease-in-out;
-        -moz-transition: opacity .3s ease-in-out;
-        -webkit-transition: opacity .3s ease-in-out; }
-      .projects-container .project .img-container img {
-        vertical-align: middle;
-        width: 100%; }
-    .projects-container .project figcaption {
-      padding: 1.5rem .5rem .5rem; }
-      .projects-container .project figcaption h4 {
-        font-size: 1rem;
-        margin-bottom: 0.5rem;
-        text-transform: none; }
-      .projects-container .project figcaption p {
-        font-size: .85rem;
-        line-height: 1.5em; }
-        .projects-container .project figcaption p a .fa {
-          margin-left: .25rem; }
 
 .project-screenshot {
+  background: #f1f1f1;
   border: 1px #ccc solid;
-  margin: 0; }
+  margin: 0;
+  padding: 1rem; }
   .project-screenshot img {
+    border: 1px #ccc solid;
     max-width: 100%;
     vertical-align: middle; }
+  .project-screenshot figcaption {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    font-style: italic; }
 
 .clients-container {
   max-width: 1153px;
@@ -576,7 +613,7 @@ nav {
       .clients-container .client {
         width: 25%;
         float: left; }
-        .clients-container .client:nth-child(4n+4) {
+        .clients-container .client:nth-child(4n + 4) {
           clear: left; } }
     .clients-container .client figure {
       margin: 0; }
@@ -591,18 +628,18 @@ nav {
           overflow: hidden; } }
       .clients-container .client .img-container a:hover,
       .clients-container .client .img-container a:active {
-        opacity: .66;
-        transition: opacity .3s ease-in-out;
-        -moz-transition: opacity .3s ease-in-out;
-        -webkit-transition: opacity .3s ease-in-out; }
+        opacity: 0.66;
+        transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -webkit-transition: opacity 0.3s ease-in-out; }
       .clients-container .client .img-container img {
         vertical-align: middle;
         width: 100%; }
     .clients-container .client figcaption {
-      padding: .5rem .5rem .5rem;
+      padding: 0.5rem 0.5rem 0.5rem;
       text-align: center; }
       .clients-container .client figcaption h4 {
-        font-size: .8rem;
+        font-size: 0.8rem;
         margin-bottom: 0.5rem;
         text-transform: none; }
 
@@ -612,13 +649,13 @@ nav {
   margin-bottom: 3rem; }
   .skills .skills-group h4 {
     font-size: 1rem;
-    margin-bottom: .25rem; }
+    margin-bottom: 0.25rem; }
   .skills .skills-group .company-name {
     display: block;
-    margin-bottom: .25rem;
+    margin-bottom: 0.25rem;
     font-size: 1.25rem; }
   .skills .skills-group ul {
-    font-size: .85rem;
+    font-size: 0.85rem;
     line-height: 1.5em; }
   .skills .skills-group table td {
     vertical-align: top; }
@@ -629,13 +666,15 @@ nav {
   list-style: none;
   margin: 0 0 1rem;
   padding: 0; }
+  .list-tags:last-child {
+    margin-bottom: 0; }
   .list-tags li {
     background: #645389;
-    border-radius: 2px;
+    border-radius: 3px;
     color: #fff;
     display: inline-block;
     font-family: arial, sans-serif;
-    font-size: .65rem;
+    font-size: 0.65rem;
     letter-spacing: 1px;
     margin: 0 1px 4px 0;
     padding: 0 8px;
@@ -664,7 +703,7 @@ footer {
       float: right;
       margin-right: 0; } }
   footer p {
-    font-size: .75rem;
+    font-size: 0.75rem;
     margin: 0; }
 
 /* Typography */
@@ -680,30 +719,42 @@ body {
   font-weight: 300;
   line-height: 1; }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 2rem; }
 
-h2, .h2 {
-  font-size: 1.5rem; }
+h2,
+.h2 {
+  font-size: 1.75rem; }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 1.25rem; }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 1.25rem; }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 1.25rem; }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 1rem; }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   font-family: "Droid Sans", arial, sans-serif;
   font-weight: 700;
   line-height: 1;
@@ -711,8 +762,8 @@ h6, .h6 {
 
 .header-tags {
   color: #000;
-  font-size: .85rem;
-  margin: 0 0 .25rem;
+  font-size: 0.85rem;
+  margin: 0 0 0.25rem;
   text-transform: uppercase; }
 
 p {
@@ -727,7 +778,7 @@ ol {
 
 ul li,
 ol li {
-  margin: 0 0 .5rem; }
+  margin: 0 0 0.5rem; }
 
 header h1 {
   font-family: "Pathway Gothic One", arial, sans-serif; }

@@ -1,77 +1,101 @@
 $base-font-size: 18px;
 $base-font-weight: 300;
-$font-for-headers: 'Droid Sans', arial, sans-serif;
-$font-for-body: 'Droid Serif', Georgia, serif;
-$font-for-logo: 'Pathway Gothic One', arial, sans-serif;
+$font-for-headers: "Droid Sans", arial, sans-serif;
+$font-for-body: "Droid Serif", Georgia, serif;
+$font-for-logo: "Pathway Gothic One", arial, sans-serif;
 
 /* Typography */
 html {
-	font-size: 16px; 
+  font-size: 16px;
 
-	@media (min-width: $medium-screen) {
-		font-size: 18px;
-	}
-} 
+  @media (min-width: $medium-screen) {
+    font-size: 18px;
+  }
+}
 
 body {
-	font-family: $font-for-body;
-	font-size: 100%;
-	font-weight: $base-font-weight;
-	line-height: 1;
+  font-family: $font-for-body;
+  font-size: 100%;
+  font-weight: $base-font-weight;
+  line-height: 1;
 }
-h1, .h1 { font-size: 2rem; }
-h2, .h2 { font-size: 1.5rem; }
-h3, .h3 { font-size: 1.25rem; }
-h4, .h4 { font-size: 1.25rem; }
-h5, .h5 { font-size: 1.25rem; }
-h6, .h6 { font-size: 1rem; }
+h1,
+.h1 {
+  font-size: 2rem;
+}
+h2,
+.h2 {
+  font-size: 1.75rem;
+}
+h3,
+.h3 {
+  font-size: 1.25rem;
+}
+h4,
+.h4 {
+  font-size: 1.25rem;
+}
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+h6,
+.h6 {
+  font-size: 1rem;
+}
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-	font-family: $font-for-headers; 
-	font-weight: 700;
-	line-height: 1;
-	margin: 0 0 1rem;
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: $font-for-headers;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0 0 1rem;
 }
 
 .header-tags {
-	color: #000;
-	font-size: .85rem;
-	margin: 0 0 .25rem;
-	text-transform: uppercase;
+  color: #000;
+  font-size: 0.85rem;
+  margin: 0 0 0.25rem;
+  text-transform: uppercase;
 }
 
-p { 
-	font-size: 1rem; 
-	line-height: 1.5rem; 
-	margin: 0 0 1rem;
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0 0 1rem;
 }
 
 ul,
 ol {
-	line-height: 1.5rem;
-	margin: 0 0 1rem;
+  line-height: 1.5rem;
+  margin: 0 0 1rem;
 }
 
 ul li,
 ol li {
-	margin: 0 0 .5rem;
+  margin: 0 0 0.5rem;
 }
 
 header h1 {
-	font-family: $font-for-logo;	
+  font-family: $font-for-logo;
 }
 
 nav {
-	font-family: $font-for-headers;
+  font-family: $font-for-headers;
 }
 
 .pad-right {
-	@media (min-width: $large-screen) {
-		padding-right: 10%;
-	}
+  @media (min-width: $large-screen) {
+    padding-right: 10%;
+  }
 }
