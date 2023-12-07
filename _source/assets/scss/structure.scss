@@ -287,18 +287,18 @@ nav {
 }
 
 .project-screenshot {
-  background: #f1f1f1;
-  border: 1px #ccc solid;
   margin: 0;
-  padding: 1rem;
   img {
-    border: 1px #ccc solid;
+    background: #fff;
+    display: block;
     max-width: 100%;
-    vertical-align: middle;
   }
   figcaption {
+    background: #f1f1f1;
     font-size: 0.8rem;
+    line-height: 1.25;
     margin-top: 1rem;
+    padding: 0.5rem 1rem;
     font-style: italic;
   }
 }

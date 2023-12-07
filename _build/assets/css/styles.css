@@ -584,17 +584,17 @@ nav {
           margin-right: 12%; } }
 
 .project-screenshot {
-  background: #f1f1f1;
-  border: 1px #ccc solid;
-  margin: 0;
-  padding: 1rem; }
+  margin: 0; }
   .project-screenshot img {
-    border: 1px #ccc solid;
-    max-width: 100%;
-    vertical-align: middle; }
+    background: #fff;
+    display: block;
+    max-width: 100%; }
   .project-screenshot figcaption {
+    background: #f1f1f1;
     font-size: 0.8rem;
+    line-height: 1.25;
     margin-top: 1rem;
+    padding: 0.5rem 1rem;
     font-style: italic; }
 
 .clients-container {
