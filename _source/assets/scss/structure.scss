@@ -221,6 +221,18 @@ nav {
       font-size: 1rem;
       margin-bottom: 0.5rem;
       text-transform: none;
+
+      a {
+        color: black;
+        text-decoration: none;
+        &:link,
+        &:visited {
+          text-decoration: none;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
     p {
       font-size: 0.85rem;
@@ -268,7 +280,7 @@ nav {
     margin: 0 0 0.5rem;
     padding: 0;
 
-    @media (min-width: $large-screen) {
+    @media (min-width: $small-screen) {
       @include span(6 of 12);
 
       &:nth-child(3n) {
@@ -279,7 +291,7 @@ nav {
     figure {
       margin: 0;
 
-      @media (min-width: $large-screen) {
+      @media (min-width: $small-screen) {
         margin-right: 12%;
       }
     }
@@ -301,6 +313,9 @@ nav {
     padding: 0.5rem 1rem;
     font-style: italic;
   }
+  .add-border {
+    border: 1px #ccc solid;
+  }
 }
 
 .clients-container {
@@ -311,11 +326,17 @@ nav {
     margin: 0 0 0.5rem;
     padding: 0;
 
+    @include span(6 of 12);
+
+    &:nth-child(2n + 2) {
+      //clear: left;
+    }
+
     @media (min-width: $large-screen) {
       @include span(3 of 12);
 
       &:nth-child(4n + 4) {
-        clear: left;
+        //clear: left;
       }
     }
 
@@ -329,7 +350,7 @@ nav {
 
     .img-container {
       background: #fff;
-      border: 1px #ccc solid;
+      //border: 1px #ccc solid;
 
       @media (min-width: $large-screen) {
         overflow: hidden;
@@ -350,6 +371,7 @@ nav {
     }
 
     figcaption {
+      display: none;
       padding: 0.5rem 0.5rem 0.5rem;
       text-align: center;
 
@@ -373,10 +395,18 @@ nav {
       margin-bottom: 0.25rem;
     }
 
+    .title {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-size: 1rem;
+    }
+
     .company-name {
       display: block;
       margin-bottom: 0.25rem;
-      font-size: 1.25rem;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.25rem;
     }
 
     ul {
@@ -401,6 +431,7 @@ nav {
   list-style: none;
   margin: 0 0 1rem;
   padding: 0;
+  max-width: 100%;
   &:last-child {
     margin-bottom: 0;
   }
@@ -411,12 +442,21 @@ nav {
     color: #fff;
     display: inline-block;
     font-family: arial, sans-serif;
-    font-size: 0.65rem;
+    font-size: 10px;
+    font-weight: 600;
     letter-spacing: 1px;
+    line-height: 10px;
     margin: 0 1px 4px 0;
-    padding: 0 8px;
+    padding: 6px 8px;
     text-transform: uppercase;
     white-space: nowrap;
+
+    &.tag-design {
+      background: #ad5c99;
+    }
+    &.tag-other {
+      background: #9ead5c;
+    }
   }
 }
 

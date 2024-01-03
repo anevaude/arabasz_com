@@ -525,6 +525,13 @@ nav {
     font-size: 1rem;
     margin-bottom: 0.5rem;
     text-transform: none; }
+    .project figcaption h4 a {
+      color: black;
+      text-decoration: none; }
+      .project figcaption h4 a:link, .project figcaption h4 a:visited {
+        text-decoration: none; }
+      .project figcaption h4 a:hover {
+        text-decoration: underline; }
   .project figcaption p {
     font-size: 0.85rem;
     line-height: 1.5em; }
@@ -571,7 +578,7 @@ nav {
     display: block;
     margin: 0 0 0.5rem;
     padding: 0; }
-    @media (min-width: 940px) {
+    @media (min-width: 400px) {
       .project-highlights .project {
         width: 50%;
         float: left; }
@@ -579,7 +586,7 @@ nav {
           clear: left; } }
     .project-highlights .project figure {
       margin: 0; }
-      @media (min-width: 940px) {
+      @media (min-width: 400px) {
         .project-highlights .project figure {
           margin-right: 12%; } }
 
@@ -596,6 +603,8 @@ nav {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
     font-style: italic; }
+  .project-screenshot .add-border {
+    border: 1px #ccc solid; }
 
 .clients-container {
   max-width: 1153px;
@@ -608,21 +617,20 @@ nav {
   .clients-container .client {
     display: block;
     margin: 0 0 0.5rem;
-    padding: 0; }
+    padding: 0;
+    width: 50%;
+    float: left; }
     @media (min-width: 940px) {
       .clients-container .client {
         width: 25%;
-        float: left; }
-        .clients-container .client:nth-child(4n + 4) {
-          clear: left; } }
+        float: left; } }
     .clients-container .client figure {
       margin: 0; }
       @media (min-width: 940px) {
         .clients-container .client figure {
           margin-right: 12%; } }
     .clients-container .client .img-container {
-      background: #fff;
-      border: 1px #ccc solid; }
+      background: #fff; }
       @media (min-width: 940px) {
         .clients-container .client .img-container {
           overflow: hidden; } }
@@ -636,6 +644,7 @@ nav {
         vertical-align: middle;
         width: 100%; }
     .clients-container .client figcaption {
+      display: none;
       padding: 0.5rem 0.5rem 0.5rem;
       text-align: center; }
       .clients-container .client figcaption h4 {
@@ -650,10 +659,16 @@ nav {
   .skills .skills-group h4 {
     font-size: 1rem;
     margin-bottom: 0.25rem; }
+  .skills .skills-group .title {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 1rem; }
   .skills .skills-group .company-name {
     display: block;
     margin-bottom: 0.25rem;
-    font-size: 1.25rem; }
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.25rem; }
   .skills .skills-group ul {
     font-size: 0.85rem;
     line-height: 1.5em; }
@@ -665,7 +680,8 @@ nav {
 .list-tags {
   list-style: none;
   margin: 0 0 1rem;
-  padding: 0; }
+  padding: 0;
+  max-width: 100%; }
   .list-tags:last-child {
     margin-bottom: 0; }
   .list-tags li {
@@ -674,12 +690,18 @@ nav {
     color: #fff;
     display: inline-block;
     font-family: arial, sans-serif;
-    font-size: 0.65rem;
+    font-size: 10px;
+    font-weight: 600;
     letter-spacing: 1px;
+    line-height: 10px;
     margin: 0 1px 4px 0;
-    padding: 0 8px;
+    padding: 6px 8px;
     text-transform: uppercase;
     white-space: nowrap; }
+    .list-tags li.tag-design {
+      background: #ad5c99; }
+    .list-tags li.tag-other {
+      background: #9ead5c; }
 
 .secret-page-corner {
   height: 69px;
@@ -733,15 +755,18 @@ h3,
 
 h4,
 .h4 {
-  font-size: 1.25rem; }
+  font-size: 1.1rem;
+  color: #666; }
 
 h5,
 .h5 {
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  color: #666; }
 
 h6,
 .h6 {
-  font-size: 1rem; }
+  font-size: 1rem;
+  color: #666; }
 
 h1,
 .h1,
@@ -767,18 +792,32 @@ h6,
   text-transform: uppercase; }
 
 p {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.33rem;
   margin: 0 0 1rem; }
+  @media (min-width: 940px) {
+    p {
+      font-size: 1rem;
+      line-height: 1.5rem; } }
+
+@media (min-width: 940px) {
+  .content > p {
+    max-width: 90%; } }
 
 ul,
 ol {
-  line-height: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.33rem;
   margin: 0 0 1rem; }
-
-ul li,
-ol li {
-  margin: 0 0 0.5rem; }
+  @media (min-width: 940px) {
+    ul,
+    ol {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      max-width: 80%; } }
+  ul li,
+  ol li {
+    margin: 0 0 0.5rem; }
 
 header h1 {
   font-family: "Pathway Gothic One", arial, sans-serif; }

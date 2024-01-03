@@ -23,9 +23,9 @@
 	<meta charset="UTF-8">
   	<meta name="description" content="">
   	<meta name="viewport" content="width=device-width, initial-scale=1">  
-  	<meta name="description" content="The portfolio website of Annette Arabasz, a Front End Developer and designer located in Boston, Massachusetts.">
+  	<meta name="description" content="The portfolio website of Annette Arabasz, a UX Developer and designer located in Boston, Massachusetts.">
   	
-  	<title>Annette Arabasz  |  Front End Developer and Designer</title>
+  	<title>Annette Arabasz  |  UX Developer and Designer</title>
 
   	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">	
   	<link rel="stylesheet" href="assets/css/styles.css">
@@ -52,7 +52,7 @@
 		<div class="sidebar">
 
 			<header>
-				<h1>Annette Arabasz <span>Front End Developer</span></h1>
+				<h1>Annette Arabasz <span>UX Developer</span></h1>
 			</header>	
 
 <nav>
@@ -69,84 +69,64 @@
 
 				<h2>Cake: App redesign</h2>
 				<ul class="list-tags">
+					<li class="tag-design">UX</li>
   					<li>HTML</li>
   					<li>CSS</li>
-					<li>JavaScript</li>
-					<li>jQuery</li>
-  					<li>Bootstrap</li>				
-  				</ul>	
+  					<li>Bootstrap</li>	
+					<li>Angular</li>
+  				</ul>		
 				<p><a href="http://joincake.com"><span class="fa fa-external-link icon-margin-right"></span>http://joincake.com</a></p>
 
-				<br />
+				<br /> 
 
 				<h3>Overview</h3>
-				<p>As the company's first Front End Developer, I had the exciting opportunity to do a top-to-bottom evaluation of the app and recommend improvements to usability, mobile-friendliness and overall look and feel.</p>
-				<p>For my role, I was involved in both design and development. The design was created on-the-fly by working closely with the Product Owner. The code team was me (HTML, CSS and JS for interactions) and two Back End Devs (C#, JS for fetching of data).</p>
+				<p>As an early-stage startup with a tiny team, the app had quickly evolved from a scrappy prototype to a tool that was being used by hundreds of users. We needed to move quickly to make the app look more polished and trustworthy.</p>
+				
+				<p>As the company's first Frontend Developer, I had the exciting opportunity to review our app and suggest improvements for usability, mobile-friendliness, and overall appearance.</p>
+
+				<h3>Team & Role</h3>
+
+				<p>I served as both a <strong>Front End Developer</strong> and <strong>Designer</strong>, working closely with the team to make decisions and deploy them straight-to-code.</p>
+				<p>In addition to myself, the team included two Back End Developers and a Product Owner.
 				<br />
 				
-				<h3>Universal improvements</h3>
-				<p>Because trust and security is a top priority for users, it was important for the site to feel cohesive and... like Cake. I made my first goal making the app look more polished with clear and reflective of the Cake brand.</p>
+				<h3>Global improvements</h3>
+				<p>Trust and safety were a top need for Cake users, who often uploaded sensitive documents and shared highly personal details about their end-of-life wishes. I felt it was important for the site to feel authentic and trustworthy. My first goal was to make the site look polished, cohesive and reflective of the company brand. Some highlights:</p>
 				<p>
 				<ul>
-					<li><strong>Resolved failing contrast:</strong> There was insufficient contrast between the sidenav and background colors, which could cause accessibility issues and impact Google Lighthouse scores. I updated the nav to ones that would pass contrast tests, while maintaining the company branding.
-					<li><strong>Added logo to nav: </strong>  By adding the logo in and incorporating more of brand's colors (light teal, dark deal and cream), the website began to feel less like a prototype and more like an official product.</li>
-					<li><strong>Icon changes:</strong> The box icons looked like checkboxes, which could be confusing to users. Users also didn't understand what the categories meant, so we removed them entirely from the nav.</li>
-					<li><strong>Simplified IA:</strong> As a developer, it ws clear to me that the nav had grown over the years to accommodate a rapidly-changing number of tools. I proposed a new sitemap that addressed links that were redundant or ambiguous, merging the bulk of the "Discover" child links into a single parent named "Checklist".</li>
+					<li><strong>Brand Integration: </strong> Added the company logo to the navigation and used the brand's colors (light teal, dark teal, and cream) to make the website look more official and less like a prototype.</li>
+					<li><strong>Icon Tweaks:</strong> Updated box-like icons that resembled checkboxes, which could confuse users. Also, removed ambiguous category icons from the navigation.</li>
+					<li><strong>Simplified IA:</strong> As a developer, it was clear to me that the nav had grown over the years to accommodate a rapidly changing number of tools. I proposed a new sitemap that addressed links that were redundant or ambiguous, merging the bulk of the "Discover" child links into a single parent named "Checklist".</li>
 				</ul>
 				</p>
-
-				<figure class="project-screenshot" style="max-width: 300px; border: 1px #ccc solid;">
-					<a href="assets/img/projects/cake/contrast-checker-01.png"><img src="assets/img/projects/cake/contrast-checker-01.png" alt="contrast test result"></a>
-					<figcaption>Lea Verou's Contrast Checker, <a href="https://www.siegemedia.com/contrast-ratio" target="_blank">https://www.siegemedia.com/contrast-ratio</a></figcaption>
-				</figure>
-				<br />
-				<br />
-
-
-				<h3>Mobile-friendliness</h3>
-				<p>The app was originally designed with desktop users in mind. While this allowed Cake to fit several tools into a wide area, I had a feeling we were leaving out a significant mobile audience. Furthermore, mobile users who <em>were</em> using the app on their phone were met with a subpar experience, frequently encountering too-small touch targets or "broken" elements due to lack of CSS fallbacks. </p>
-				<p>To confirm my hypothesis, I used Google Analytics to confirm that 64-68% of users who visited the Cake homepage from a mobile or tablet device. Furthermore, that number was increasing by 1-2% every year. This data confirmed for me the urgency of making the app more mobile-friendly in order to better serve its audience and stay competitive.</p>
 				
-
-				<h3>Discover page improvements</h3>
-				<p>Every user started with the "Discover" tool. The tool was meant to look like a deck of cards that users can flip through to answer important questions about their healthcare and funeral/burial preferences. They could select their answer on each card or skip any they weren't comfortable answering. Changes added:</p>
-				<p>
-				<ul>
-					<li><strong>Making the "cards" more card-like:</strong> The "Discover" tool was intended to look like a deck of cards that the user can flip through, so I redesigned it with elements common in a playing card like rounded corners.</li>
-					<li><strong>Swipe gestures:</strong> Previously, only the "Back" and "Save" buttons could be used to swipe. I added touch-activated arrows to allow swiping on mobile/tablet. </li>
-					<li><strong>Large answer fields:</strong> To make the answers easier to click on mobile, I increased the size of the buttons and added iconography to indicate yes/no answers.</li>
-				</ul>
-				</p>
-
 				<figure class="project-screenshot">
 					<a href="assets/img/projects/cake/cake-questions-before.png"><img src="assets/img/projects/cake/cake-questions-before.png" alt="Cake Discover page"></a>
-					<figcaption><strong>Before:</strong> A screenshot of the Discover prior to redesign.</figcaption>
+					<figcaption><strong>Before:</strong> A screenshot of the Discover page before redesign.</figcaption>
 				</figure>
 				<br />
 				<br />
 
 				<figure class="project-screenshot">
 					<a href="assets/img/projects/cake/cake-questions-after.png"><img src="assets/img/projects/cake/cake-questions-after.png" alt="Cake Discover page"></a>
-					<figcaption><strong>After:</strong> A screenshot of the Discover after redesign, showing improvements to navigation, card component and overall page layout.</figcaption>
+					<figcaption><strong>After:</strong> A screenshot of the Discover page after redesign, showing improvements to navigation, card component and overall page layout.</figcaption>
 				</figure>
 				<br />
 				<br />
-
 				
-				<h3>Document page improvements</h3>
-				<p>Documents was the page where users can upload important files like their Wills or Health Care Proxy forms. The original design had pre-named slots where users can upload the named document and add notes about it. (e.g. If you wanted to upload your Will, you'd have to upload it to the Will box.) One of my concerns was that this design assumed the user (a) had all of the documents ready (b) knew what each document was and (c) had no need to upload any documents other than the ones we provided slots for. </p>
+				<h3>Improvements to the Discover page</h3>
+				<p>Every new user started off with the "Discover" tool, so it was important that we get this part right. The tool was designed as a virtual deck of cards that a user can flip through and answer crucial questions about their healthcare and funeral/burial preferences. Key changes included:</p>
 				<p>
 				<ul>
-					<li><strong>Loosened the scope for document upload:</strong> Instead of uploading documents into slots, I recommended that we allow a user to upload any document they felt was important and then apply a category (Type) as they saw fit. This was especially helpful in cases where a user needed to upload a file that didn't fit our slots.</li>
-					<li><strong>Changed layout</strong> When it comes to file lists, a pattern that has been used consistently for years has been the Dropbox or Google Drive file list. I suggested this pattern as a way to display files that is not only cleaner, but familiar and intuititve. Additionally, it cut down on the amount of room needed to display files. The original design took up a lot of vertical height, which could lead to a frustrating experience as users scrolled endlessly to find their file.</li>
-
+					<li><strong>Card-like Aesthetics:</strong> Redesigned the "Discover" tool to emulate a deck of cards, incorporating rounded corners and themed borders to enhance the visual resemblance to a playing card.</li>
+					<li><strong>Swipe Functionality:</strong> Expanded user interaction by introducing swipe gestures. In addition to the existing "Back" and "Save" buttons, touch-activated arrows were integrated, allowing seamless swiping on mobile and tablet devices.</li>
+					<li><strong>Touch-friendly fields:</strong> Improved mobile usability by enlarging answer buttons, meeting minimum recommended sizing for touch points. Iconography was also introduced to clearly indicate yes/no answers.</li>
 				</ul>
 				</p>
 
-
 				<figure class="project-screenshot">
 					<a href="assets/img/projects/cake/cake-documents-before.png"><img src="assets/img/projects/cake/cake-documents-before.png" alt="Cake documents page"></a>
-					<figcaption><strong>Before:</strong> A screenshot of the  Documents page prior to redesign.</figcaption>
+					<figcaption><strong>Before:</strong> A screenshot of the Documents page prior to redesign.</figcaption>
 				</figure>
 				<br />
 				<br />
@@ -157,6 +137,18 @@
 				</figure>
 				<br />
 				<br />
+				
+				<h3>Improvements to the Documents page</h3>
+				<p>The Documents page served as the platform for users to upload vital files such as Wills or Health Care Proxy forms. A notable concern was the rigid design that assigned specific slots for document uploads (e.g., Wills could only be uploaded to the "Wills" box). This assumed users (a) had all documents ready, (b) knew each document's purpose, and (c) had no need for uploading documents beyond the provided slots. To address these limitations, I proposed the following changes:</p>
+				<p>
+				<ul>
+					<li><strong>Flexible Document Upload:</strong> Instead of confining users to pre-assigned slots, I recommended a more versatile approach. Users could now upload any document they deemed important and subsequently categorize it (i.e. Type) according to their preferences. This proved especially beneficial for cases where users needed to upload files that didn't match our predefined slots.</li>
+					<li><strong>Revamped layout</strong> A shift from the original design involved adopting a file list pattern akin to Dropbox or Google Drive, a format consistently recognized and used for years. This not only presented a cleaner and more familiar display of files but also proved to be more intuitive. Additionally, this modification significantly reduced the vertical space required to showcase files, preventing a potentially frustrating user experience of endless scrolling.</li>
+
+				</ul>
+				</p>
+
+
 <!-- 
 
 				<h3>Migrating to a Mobile-first Framework</h3>
@@ -179,10 +171,29 @@
 				<p>We decided that Option 1 (upgrading Bootstrap) would be the least disruptive and require the least learning curve to ramp back up. It took about 1-2 months to fully upgrade, with gradual fixes popping up over the months that followed.</p>
 				-->
 
-				<h3>!! More Details Coming Soon</h3>
-				<p>Gradually adding more as I get approval to post additional screenshots. As always, you can email me to ask about specific examples. (updated 12/6/2023)</p>
+				
+				<h3>Mobile Optimization</h3>
+				<p>The app was originally designed with desktop users in mind, but it was 2018 and I had a feeling we were leaving out a significant mobile audience.</p>
+				<p>I used Google Analytics to confirm that 64-68% of users who visited the Cake homepage from a mobile or tablet device. This data underscored the pressing need to prioritize mobile-friendliness to better serve the app's audience and stay competitive.</p>
+				
+				<!--
+				<h3>Accessibility</h3>
+				<p>When I do accessibility evaluations, my focus revolves around ensuring compliance with core Section 508 and WCAG guidelines. Frequently, websites overlook simple adjustments that can significantly improve the experience for individuals with impairments. Some of the updates I added:</p>
+				<p>
+					<ul>
+						<li><strong>Keyboard and tab index:</strong> Ensured comprehensive keyboard accessibility, confirming that all elements could be accessed without reliance on a mouse. (Sometimes I unplugged my mouse to be extra sure!)</li>
+						<li><strong>ARIA and alt tags:</strong> Incorporated ARIA tags and alt tags wherever applicable. This approach aimed to eliminate any ambiguity and enhance the experience for individuals relying on assistive technologies.</li>
+						<li><strong>Resolved failing contrast:</strong> Addressed an insufficient contrast issue between the side nav and background colors, which could pose accessibility challenges and impact Google Lighthouse scores. The navigation was updated to ensure it passed contrast tests while still maintaining alignment with the company's branding.</li>
+					</ul>
+				</p>
+				
 
+				<figure class="project-screenshot" style="max-width: 300px; border: 1px #ccc solid;">
+					<a href="assets/img/projects/cake/contrast-checker-01.png"><img src="assets/img/projects/cake/contrast-checker-01.png" alt="contrast test result"></a>
+					<figcaption>Lea Verou's Contrast Checker, <a href="https://www.siegemedia.com/contrast-ratio" target="_blank">https://www.siegemedia.com/contrast-ratio</a></figcaption>
+				</figure>
 
+				-->
 
 		</div>
 

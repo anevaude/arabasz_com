@@ -33,15 +33,18 @@ h3,
 }
 h4,
 .h4 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
+  color: #666;
 }
 h5,
 .h5 {
   font-size: 1.25rem;
+  color: #666;
 }
 h6,
 .h6 {
   font-size: 1rem;
+  color: #666;
 }
 
 h1,
@@ -70,20 +73,37 @@ h6,
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.33rem;
   margin: 0 0 1rem;
+
+  @media (min-width: $large-screen) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.content > p {
+  @media (min-width: $large-screen) {
+    max-width: 90%;
+  }
 }
 
 ul,
 ol {
-  line-height: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.33rem;
   margin: 0 0 1rem;
-}
 
-ul li,
-ol li {
-  margin: 0 0 0.5rem;
+  @media (min-width: $large-screen) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    max-width: 80%;
+  }
+
+  li {
+    margin: 0 0 0.5rem;
+  }
 }
 
 header h1 {

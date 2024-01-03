@@ -15,8 +15,6 @@ module.exports = function (grunt) {
         files: {
           "_build/index.html": "_source/templates/pages/index.mustache",
           "_build/projects.html": "_source/templates/pages/projects.mustache",
-          "_build/project-cake-01.html":
-            "_source/templates/pages/project-cake-01.mustache",
           "_build/project-espn.html":
             "_source/templates/pages/project-espn.mustache",
           "_build/project-hxr.html":
@@ -25,6 +23,16 @@ module.exports = function (grunt) {
           "_build/connect.html": "_source/templates/pages/connect.mustache",
           "_build/nitty-gritty.html":
             "_source/templates/pages/nitty-gritty.mustache",
+          "_build/project-cake-01.html":
+            "_source/templates/pages/project-cake-01.mustache",
+          "_build/project-cake-02.html":
+            "_source/templates/pages/project-cake-02.mustache",
+          "_build/project-va.html":
+            "_source/templates/pages/project-va.mustache",
+          "_build/project-espn-02.html":
+            "_source/templates/pages/project-espn-02.mustache",
+          "_build/project-boa.html":
+            "_source/templates/pages/project-boa.mustache",
         },
       },
     },
