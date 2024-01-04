@@ -566,28 +566,28 @@ nav {
         .project-list .project > figure figcaption p:last-child {
           margin-bottom: 0; }
 
-.project-highlights {
+.project-archives {
   max-width: 1153px;
   margin-left: auto;
   margin-right: auto; }
-  .project-highlights:after {
+  .project-archives:after {
     content: " ";
     display: block;
     clear: both; }
-  .project-highlights .project {
+  .project-archives .project {
     display: block;
     margin: 0 0 0.5rem;
     padding: 0; }
     @media (min-width: 400px) {
-      .project-highlights .project {
+      .project-archives .project {
         width: 50%;
         float: left; }
-        .project-highlights .project:nth-child(3n) {
+        .project-archives .project:nth-child(3n) {
           clear: left; } }
-    .project-highlights .project figure {
+    .project-archives .project figure {
       margin: 0; }
       @media (min-width: 400px) {
-        .project-highlights .project figure {
+        .project-archives .project figure {
           margin-right: 12%; } }
 
 .project-screenshot {
