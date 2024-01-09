@@ -219,6 +219,7 @@ nav {
 
     h4 {
       font-size: 1rem;
+      line-height: 1.25;
       margin-bottom: 0.5rem;
       text-transform: none;
 
@@ -238,6 +239,10 @@ nav {
       font-size: 0.85rem;
       line-height: 1.5em;
 
+      @media (min-width: $large-screen) {
+        font-size: 0.9rem;
+      }
+
       a .fa {
         margin-left: 0.25rem;
       }
@@ -245,7 +250,7 @@ nav {
   }
 }
 
-.project-list {
+.projects-main {
   @include container(12);
   display: flex;
   flex-direction: column;
@@ -272,7 +277,7 @@ nav {
   }
 }
 
-.project-archives {
+.projects-archive {
   @include container(12);
 
   .project {
@@ -299,7 +304,8 @@ nav {
 }
 
 .project-screenshot {
-  margin: 0;
+  display: inline-block;
+  margin: 0 0 2rem;
   img {
     background: #fff;
     display: block;
@@ -309,13 +315,28 @@ nav {
     background: #f1f1f1;
     font-size: 0.8rem;
     line-height: 1.25;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     padding: 0.5rem 1rem;
     font-style: italic;
   }
   .add-border {
     border: 1px #ccc solid;
   }
+}
+
+.pretty-thumbnail {
+  background: rgb(79, 156, 156);
+  border: 0;
+  border-radius: 8px;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.projects-main .pretty-thumbnail {
+  padding: 1rem;
 }
 
 .clients-container {

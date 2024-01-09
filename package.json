@@ -42,6 +42,7 @@
   "dependencies": {
     "grunt-contrib-copy": "^1.0.0",
     "grunt-mustache-render": "^1.9.2",
-    "handlebars": "^4.0.5"
+    "handlebars": "^4.0.5",
+    "sass": "^1.69.7"
   }
 }
