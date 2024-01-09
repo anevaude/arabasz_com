@@ -1,0 +1,135 @@
+.mobile-only { display: block; }
+
+#checkingAccount .account-date {
+	padding: 0 5.791505791506%;
+	margin: 1em 0 0 0;
+}
+
+#checkingAccount h2 {
+	font-size: 1.125em;
+	line-height: 1.2em;
+	margin-top: 0;
+	}
+
+#checkingAccount h3 { margin: 1.2em 0 17px 0; }
+
+
+#checkingAccountOverview { margin-bottom: 20px; }
+
+#checkingAccountOverview .account div { width: 100%; }
+
+#checkingAccountOverview div.account-balance {
+	border-left: 4px solid #F2F0EC; 
+	float: left; 
+	width: 33%;
+}
+
+.available-balance { border-left: none!important; }
+
+#checkingAccountOverview div.account-balance h3 {
+	font-size: 1em;
+	margin-bottom: 10px; 
+}
+
+#checkingAccountOverview div.account-balance p.account-detail {
+	margin: 0;
+	padding: 0 0 15px 0;
+	width: 100%;
+}
+
+#checkingAccountOverview div.account-balance h3,
+#checkingAccountOverview div.account-balance p.account-detail { text-align: center; }
+
+
+#servicesBox { padding: 5px 15px; }
+
+#servicesBox { color: #9A8C7F; }
+
+#servicesBox ul li {
+	width: 45%;
+}
+
+#servicesBox h1 {
+	color: #433732;
+	font-size: 1.25em; /* 20px */
+}
+
+#servicesBox ul li a { 
+	color: #574e46;
+	font-size: 0.875em;
+}
+
+#reportsBox > h1 {
+	font-size: 1.25em;
+}
+
+#reportsBox > section {
+	background-color: #fff;
+	padding: 5px 15px;
+}
+
+	#reportsBox section.pie-chart {
+		float: left;
+		margin-right: 6%;
+		width: 30%;
+	}
+	
+		#reportsBox section.pie-chart img {
+			max-width: 100%;
+		}
+		
+#reportsBox aside {
+	float: left;
+	margin: 0;
+	width: 64%;
+}
+
+	#reportsBox aside > form {
+		margin-bottom: 1em;
+	}
+
+#checkingTabs ul { 
+	height: 40px; 
+	margin-bottom: -3px;
+}
+
+#checkingTabs ul li {
+	background: #E5E2DA;
+	border: 1px solid #BBB1A3;
+	border-bottom: none;
+	height: 36px;
+	margin-left: 1%;
+	padding: 1.12% 0 2% 0;
+	width: 24.25%;
+}	
+
+#checkingTabs ul li.active { background: white; }
+
+#checkingTabs ul li:first-child { margin-left: 0; }
+
+#checkingTabs ul li a { font-size: 0.75em; }
+
+#activitySelect select {
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+
+
+#ameriTabs .tabs ul li:first-child { margin-left: 0; } 
+
+
+@media only screen and (min-width: 30em) {
+	#checkingAccountOverview div.account-balance h3 { font-size: 1.5em; }
+}
+
+
+
+
+@media only screen and (min-width: 50em) {
+	.mobile-only { display: none; }
+}
+
+@media only screen and (min-width: 60em) {
+	#checkingTabs ul li a { font-size: 0.8125em; }
+}

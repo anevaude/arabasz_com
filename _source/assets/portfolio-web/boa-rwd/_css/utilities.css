@@ -1,0 +1,170 @@
+/*
+==================================================
+    Development Overrides
+==================================================
+*/
+
+header {
+	background: #CCC;
+	width: 100%;
+}
+
+footer {
+	width: 100%;
+}
+
+.container {
+	margin: 0 auto !important;
+	width: 90% !important;
+}
+
+
+header form.form-search,
+header form.form-login {
+	padding: 10px 0;
+}
+
+header #nav-main,
+header .nav-tertiary {
+	background: #f8f8f8;
+}
+
+
+/*
+==================================================
+    Utility Kit
+==================================================
+*/
+
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+.block { display: block }
+.hidden { display: none; }
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*! responsive-nav.js v1.0.13 by @viljamis */
+
+#nav ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+#nav li {
+  width: 100%;
+  display: block;
+}
+
+.js #nav {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+#nav.opened {
+  max-height: 9999px;
+}
+
+@media screen and (min-width: 40em) {
+  .js #nav {
+    position: relative;
+    max-height: none;
+  }
+  #nav-toggle {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 50em) {
+	header form.form-search,
+	header form.form-login {
+		padding: 10px;
+	}
+}
+
+	
+/*
+==================================================
+    Print
+==================================================
+*/
+
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

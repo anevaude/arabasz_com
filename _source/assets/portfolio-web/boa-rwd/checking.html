@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Online Banking (online-banking.html)</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="_css/normalize.css">
+		<link rel="stylesheet" href="_css/utilities.css">  
+		<link rel="stylesheet" href="_css/skin.css"> 
+		<link rel="stylesheet" href="_css/brown.css">  
+		<link rel="stylesheet" href="_css/olb.css"> 
+		<link rel="stylesheet" href="_css/checking.css">           		
+		<link rel="stylesheet" href="_modules/tabs/tabs.css">
+		<link rel="stylesheet" href="_modules/slider/slider.css">
+		
+		<script src="_js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	</head>
+	
+	<body class="olb">
+	
+		<header class="group">
+			<section class="group container" id="subNav">
+				<ul class="group">
+				
+					
+					<li class="last-nav">
+						<a href="#">Sign Out</a>
+					</li>
+					
+					<li class="large-only">
+						<a href="#">Merrill Lynch</a>
+					</li>
+				
+					<li id="subNavProfile">
+						<a href="#">Profile &amp; Settings</a>
+					</li>
+				
+					<li class="large-only">
+						<a href="#">Last Login: 04/15/2012 14:30</a>
+					</li>
+					
+					
+					
+				</ul>
+			</section>
+			
+			<section class="hero container group logo-hero">
+				<h1 class="logo-main">
+					<a href="homepage.html"><img src="_img/logo-header.png" alt="Bank of America logo"></a>
+					<span>Online Banking</span>
+				</h1>			
+				<form class="form-search">
+					<input type="text" class="search-query" placeholder="Search">
+					<img src="_img/search.png" id="headerSearchGlass">
+				</form>	
+				<div id="little-toggle">Toggle Navigation</div>										
+			</section>
+			
+			<nav class="nav-context" id="responsiveNav">
+				<ul class="nav nav-tabs container">
+					<li class="active"><a href="online-banking.html">Accounts</a></li>
+					<li><a href="#">Bill Pay</a></li>
+					<li><a href="#">Transfers</a></li>
+					<li><a href="amerideals.html">Cash Back Deals</a></li>
+					<li><a href="#">Tools &amp; Investing</a></li>
+					<li><a href="#">Help &amp; Support</a></li>
+				</ul>
+			</nav>			
+		</header>
+		
+				
+		<div class="container group">
+		
+			<aside class="topAside">
+				<h1>Hello, Robin Lee</h1>
+				<section id="welcomeBox" class="blue-callout">
+					<p><a href="#">You have <b>14</b> unread alerts</a></p>
+					<ul class="group">
+						<li>
+							<a href="#">robin.lee@gmail.com</a>
+						</li>
+						<li>
+							<a href="#">Update profile</a>
+						</li>
+					</ul>
+				</section>
+			</aside>
+			
+			<div id="mainContent">
+				
+				<div id="bankStatement">
+					
+					<section id="checkingAccountOverview">
+						<h1 class="canopy">Family Checking - 1234</h1>					
+						<div class="account group">
+							<div class="left group">
+								<div class="account-balance available-balance">
+									<h3>$3,777.64</h3>
+									<p class="account-detail">Available</p>
+								</div>
+								<div class="account-balance">
+									<h3>$15.94</h3>
+									<p class="account-detail">Pending</p>
+								</div>
+								<div class="account-balance">
+									<h3>$3,761.70</h3>
+									<p class="account-detail">Projected</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+					<div id="checkingTabs" class="tabs">
+						<ul>
+							<li><a href="#">Activity</a></li>
+							<li><a href="#">Document &amp; Alerts</a></li>
+							<li><a href="#">Deals</a></li>
+							<li><a href="#">Service &amp; Settings</a></li>
+						</ul>				
+					</div>
+					
+					<div id="activitySelect" class="mobile-only">
+						<select>
+							<option>Activity</option>
+							<option>Document &amp; Alerts</option>
+							<option>Deals</option>
+							<option>Service &amp; Settings</option>
+						</select>
+					</div>
+					
+					<section id="checkingAccount">
+						<h1 class="canopy">Account Activity</h1>					
+						
+						<div class="account group account-not-last">
+							<div class="left">
+								<p class="account-date">01/13/2013</p>
+								<h2>Check #425</h3>
+								<p class="account-detail">Categories</p>
+							</div>
+							<div class="right">
+								<h3>-$1.95</h3>
+								<p class="account-detail">($3,761.00)</p>
+							</div>
+						</div>
+						
+						<div class="account group account-not-last">
+							<div class="left">
+								<p class="account-date">01/13/2013</p>
+								<h2>Barnes and Nobel</h3>
+								<p class="account-detail">Shopping</p>
+							</div>
+							<div class="right">
+								<h3>-$66.91</h3>
+								<p class="account-detail">($3,780.59)</p>
+							</div>
+						</div>
+						
+						<div class="account group account-not-last">
+							<div class="left">
+								<p class="account-date">01/11/2013</p>
+								<h2>Nakato Japanese Restaurant</h3>
+								<p class="account-detail">Restaurant</p>
+							</div>
+							<div class="right">
+								<h3>-$122.18</h3>
+								<p class="account-detail">($3,918.00)</p>
+							</div>
+						</div>
+						
+						<div class="account group account-not-last">
+							<div class="left">
+								<p class="account-date">01/13/2013</p>
+								<h2>Check #425</h3>
+								<p class="account-detail">Categories</p>
+							</div>
+							<div class="right">
+								<h3>-$1.95</h3>
+								<p class="account-detail">($3,761.00)</p>
+							</div>
+						</div>
+						
+						<div class="account group">
+							<div class="left">
+								<p class="account-date">01/13/2013</p>
+								<h2>Fund Transfer from #5678</h3>
+								<p class="account-detail">Transfer</p>
+							</div>
+							<div class="right">
+								<h3>+$340.00</h3>
+								<p class="account-detail">($4,175.00)</p>
+							</div>
+						</div>
+
+
+						
+					</section>
+					
+					
+								
+					<section id="accountSummary" class="group">
+						<div>
+							<img src="_img/add.png">
+							<a href="#">Add a new transaction</a>
+						</div>
+
+					</section>	
+					
+					
+				</div>	
+				<br>
+				
+				<div id="accountMeta">
+					<div class="tabs">
+						<ul>
+							<li>
+								<a href="#tab-4">Spending</a>
+							</li>
+							<li>
+								<a href="#tab-5">Budget</a>
+							</li>
+							<li>
+								<a href="#tab-6">Goals</a>
+							</li>
+						</ul>
+						
+						<section id="tab-4" class="group">
+							<div class="mobile">
+								<h1>Spending</h1>
+								<hr>
+							</div>
+							<div class="totals group">
+								<div class="left">
+									<p>
+										<b>Total Spending:</b>
+										<span class="amount">$1,500.00</span>
+									</p>
+									<p><a href="#">More details &raquo;</a></p>
+								</div>
+								<div class="right">
+									<img src="_img/graph.png">
+								</div>
+							</div>						
+						</section>
+						
+						<section id="tab-5" class="group">
+							<div class="mobile">
+								<h1>Budget</h1>
+								<hr>
+							</div>
+							<div class="totals group">
+								<div class="left">
+									<p>
+										<b>Total Spending:</b>
+										<span class="amount">$1,500.00</span>
+									</p>
+									<p><a href="#">More details &raquo;</a></p>
+								</div>
+								<div class="right">
+									<img src="_img/graph.png">
+								</div>
+							</div>						
+						</section>
+						
+						<section id="tab-6" class="group mobile-tabs-section">
+							<div class="mobile">
+								<h1>Goals</h1>
+								<hr>
+							</div>
+							<div class="totals group">
+								<div class="left">
+									<p>
+										<b>Total Spending:</b>
+										<span class="amount">$1,500.00</span>
+									</p>
+									<p><a href="#">More details &raquo;</a></p>
+								</div>
+								<div class="right">
+									<img src="_img/graph.png">
+								</div>
+							</div>						
+						</section>
+									
+					</div>
+				</div>
+			</div>
+			
+			<!-- Sidebar -->
+			<aside>		
+			
+				<div id="reportsBox">
+					<section class="group">
+						<h1>Reports</h1>
+						<section class="pie-chart">
+							<img src="_img/piechart.png" alt="Pie Chart" />
+						</section>
+						<aside>
+							<form>
+								<select name="placeholder">
+									<option value="1">Expense analysis</option>
+									<option value="2">Expense analysis 2</option>
+									<option value="3">Expense analysis 3</option>
+								</select>	
+							</form>						
+							<p>Monthly spending - Jan</p>
+							<p><b>$1,654.65</b></p>
+							<p><b><a href="#">View your reports &raquo;</a></b></p>					
+						</aside>
+					</section>
+				</div>
+					
+				<div id="adsBox">
+					<section class="blue-callout" id="servicesBox">
+						<h1>Services</h1>
+						<ul class="group">
+							<li class="left"><a href="#">Report a lost or stolen debit card</a></li>
+							<li class="right"><a href="#">Dispute ATM/Check card transaction</a></li>
+							<li class="left"><a href="#">Stop check payment</a></li>
+							<li class="right"><a href="#"><b>View more services</b></a></li>
+						</ul>
+					</section>
+					
+					<section class="brown-callout">
+						<h1>Talking Money With Teens</h1>
+						<p>Spending, saving, budgets & more.</p>
+						<p><a href="">View Infographic &raquo;</a></p>
+					</section>
+					
+					<section class="brown-callout">
+						<h1>Working to Fight Hunger</h1>
+						<p>We're helping to provide relief in communities across the country.</p>
+						<p><a href="">See how &raquo;</a></p>
+					</section>	
+				</div>
+			</aside>
+			
+		</div>
+		
+		<footer class="group">
+			<nav>
+				<ul class="nav nav-pills">
+					<li><a href="#"><b>Online Banking Service Agreement</b></a></li>
+					<li><a href="#">Locations</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Accessible Banking</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Privacy &amp; Security</a></li>
+					<li><a href="#">Site Map</a></li>
+				</ul>
+			</nav>
+		</footer>		
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="_js/plugins.js"></script>	
+		<script src="_js/logged-in.js"></script>	
+		<script src="_modules/tabs/tabs.js"></script>	
+		<script src="_modules/slider/slider.js"></script>	
+		<script src="_js/main.js"></script>		
+		<script>
+			var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+	</body>
+</html>

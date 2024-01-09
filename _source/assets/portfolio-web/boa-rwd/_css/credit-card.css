@@ -1,0 +1,306 @@
+/*
+==================================================
+    No Breakpoint
+==================================================
+*/
+
+.credit-card header { background: white!important; }
+
+
+
+.logo-main span { color: #998C7F; }
+
+header ~ div.container { 
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+/* --- Global -------------------- */
+
+.credit-card ul,
+.credit-card ol {
+	list-style: disc;
+	margin: 0 0 0 20px;
+	padding: 0;
+}
+
+#ccMain section,
+#ccMiddle section {
+	background: #fff;
+	border: 1px #CEC5BC solid;
+	border-radius: 3px;
+	box-sizing: border-box;
+	display: block;
+	float: left;
+	margin: 0 0 20px;
+	padding: 5%;
+	position: relative;
+	width: 100%;
+}
+
+/* --- Top Section -------------------- */
+
+#ccMain,
+#ccMiddle { margin: 0; }
+
+
+#ccMain {
+	background: #F6F3EE;
+	padding: 2%;
+	position: relative;
+}
+
+#ccMain .container { 
+	padding: 0%;
+	width: 100%;
+}
+
+#ccMain h1 { padding-left: 1%; }
+	#ccMain h1 span.plural-hook {
+		display: none;
+	}
+
+#ccMain > section { min-height: 300px; }
+
+#ccMain section.second,
+#ccMain section.last {display: none;}
+
+#ccMain section img {
+	margin-bottom: 15px; 
+	max-width: 335px;
+	width: 100%; 
+}
+
+#ccMain section p {
+	font-size: 0.875em; /* 14px */
+	line-height: 21px;
+}
+
+#ccMain .header {
+	color: #CB0637;
+	font-size: 1.3125em;
+	line-height: 1.2em;
+	margin: 0 0 .5em;
+}
+
+#ccMain a.compare-cards { 
+	float: right;
+	font-size: 1.125em;
+	padding-bottom: 15px;
+	padding-right: 1%;
+}
+
+
+/* --- Middle Section -------------------- */
+
+#ccMiddle {
+	background: #F4F6F4;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#ECEEEC)); /* Chrome, Safari 4+ */
+  background-image: -webkit-linear-gradient(top, #FFFFFF, #ECEEEC); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  background-image: -moz-linear-gradient(top, #FFFFFF, #ECEEEC); /* Firefox 3.6-15 */
+  background-image: -o-linear-gradient(top, #FFFFFF, #ECEEEC); /* Opera 11.10-12.00 */
+  background-image: linear-gradient(to bottom, #FFFFFF, #ECEEEC); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+  border: 1px #CEC5BC solid;
+  border-radius: 0;
+	border-top: 4px solid #ACACAC;
+	padding: 1em 2%;
+}
+
+#ccMiddle section {
+	border-radius: 0;
+}
+
+#newCard h2,
+#newCard h3 { margin: 0; }
+
+#newCard h2 { font-size: 1.5em; }
+
+#newCard h3 { 
+	font-size: 1.125em; 
+	margin: 5px 0 15px 0;
+}
+
+
+#newCardMeta #ncmRespond {
+	border-bottom: 1px #CEC5BC solid;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+
+#newCardMeta h2 { 
+	margin-bottom: 10px;
+	margin-top: 0; 
+}
+
+#newCardMeta p {
+	margin: 1em 0 4px 0;
+} 
+
+
+/* --- Bottom Section -------------------- */
+
+#ccEnd { 
+	background: #F2F8FD;
+	border: 1px #CEC5BC solid;
+  border-radius: 0 0 5px 5px; 
+	border-top: 4px solid #ACACAC;
+	padding: 1em 2%;
+}
+
+#ccEnd section { padding: 0 3%; }
+
+#ccEnd section.even {
+	border-bottom: 1px #CEC5BC solid;
+	border-top: 1px #CEC5BC solid;
+	padding: 3%;
+}
+
+#ccEnd ul.social {
+	list-style: none;
+	margin: 0;
+}
+
+#ccEnd ul.social li {
+	float: left;
+	margin-left: 9%;
+	width: 27%;
+}
+
+#ccEnd ul.social li:first-child { margin-left: 0; }
+
+#ccEnd ul.social li img { max-width: 100%; }
+
+
+/*
+==================================================
+    Orange (30em)
+==================================================
+*/
+
+
+/*
+==================================================
+    Yellow (40em)
+==================================================
+*/
+
+@media only screen and (min-width: 40em) { 
+	#newCard,
+	#newCardMeta { min-height: 580px!important; }
+	
+	#newCard { background: #fff url('../_img/cc-card-bg.jpg') 100% 100% no-repeat!important; }
+	
+	
+}
+
+
+/*
+==================================================
+    Green (50em)
+==================================================
+*/
+
+@media only screen and (min-width: 50em) { 
+
+	#ccMain section,
+	#ccMiddle section {
+		float: left;
+		padding: 3%;
+	}
+	
+	#ccMain section {
+		min-height: 595px;
+		width: 32%;
+	}
+	
+	#ccMain section.second,
+	#ccMain section.last {display: inline-block;}
+	
+	#ccMain h1 span.plural-hook {
+		display: inline-block;
+	}
+	
+	#ccMain section.even {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	
+	#ccMain section a.apply-now {
+		bottom: 15px;
+		max-width: 120px;
+		position: absolute;
+		left: 10%;
+	}
+	
+	
+	#ccEnd section {
+		float: left;
+		min-height: 230px;
+		padding-left: 0;
+		padding-right: 0;
+		width: 31%;
+	}
+	
+	#ccEnd section.even {
+		border-bottom: none;
+		border-left: 1px #CEC5BC solid;
+		border-right: 1px #CEC5BC solid;
+		border-top: none;
+		margin-left: 2%!important;
+		margin-right: 2%!important;
+		padding: 0 3%;
+	}
+	
+	#ccEnd section section { width: 100%; }
+
+}
+
+
+
+
+
+
+/*
+==================================================
+    Blue (60em)
+==================================================
+*/
+
+@media only screen and (min-width: 60em) { 
+	#ccMain section {
+		min-height: 582px;
+	}
+	
+	#newCard { 
+		background: #fff url('../_img/cc-card-bg.png') right bottom no-repeat !important;
+		width: 70%!important;
+	}
+	
+	#newCardMeta {
+		margin-left: 2.564103%!important;
+		width: 27%!important;
+	}
+
+	#newCard,
+	#newCardMeta { min-height: 502px!important; }
+
+
+}
+
+
+
+
+
+/*
+==================================================
+    Purple (75em)
+==================================================
+*/
+
+@media only screen and (min-width: 75em) {
+	
+	#ccMain section.even {
+		margin-left: 1.75%;
+		margin-right: 1.75%;
+	}
+}

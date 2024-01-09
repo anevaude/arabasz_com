@@ -1,0 +1,188 @@
+/* --- Logged Out Versions -------------------- */	
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Header */
+.logged-out header {
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}		
+	
+	.logged-out header #loggedOutLogos #toggleMenu,
+	.logged-out header #loggedOutLogos #signInBtn,
+	.logged-out header #loggedOutLogos .logo-main,
+	.logged-out header #loggedOutLogos .logo-main a { float: left; }
+	
+	
+	
+	.logged-out header #loggedOutLogos #toggleMenu { width: 15%; }
+	.logged-out header #loggedOutLogos .logo-main { width: 63%; }
+	.logged-out header #loggedOutLogos #signInBtn { width: 22%; }
+
+	.logged-out header #loggedOutLogos #signInBtn button { 
+		font-size: 10px;
+		width: 100%; 
+	}
+	
+	.logged-out header #loggedOutLogos .logo-main a img { 
+		left: 25%;
+		position: absolute;
+		top: 28px;	
+	}
+	
+/*	.logged-out header nav { min-height: 255px; } */
+
+	.logged-out header #loggedOutLogos a { float: right; }
+	
+	
+	.logged-out ul.nav-tabs { margin-left: 0; }
+	
+	.logged-out header .nav-tabs > li > a {
+		border-top-color: #F1EFEA;
+	}
+	
+	.logged-out header h1.logo-main > span {
+		color: #998C7F;
+	}
+	
+	.logged-out header form.form-search {
+		width: 100%;
+	}	
+
+	.logged-out header .login {
+		margin: 0 0 10px;
+	}
+	
+	.logged-out footer nav ul {
+			margin: 0;
+		}
+		
+/* Menu Toggler */	
+	.logged-out #little-toggle:hover,
+	.logged-out #little-toggle:active {
+		background-color: #CEC5BC;
+	}		
+	
+	#mobilePageTitle {
+		border-top: 1px solid #433732;
+	}
+	
+	#mobilePageTitle h1 {
+		margin-left: 5%; 
+	}
+	
+	
+#largeSearch { display: none; }
+
+#mobileSearch { 
+	display: block; 
+	margin: 15px 0 15px 2.65%;
+	width: 95%;
+}
+
+.logo-main span { display: none!important; }
+
+/* Slider */	
+.logged-out .flexslider {
+	background-color: #4E3E31;
+	border-radius: 0;
+	box-shadow: none;
+	margin: 0;
+}
+
+.logged-out .flexslider .slides img {
+	margin: 0 auto;
+	max-height: 508px;
+	max-width: 1148px;
+}	
+
+@media only screen and (min-width: 30em) {
+	.logged-out header #loggedOutLogos .logo-main a img { 
+		left: 33%;
+	}
+}
+
+
+@media only screen and (min-width: 40em) {
+	
+	header .logo-main img { width: 213px; }
+	
+	.logged-out header #loggedOutLogos .logo-main a img { 
+		left: 35%;
+		top: 17px;	
+	}
+	
+	.logged-out header #loggedOutLogos #signInBtn button { 
+	font-size: 1em;
+	}
+
+}
+
+/* GREEN, Tablet-ish (800px = 50 Em) */
+@media only screen and (min-width: 50em) {
+	
+	.logged-out header nav { min-height: 0px; }
+	
+	.logged-out header #loggedOutLogos .logo-main a img { 
+		left: inherit;
+		position: relative;
+		top: inherit;	
+	}
+	
+	#mobilePageTitle {
+		display: none;
+	}
+	
+	.logged-out header #loggedOutLogos #toggleMenu { display: none; }
+	
+	.logged-out header #loggedOutLogos .logo-main a img { 
+		margin-left: 0; 
+		margin-top: 0;
+	}
+	
+	.logged-out header #loggedOutLogos #signInBtn { 
+		float: right;
+		width: 35%; 
+	}
+	
+	#largeSearch { display: block; }
+	#mobileSearch { display: none; }
+	
+	.logo-main span { display: inline-block!important; }
+	
+	
+	.logged-out header .login {
+		float: right;
+		margin: 0 6px 0 0;
+	}	
+		
+	.logged-out footer nav ul {
+		margin: 0;
+	}
+	
+	.logged-out footer .container {
+		width: 100% !important;
+	}
+	
+		.logged-out footer nav ul li a {
+			padding-left: 0;
+		}	
+			
+		.logged-out footer p.container {
+			font-size: .9em;
+			margin-top: 0;
+			margin-bottom: 20px !important;
+		}
+	
+	.logged-out footer nav,
+	.logged-out footer p.container {
+		margin: 0 auto;
+		max-width: 1148px;
+		width: 90% !important;
+	}
+	
+}

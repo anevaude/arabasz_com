@@ -1,0 +1,1290 @@
+/* ==========================================================================
+   Author: Mad*Pow
+   
+   TABLE OF CONTENTS
+   * NORMALIZE
+   * UTILITIES   
+   * THEME
+   * MAIN
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+   
+/* Root, There is no breakpoint. */
+
+.container {
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+section > section { 
+	margin: 0;
+	padding: 1% 2%; 
+}
+
+aside .bucket {
+	padding: 3% 6%;
+}
+
+footer { margin-top: 20px; }
+
+/* Header Content */
+
+header {
+	margin: 0;
+}
+
+header .logo-main {
+	color: #fff;
+	display: inline-block;
+	font-size: 1.125em; /* 18 /16 = 1.125em */
+	height: 25px;
+	margin: 0 0 20px;
+	width: 100%; 
+}
+
+header h1.logo-main > span {
+	display: none;
+	font-size: 1em;
+	font-weight: 100;
+}
+
+	body.credit-card header h1.logo-main > span {
+		display: inline-block;
+		white-space: nowrap;
+	}
+
+header .logo-main img { 
+	max-width: 100%;
+	width: 150px; 
+}
+
+	header .form-login,
+	header .form-search,
+	header .nav-tertiary {
+		margin-bottom: 15px;
+	}
+	
+	header form.form-search {
+		margin: 0;
+		padding: 0;
+		float: left;
+		width: 79%;
+	}
+	
+	header form.form-search input {
+		height: 40px;
+		width: 100%;
+	}
+	
+	#headerSearchGlass { 
+		float: right;
+		left: -3%;
+		position: relative;
+		top: -25px;
+	}
+	
+	.amerideals #subNav ul { max-width: 1148px; }
+	
+	section.logo-hero {
+		padding-top: 10px;
+	}
+	
+	
+	header .nav-context {
+		clear: both;
+	}
+	
+	header .nav-tabs {
+		margin-bottom: 0;
+	}
+	
+		header .nav-tabs > li,
+		header .nav-pills > li,
+		footer .nav-pills > li{
+			display: block;
+			float: none;
+		}
+		
+			header .nav-tabs > li > a,
+			header .nav-pills > li > a,
+			footer .nav-pills > li > a{
+				border-radius: 0;
+				-webkit-border-radius: 0;
+				-moz-border-radius: 0;
+				border-left: 0;
+			}	
+			
+		header .nav-tabs > li > a {
+			border: 1px #c2bba9 solid;
+			
+		}			
+			
+	#responsiveNav {
+		clip: rect(0 0 0 0);
+		margin: 0;
+		max-height: 0;
+		overflow: hidden;
+		}	
+		
+		#responsiveNav.opened {
+			background: #fff;
+		}	
+	
+		nav#responsiveNav li .nav-icon {
+			background: #fff;
+			display: inline-block;
+			height: 40px;
+			float: right;
+			margin: 10px 0;
+			text-indent: -999em;
+			width: 40px;
+		}
+		
+		nav#responsiveNav li p {
+			font-size: .75em;
+			max-width: 70%;
+		}
+	
+		nav#responsiveNav ul ul {
+			margin: 0;
+			padding: 0;
+		}
+		
+		nav#responsiveNav > ul ul li {
+			float: none;
+			display: block;
+		}
+		
+		nav#responsiveNav > ul ul li a {
+			background: #F5F3EE;		
+			border-bottom: 1px #ccc solid;
+			color: #535353;
+			display: block;
+			font-size: .85em;
+			padding: 4px 16px 4px 26px;
+			text-decoration: none;
+		}
+		
+		nav#responsiveNav > ul ul li a:hover,
+		nav#responsiveNav > ul ul li a:active {
+			background: #FBFAF8;			
+		}
+		
+	#little-toggle {
+		height: 40px;
+		margin: 0 0 0 20px;
+		width: 41px;
+		float: right;
+		text-indent: -9999px;
+		overflow: hidden;
+		display: block;	
+		background: transparent url('../_img/hamburger.gif') no-repeat;
+	}		
+	
+	#little-toggle:hover,
+	#little-toggle:active {
+		background-position: 0 -40px;
+		cursor: pointer;
+	}
+
+			
+/* --- OLB -------------------- */
+
+/* Global */
+
+aside {
+	background: #fff;
+	padding: 0.5% 5%;
+}
+
+/* Tabs */
+
+.tabs ul li {
+	background: #E5E2DA;
+	border: 1px solid #BBB1A3;
+}
+
+.tabs ul li a {
+	color: #535353;
+	font-size: 1em;
+	}
+
+	.tabs ul li a:hover,
+	.tabs ul li a:active {
+		text-decoration: none;
+	}
+
+.tabs ul li.active {
+	background: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.tabs ul li.active a { color: #333333; }
+
+/* Main Content Area */
+
+#bankStatement section {
+	background: #fff;
+}
+
+#bankStatement section:first-child {
+	}
+
+#bankStatement section h1 {
+	background: #DDD7CD;
+	color: #605952;
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	margin: 0;
+	padding: 1% 1.65%;
+}
+
+#bankStatement section#accountSummary h1{
+	background-color: #124e89; 
+}
+
+#bankAccounts { border-radius: 5px 5px 0 0; }
+#invAccounts { border-radius: 0 0 5px 0; }
+
+.account dl,
+.account dd { margin: 0; }
+
+.account dl {
+	padding: 1% 1.65%;
+}
+
+.account dl.even { background: #f8f7f4; }
+
+.account .account-info,
+.account .account-amount { float: left; }
+
+.account .account-info { min-width: 65%; }
+.account .account-amount { min-width: 35%; }
+
+.account dt.account-info,
+.account dd.account-amount { font-size: 1em; /* 13 / 16 = 0.8125*/ }
+
+.account .account-info p,
+.account .account-amount p { 
+	display: inline-block;
+	font-size: 0.8125em; /* 13 / 16 = 0.8125*/
+	margin-left: 1.5%;
+}
+
+.account .account-info p:first-child,
+.account .account-amount p:first-child { margin-left: 0; }
+.account .account-amount { 
+	text-align: right; 
+	}
+
+.account div.group { padding: 0 1.65% 0 1.65%; }
+.account div p { margin: 0 0 1em 0; }
+
+#showMore {
+	background: #E5E2DA;
+	border: 1px solid #BBB1A3;
+	border-radius: 0 0 3px 3px;
+	border-top: none;
+	color: #535353;
+	font-size: 0.8125em; /* 13 / 16 = 0.8125 */
+	padding: 10px 2%;
+	position: relative;
+	top: 4px;
+}
+
+#accountAction {
+	margin: 1.6em 0 2em 0; 
+	}
+
+#accountAction dl {
+	float: none;
+}
+
+#accountAction dt,
+#accountAction dd {
+	margin: 0;
+	padding: 0;
+}
+
+#accountAction dd { 
+	color: #555;
+	font-size: 1.5em;
+	}
+	
+#accountAction dd span {
+	font-size: .6em; /* 14 / 16 = 0.875 */
+	text-transform: uppercase;
+}
+
+#accountAction ul { 
+	list-style: none; 
+	padding: 0;
+}
+
+#accountAction ul li {
+	border-left: 1px solid #BBB1A3;
+	float: left;
+	margin-left: 2%;
+	padding-left: 2%;
+}
+
+#accountAction ul li:first-child {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* OLB Side */
+
+.olb aside.topAside {
+	margin-bottom: 20px;
+}
+
+	.olb aside.topAside section {
+		padding: 10px;
+	}
+
+.olb aside nav ul { 
+	height: 30px;
+	margin-bottom: 0;
+	margin-top: 5px;
+	padding-left: 0; 
+}
+
+.olb aside nav ul li {
+	float: left;
+}
+
+.olb aside nav ul li a {
+	border-right: 1px solid #BBB1A3;
+	display: inline-block;
+	font-size: 0.8125em; /* 13 / 16 = 0.8125  */	
+	line-height: 1em;
+	padding-right: 10px;
+	padding-left: 10px;	
+	#fff-space: nowrap;
+}
+
+	.olb aside nav ul li.first a{
+		padding-left: 0;
+	}
+
+	.olb section#actionsBox .false-nav {
+		display: block;
+	}
+	
+		.olb section#actionsBox .false-nav > ul {
+			list-style: none;
+			margin: 4px 0 0 0;
+			padding: 0;
+		}
+	
+		.olb section#actionsBox .false-nav > ul > li > a {
+			background: #ece6dd url('../_img/dart-right.png') no-repeat right 50%;
+			border: 1px solid #fff;
+			border-bottom: 0;
+			color: #555;
+			cursor: pointer;
+			display: block;
+			margin-right: 1px;
+			padding: 8px 12px 8px 12px;
+			text-decoration: none;
+		}
+		
+	.olb section#actionsBox .hide-on-single {
+		display: none;
+	}
+
+
+/* --- AmeriDeals -------------------- */
+
+.show-hide {
+	color: #3366CC;
+	font-size: 0.8125em; /* 13px */
+}
+
+.show-hide:hover { cursor: pointer; }
+
+.large-only { display: none; }
+.mobile-only { display: block; }
+
+#adInstructions { 
+	display: none; 
+	margin: 0;
+	}
+
+#adFAQ { 
+	margin-bottom: 20px;
+	width: 100%; 
+	}
+
+
+#adFAQ h1 {
+	font-size: 1.125em; /* 18 / 16 = 1.125em */
+}
+
+#adFAQ h2 {
+	font-size: 0.875em; /* 14 / 16 = 0.875em */
+	line-height: 1.3em;
+}
+
+#adFAQ section h2 {
+	padding: 0;
+}
+
+#adDemo {
+	border-bottom: 2px solid #DDD7CD;
+	border-top: 2px solid #DDD7CD;
+	padding-bottom: 15px;
+}
+
+#adDemo img { 
+	float: left; 
+	margin-right: 5%;
+}
+
+#adDemo p { 
+	font-size: 1.1em; 
+	line-height: 1.2em;
+	}
+
+#adFAQ ul,
+#adFAQ ul li { 
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#adFAQ ul li {
+	line-height: 1em;
+	margin-bottom: 10px;	
+}
+
+#adFAQ ul li a { 
+	font-size: 0.8125em; /* 13 / 16 = 0.8125em */
+	line-height: 1.4em;
+}
+
+#allDeals { margin-bottom: 35px; }
+
+
+.adActivity {
+	background: #fff;
+}
+
+.adActivity,
+.deal {
+	border: 0;
+	border-radius: 5px;
+	padding: 5%;
+}
+
+.adActivity h1 { 
+	border-bottom: 1px solid #BBB1A3;
+	color: #767273;
+	font-size: 1.125em; /* 18 / 16 = 1.125em */
+	margin-top: 0;
+	padding-top: 0;
+	padding-bottom: 10px;
+}
+.adActivity p {
+	color: #414548;
+	margin: 5px 0; 
+	}
+.adActivity p span { float: right; }
+
+#ameriTabs { width: 100%; }
+
+#ameriTabs .tabs ul {}
+
+#ameriTabs .tabs ul li { 
+	margin-left: 1.05%;
+	padding: 1% 0.5%;
+	width: 19.15%;
+}
+
+#ameriTabs .tabs ul li:first-child { margin-left: 0; } 
+
+select.mobile-only { 
+	float: left;
+	margin-right: 3%;
+	margin-top: 20px;
+	width: 61.5%;
+}
+
+select#mobileSelectSort {
+	width: 31.5%;
+}
+
+
+#dealMenu {
+	background: #DDD7CD;
+	color: #605952;
+	display: none;
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+	margin: 0;
+	padding: 0.5% 3% 0.5% 3%;
+	width: 100%;
+}
+
+#dealMenu p { 
+	float: left; 
+	margin: .6em 0;
+	}
+	
+#dealMenu p.deal-name { width: 30%; }
+#dealMenu p.deal-expires { width: 8%; }
+
+#dealMenu p.deal-offer { 
+	margin: .6em 0 0;
+	width: 39%; 
+}
+
+#dealMenu p.deal-button { width: 12%;}
+
+
+.deal { margin: 20px 0; background: #fff;}
+
+.deal-offer span.deal-description-long { 
+	display: none;
+	font-size: 0.9375em; /* 15 / 16 = 0.9375em */  
+}
+
+.deal img,
+.deal div { float: left; }
+
+.deal img { margin-right: 5%; }
+.deal p { margin: 0;}
+
+.deal p.deal-name { font-size: 1.25em; /* 20 / 16 = 1.25em */ }
+
+.deal-name img { 
+	position: relative;
+	top: -8px;
+}
+
+.deal-offer span { display: block; }
+p.deal-offer {	margin: 25px 0 15px 0; }
+
+.deal button { width: 100%;}
+
+/* Content */	
+
+section.bucket-holder {
+	clear: both;
+	display: block;
+	margin: 0 0 20px;
+}
+
+	section.bucket-holder > section {
+		background: #fff;
+		border: 1px #E8E4DF solid;
+		-webkit-box-shadow: 2px 2px 1px 0 #E5E2DA;
+		box-shadow: 2px 2px 1px 0 #E5E2DA;
+		box-sizing: border-box;
+		display: block;
+		float:left;
+		margin: 0 0 20px;
+		min-height: 100px;
+		width: 100%;
+		padding: 1.5% 1.5%;
+	}
+	
+		section.bucket-holder > section h2 {
+			margin-top: 0;
+		}
+	
+		section.bucket-holder > section .ad-pic {
+			float: left;
+			margin: 0 15px 15px 0;
+			width: 33%;
+		}
+	
+		section.bucket-holder > section .ad-pic > img {
+			max-width: 100%;
+			width: 100%;
+		}
+		
+		
+section#location-chooser  {
+	background: #F6F3EE;
+	margin: 0 0 20px;
+	padding: 0;
+}		
+	
+	section#location-chooser > section .header {
+		float: left;
+		font-size: 1em;
+		margin: 1px 3% 0 0;
+	}
+	
+	section#location-chooser > section > form {
+		display: inline-block;
+		float: left;
+	}
+	
+	section#location-chooser > section > p.ad-practices {
+		clear: both;
+		margin: 0;
+		padding-top: 2%;
+	}	
+	
+		
+section#home-ad-buckets {
+	padding: 0;
+}
+
+	section#home-ad-buckets > section,
+	section#location-chooser > section,
+	section#home-service-buckets > section {
+		padding: 4%;
+	}
+
+	section#home-ad-buckets span.ad-pic {
+		margin: 0 5% 0 0;
+		max-width: 55px;
+	}
+
+	section#home-ad-buckets span.ad-pic img {
+		max-width: 55px;
+	}
+
+	section#home-ad-buckets .header {
+		color: #CB0637;
+		font-size: 1.3125em; /* 21 / 16 */
+		line-height: 1.2em;
+		margin: 0 0 .5em;
+	}		
+	
+	section#home-ad-buckets p {
+		font-size: .75em; /* 12 / 16 */
+		line-height: 1.2em;
+		margin: 0 0 .75em;
+	}
+	
+	section#home-ad-buckets p:first-child {
+		margin-top: 1.5em;
+	}
+	
+	section#home-ad-buckets p:last-child {
+		margin-bottom: 0;
+	}
+	
+section#home-service-buckets {}
+
+	section#home-service-buckets > section {
+		background: #F2F7FB;
+		border: 0;
+		border-radius: 0;
+	}
+	
+		section#home-service-buckets > section .header {
+			color: #463F33;	
+		}
+	
+		section#home-service-buckets p {
+			font-size: .875em; /* 14 / 16 */
+			line-height: 1.4em;
+			margin: 0 0 1em;		
+		}
+		
+		section#home-service-buckets > section.last .btn {
+			width: 45px;
+		}		
+			
+		section#home-service-buckets section#locations,
+		section#home-service-buckets section#privacy {
+			border-bottom: 1px #CEC5BC solid;
+			margin-bottom: 1em;
+			padding-bottom: 1em;
+		}	
+	
+		section#home-service-buckets section#locations p {
+			margin-top: 10px;
+		}		
+		
+		section#home-service-buckets section#locations form input[type='text'],
+		section#home-service-buckets section#services form select {
+			margin-right: 9px;
+		}
+		
+		ul.tan-bullets {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			}
+			
+			ul.tan-bullets li {
+				background: transparent url('../_img/bullet-tan.gif') no-repeat 0 6px;
+				padding-left: 15px;
+			}
+		
+section#cc-ad-buckets .compare-cards {
+	clear: both;
+	display: block;
+}
+
+section#cc-featured {
+	background: lightblue;
+}
+
+section#actionsBox select,
+section#actionsBox input[type='date'] {
+	min-width: 160px;
+}
+
+section#actionsBox form .label-name {
+	display: inline-block;
+	font-weight: 700;
+	margin-right: 10px;
+	min-width: 60px;
+	text-align: right;
+}
+
+	section#actionsBox form > label {
+		display: block;
+		margin-bottom: 4px;
+	}
+	
+	section#actionsBox form > input[type='submit'] {
+		margin-top: 10px;
+	}
+
+#accountMeta .totals {
+	float: left;
+	margin-right: 20px;
+	width: 48%;
+}
+
+	#accountMeta hr {
+		margin: 0 0 1.625em 0;
+	}
+
+	#accountMeta .totals p {
+		margin: 0 0 1em 0;
+	}
+	
+	#accountMeta .totals .amount {
+		color: #dc1431;
+		display: block;
+		font-size: 1.25em; /* 20px / 16px = 1.25em */
+	}
+	
+	#accountMeta .placeholder {
+		float: right;
+		margin-top: -5px;
+		max-width: 35%;
+		overflow: auto;
+	}
+	
+		#accountMeta .placeholder img {
+			max-width: 200px;
+			width: 100%;
+		}
+		
+		#accountMeta .placeholder .circle {
+			border-radius: 50%;
+		}
+
+#accountMeta dd.meter {
+	margin: 0;
+}
+
+	#accountMeta dd.meter meter {
+		margin-bottom: 15px;
+	}
+	
+	#accountMeta #tab-6 dd.meter.last meter {
+		margin-bottom: 0;
+	}
+		
+/* Footer */
+
+footer {
+	padding-top: 5px;
+}
+
+footer > nav.container {
+	margin: 0;
+	padding: 0;
+}
+
+footer > nav {
+	margin: 0 auto;
+	max-width: 1148px;
+}
+		
+
+/* ORANGE, Mobile Phone-ish (480px = 30 Em) */
+@media only screen and (min-width: 30em) { 
+	header h1.logo-main > span { display: inline-block; }
+	header form.form-search {
+		width: 86%;
+	}
+	
+	#adDemo img { margin-right: 3%; }
+	
+	
+}
+
+/* YELLOW, Tablet-ish (640px = 40 Em) */
+@media only screen and (min-width: 40em) { 
+
+
+/* Contents */
+
+	section#location-chooser {
+		padding: 6px 18px 6px;
+	}
+	
+		section#location-chooser > section {
+			padding: 0;
+		}
+
+		section#location-chooser > section > p.ad-practices {
+			clear: none;
+			float: right;
+			padding: 1px 0 0 0;
+		}
+	
+	section#cc-ad-buckets > section {
+		float: left;
+		margin-left: 2.564102564102564%;
+		*margin-left: 2.5109110747408616%;
+		width: 31.623931623931625%;
+		*width: 31.570740134569924%;
+	}
+
+	section#home-ad-buckets > section:first-child,
+	section#cc-ad-buckets > section:first-child {
+		margin-left: 0;
+	}
+	
+	section#home-ad-buckets > section{
+		margin-left: 2.564102564102564%;
+		width: 48.717948717948715%;		
+		min-height: 118px;
+	}
+	
+	section#home-service-buckets > section {
+		margin-left: 2.564102564102564%;
+		width: 48.717948717948715%;	
+		min-height: 320px;
+	}	
+	
+		section#home-ad-buckets > section.odd,
+		section#home-service-buckets > section.odd {
+			margin-left: 0;
+		}	
+	
+section#cc-finding-buckets > section {
+	margin-left: 2.127659574468085%;
+	*margin-left: 2.074468085106383%;
+	width: 48.93617021276595%;
+	*width: 48.88297872340425%;
+}
+
+	section#cc-finding-buckets > section:first-child {
+		margin-left: 0;
+	}	
+
+
+	/* --- AmeriDeals -------------------- */
+	
+	.deal { 
+		float: left;
+		position: relative;
+		min-height: 290px;
+		margin-bottom: 0;
+		width: 48.5%; 
+	}
+	
+	.deal.even { margin-left: 3%; }
+	
+	.deal button {
+		bottom: 15px; 
+		position: absolute;
+		width: 78%;
+	}
+
+				
+}
+
+/* GREEN, Tablet-ish (800px = 50 Em) */
+@media only screen and (min-width: 50em) {
+
+/* Header */
+header h1.logo-main {
+	float: left;
+	margin-top: -5px;
+	width: 60%;
+}
+
+	header h1.logo-main > span {
+		display: inline-block;
+		margin: 4px 0 0 15px;
+	}
+
+	header #nav-main,
+	header .nav-tertiary,
+	header form.form-login {
+		clear: right;
+		float: right;
+	}
+	
+	header form.form-search {
+		clear: right;
+		float: right;
+	}
+
+	header .nav-tabs > li{
+		display: inline-block;
+		float: left;
+		border-right: 1px #999 solid;
+		}
+		
+		.nav-tabs {
+			margin: 0 auto !important;
+			width: 90% !important;
+		}
+		
+#responsiveNav > ul ul {
+	border: 1px #ccc solid;
+	position: absolute;
+	z-index: 1000;
+}		
+
+	nav#responsiveNav li .nav-icon,
+	nav#responsiveNav li p {
+		display: none;
+	}
+	
+	#responsiveNav > ul ul li {
+		border-right: 0;
+	}
+	
+			#responsiveNav.opened {
+			background: #e5e2da;
+		}		
+		
+	header .nav-pills > li,
+	footer .nav-pills > li	{
+		float: left;
+	}
+	
+			header .nav-pills > li > a,
+			footer .nav-pills > li > a	{
+				border: 0;
+			}	
+			
+			footer .nav-pills > li > a {
+				font-size: .9em;
+			}
+			
+			#subNav ul li#subNavProfile { border-right: 1px dotted #fff; }
+			#subNav ul li.large-only.large-only { display: block; }
+			
+			header form.form-search { 
+				margin-top: 8px;
+				margin-bottom: 8px;
+				padding: 4px 6px;
+				width: 40%; 
+			}
+			
+			header form.form-search input {
+				clear: right;
+				float: right;
+				height: 25px;
+				max-width: 210px;
+				padding: 4px 6px;
+			}
+			
+			header #headerSearchGlass {
+				left: 203px;
+				top: 7px;
+			}
+
+			
+#responsiveNav {
+	max-height: none;	
+	position: relative !important;	
+}			
+
+	header .nav-tabs > li > a { 
+		border-color: #fff;
+		border-top: 0;
+		border-left: 0;
+		border-bottom: 0;
+		}
+			
+#little-toggle {
+	display: none;
+}
+
+header .nav-tabs > li > a { 
+	font-size: 0.8125em; /* 13 / 16 = */
+	}
+
+	/* --- AmeriDeals -------------------- */
+
+	#ameriTabs .tabs ul.large-only { display: none; }
+	
+
+	/* --- Homepage -------------------- */
+
+	section#home-ad-buckets > section,
+	section#home-service-buckets > section	{
+		padding: 15px;
+	}
+	
+	section#home-ad-buckets > section > section,
+	section#home-service-buckets > section > section {
+		padding: 0;
+	}
+
+	/* --- OLB -------------------- */
+	
+	/* Main Content Area */
+	
+	.olb #mainContent {
+		float: right;
+		width: 60%;
+	}
+	
+	aside {	padding: 0.5% 1.5%; }
+	
+	/* Sidebar */
+	
+	.olb aside { 
+		float: left;
+		margin-right: 5%; 
+		width: 35%
+	}
+	
+	.olb aside .tabs.hide-on-single ul { display: block; }
+	
+	.olb aside .tabs ul li { max-width: 26%; }
+	
+	.olb aside label { 
+		display: block; 
+		margin-bottom: 5px;
+	}
+	
+	.olb aside label select,
+	.olb aside label input { margin-left: 1.5%; }
+	
+	.olb section#actionsBox .false-nav {
+		display: none;
+	}
+	.olb section#actionsBox .tabs {
+		display: block;
+	}	
+	
+	.olb section#actionsBox form .label-name {
+		display: block;
+		text-align: left;
+	}
+	
+	
+	/* Other Overrides */
+	
+	.olb footer { clear: both; }
+
+}
+
+/* BLUE, Laptop-ish (960px = 60 Em) */
+@media only screen and (min-width: 60em) {
+
+	#subNav ul { 
+		margin: 0;
+	}
+	
+	/* --- HOMEPAGE -------------------- */	
+	
+	section#location-chooser {
+		border-bottom: 1px #D1CDC4 solid;
+		margin-bottom: 0;
+	}
+		
+	section#home-ad-buckets {
+		background: #F6F3EE;
+		padding: 1.5%;
+	}	
+		
+	section#home-ad-buckets > section,
+	section#home-ad-buckets > section.odd	{
+		margin-left: 2.564102564102564%;
+		*margin-left: 2.5109110747408616%;
+		width: 23.076923076923077%;
+		*width: 23.023731587561375%;	
+		margin-bottom: 0;	
+		min-height: 148px;
+	}
+	
+	section#home-ad-buckets > section:first-child	{
+		margin-left: 0;
+	}		
+
+	/* --- OLB -------------------- */
+	
+	.olb section#actionsBox form .label-name {
+		display: inline-block;
+		float: none;
+		min-width: 62px;
+		text-align: right;
+	}
+
+	section#actionsBox select,
+	section#actionsBox input[type='text'],
+	section#actionsBox input[type='date'] {
+		float: none;
+		min-width: 0;
+	}
+	
+	section#actionsBox form > input[type='submit'] {
+		margin-top: 10px;
+		margin-left: 74px;	
+	}
+	
+	#accountMeta .placeholder {
+		float: right;
+	}	
+		
+	/* --- Amerideals -------------------- */
+	
+	.flexslider .slides  {
+		background: red !important;
+		margin: 0 auto;
+		max-width: 1148px !important;
+	}
+	
+	#ameriTabs { width: 75%; }
+	
+	#ameriTabs .tabs ul.large-only { display: block; }
+	.mobile-only { display: none; }
+	
+	.deal.even { background: #F8F7F4; }
+	
+	#adInstructions { 
+		box-shadow: none;
+		display: block; 
+		}
+		
+		#adInstructions ul img {
+			max-height: 330px;
+		}
+	
+	body.amerideals #adInstructions ul li {
+		position: relative;
+	}
+	
+	body.amerideals #adInstructions .adActivity {
+		background: transparent url('../_img/bg-clearwhite.png') repeat;
+		border: 1px #ccc solid;
+		border-radius: 10px;
+		max-width: 350px;
+		padding: 15px;
+		position: absolute;
+		top: 50px;
+		right: 20px;
+	}
+	
+		body.amerideals #adInstructions .adActivity h1 {
+			border-bottom: 0;
+			color: #333;
+			font-size: 1em;
+			padding: 0;
+		}
+	
+		body.amerideals #adInstructions .adActivity p {
+			font-size: .9em;
+		}
+	
+	body.amerideals .container .adActivity {
+		display: none;
+	}
+	
+	#adFAQ { 
+		float: right;
+		width: 23%; 
+	}
+	
+	#adDemo a { 
+		font-size: 0.75em; /* 12 / 16 = 0.75*/
+		float: right; 
+		line-height: 16px;
+		width: 68%;
+	}
+	
+	#allDeals { 
+		float: left; 
+		width: 75%;
+	}
+	
+	#dealMenu { display: block; }
+	
+	.deal { 
+		border-radius: 0;
+		border-bottom: none;
+		border-top: none;
+		margin: 0;
+		min-height: inherit;
+		padding: 4.5% 2% 1% 2%;
+		width: 100%;  
+	}
+	
+	.deal button {
+		bottom: 0; 
+		position: relative;
+	}
+	
+	.deal p,
+	.deal button { float: left; }
+	
+	.deal p.deal-name img {
+		margin-right: 10%;
+		top: -20px;
+	}
+	
+	#dealMenu p,
+	.deal p { margin-right: 4%; }
+	
+	#dealMenu p.deal-button { margin-right: 0; }
+	
+	.deal p.deal-name { width: 30%; }
+	.deal p.deal-expires { width: 8%; }
+	.deal p.deal-offer { width: 35%; }
+	.deal button { 
+		margin-right: 0;
+		width: 15%;
+	}
+	
+	.deal.even { margin-left: 0; }
+	
+	p.deal-offer { margin: 0 4% 0 0; }
+	
+	.deal-expires { float: left; }
+	.deal-expires span { display: none; }
+	
+	.last-deal { 
+		border-bottom: 4px solid #DDD7CD; 
+	}
+	
+}
+
+/* PURPLE, Desktop-ish (1140px = 70 Em) */
+@media only screen and (min-width: 1140px) {
+
+	.container {
+	    max-width: 1148px !important; /* important because there's a 90% elsewhere */
+	}
+	
+	
+}

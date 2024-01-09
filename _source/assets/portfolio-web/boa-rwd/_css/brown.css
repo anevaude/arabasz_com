@@ -1,0 +1,310 @@
+/*
+==================================================
+    Fonts
+==================================================
+*/
+
+@font-face {
+  font-family: 'fonts/connectionsregular';
+  src: url('fonts/connections-regular-webfont.eot');
+  src: url('fonts/connections-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/connections-regular-webfont.woff') format('woff'),
+       url('fonts/connections-regular-webfont.ttf') format('truetype'),
+       url('fonts/connections-regular-webfont.svg#fonts/connectionsregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'fonts/connectionsbold';
+  src: url('fonts/connections-bold-webfont.eot');
+  src: url('fonts/connections-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/connections-bold-webfont.woff') format('woff'),
+       url('fonts/connections-bold-webfont.ttf') format('truetype'),
+       url('fonts/connections-bold-webfont.svg#fonts/connectionsbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}   
+
+
+/*
+==================================================
+    Header
+==================================================
+*/
+
+/* Header Content */
+
+header {
+	margin: 0;
+}
+
+header .logo-main {
+	color: #fff;
+	display: inline-block;
+	font-size: 1.125em; /* 18 /16 = 1.125em */
+	margin: 0 0 20px;
+	width: 100%; 
+}
+
+header h1.logo-main > span {
+	font-size: 1em;
+	font-weight: 100;
+	white-space: nowrap;
+}
+
+header .logo-main img { 
+	max-width: 100%;
+	width: 185px; 
+}
+
+
+
+	header .form-login,
+	header .form-search,
+	header .nav-tertiary {
+		margin-bottom: 15px;
+	}
+	
+	form.form-search {
+		margin: 0;
+		padding: 0;
+		float: left;
+		width: 78%;
+	}
+	
+	form.form-search input {
+		height: 40px;
+		width: 100%;
+	}
+	
+	#headerSearchGlass { 
+		float: right;
+		left: -3%;
+		position: relative;
+		top: -25px;
+	}
+	
+	#subNav { padding-top: 10px; }
+	
+	#subNav ul { 
+		height: 25px;
+		list-style: none;
+		margin: 0;
+		max-width: 992px;
+		padding: 0 2% 0 0;
+		width: 100%;
+	}
+	
+	#subNav ul li {
+		border-right: 1px dotted #fff; 
+		float: right;
+		height: 15px;
+		padding: 0 1.75%;
+	}
+	
+	#subNav ul li:first-child { 
+		border-right: 0; 
+		padding-right: 0;
+	}
+	
+	#subNav ul li.last-nav { padding-right: 0; }
+	#subNav ul li.large-only { display: none; }	
+
+	
+	#subNav ul li a { 
+		color: #fff; 
+		font-size: .85em; 
+		position: relative;
+		top: -4px;
+	}
+	
+	section.logo-hero {
+		padding-top: 40px;
+	}
+	
+	
+	header .nav-context {
+		clear: both;
+	}
+	
+	header .nav-tabs {
+		margin-bottom: 0;
+	}
+	
+
+		header .nav-tabs > li,
+		header .nav-pills > li,
+		footer .nav-pills > li{
+			display: block;
+			float: none;
+		}
+		
+			header .nav-tabs > li > a,
+			header .nav-pills > li > a,
+			footer .nav-pills > li > a{
+				border-radius: 0;
+				-webkit-border-radius: 0;
+				-moz-border-radius: 0;
+				border-left: 0;
+			}	
+			
+		header .nav-tabs > li > a {
+			border: 1px #c2bba9 solid;
+			
+		}	
+		
+			
+			
+	#responsiveNav {
+		clip: rect(0 0 0 0);
+		margin: 0;
+		max-height: 0;
+		overflow: hidden;
+		}	
+		
+		#responsiveNav.opened {
+			background: #fff;
+		}	
+		
+	#little-toggle {
+		height: 40px;
+		margin: 0 0 0 20px;
+		width: 40px;
+		float: right;
+		text-indent: -9999px;
+		overflow: hidden;
+		display: block;	
+		background: transparent url('../_img/hamburger.gif') no-repeat;
+	}		
+	
+	#little-toggle:hover,
+	#little-toggle:active {
+		background-position: 0 -40px;
+		cursor: pointer;
+	}
+	
+
+
+/*
+==================================================
+    Typopgraphy
+==================================================
+*/
+
+body { 
+	background: #F9F7F4;
+	color: #463F33;
+	font-family: Arial, sans-serif;
+}
+
+b, strong {
+	font-weight: 600;
+}
+
+h1 {
+	color: #433732;
+	font-size: 1.375em; /* 22px */
+}
+
+h2 { 
+	/* Example: Account names */
+	color: #0067B1;
+	font-size: 1.125em; /* 18px */
+	padding: 10px 5.791505791506% 0 5.791505791506%;
+}
+
+h2 span {
+	color: #574D46;
+	display: block;
+	font-size: 0.72222222222222em; /* 13 / 18 = 0.72222222222222 */
+}
+
+h3 {
+	/* Example: Account balances */
+	color: #463F33;
+	font-family: Arial, sans-serif;
+	font-size: 1.5em; /* 24px */
+	padding: 10px 5.791505791506% 0 5.791505791506%;
+}
+
+h4 { color: #3F3F40; }
+
+a { 
+	color: #3366CC;
+	text-decoration: none;
+}
+
+p { 
+	font-family: Arial, sans-serif; 
+	font-size: 0.875em; /* 14px */
+}
+
+.account-detail { 
+	color: #574E46;
+	font-size: 0.8125em; /* 13px */ 
+	padding: 0 5.791505791506%;
+}
+
+label {
+	color: #665E52;
+	font-size: 0.8125em;/* 13px */
+}
+
+
+/* --- Block-specific typography -------------------- */
+
+
+h1.canopy  {
+	color: #615A53;
+	font-family: Arial, sans-serif;
+	font-size: 1.125em; /* 18px */
+	font-weight: 100;
+}
+
+.brown-callout h1 {
+	color: #433732;
+	font-size: 1.25em; /* 20px */
+}
+
+
+/*
+==================================================
+    Blocks
+==================================================
+*/
+
+.canopy { 
+	background: #DDD7CD;
+	margin: 0;
+	padding: 15px 2.083333333333%;
+}
+
+.account { 
+	background: #FFFFFF; 
+	padding: 0 1.041666666667%;
+}
+
+.account-not-last { border-bottom: 5px solid #F2F0EC; }
+
+.blue-callout {
+	background: #d9e8f3;
+	padding: 15px;
+}
+
+.brown-callout {
+	background: #E5E2DA;
+	padding: 5px 15px;
+}
+
+.tabs ul li {
+	background: #F1EFEA;
+	border-radius: 5px;
+	border: 4px solid #A39382;
+}
+
+.tabs ul li.active,
+.tabs section { background: #fff; }

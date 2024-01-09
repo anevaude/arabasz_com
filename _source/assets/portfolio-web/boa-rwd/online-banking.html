@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Online Banking (online-banking.html)</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="_css/normalize.css">
+		<link rel="stylesheet" href="_css/utilities.css">  
+		<link rel="stylesheet" href="_css/skin.css"> 
+		<link rel="stylesheet" href="_css/brown.css">  
+		<link rel="stylesheet" href="_css/olb.css">           		
+		<link rel="stylesheet" href="_modules/tabs/tabs.css">
+		<link rel="stylesheet" href="_modules/slider/slider.css">
+		
+		<script src="_js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	</head>
+	
+	<body class="olb">
+	
+		<header class="group">
+			<section class="group container" id="subNav">
+				<ul class="group">
+				
+					
+					<li class="last-nav">
+						<a href="#">Sign Out</a>
+					</li>
+					
+					<li class="large-only">
+						<a href="#">Merrill Lynch</a>
+					</li>
+				
+					<li id="subNavProfile">
+						<a href="#">Profile &amp; Settings</a>
+					</li>
+				
+					<li class="large-only">
+						<a href="#">Last Login: 04/15/2012 14:30</a>
+					</li>
+					
+					
+					
+				</ul>
+			</section>
+			
+			<section class="hero container logo-hero">
+				<h1 class="logo-main">
+					<a href="homepage.html"><img src="_img/logo-header.png" alt="Bank of America logo"></a>
+					<span>Online Banking</span>
+				</h1>			
+				<form class="form-search">
+					<input type="text" class="search-query" placeholder="Search">
+					<img src="_img/search.png" id="headerSearchGlass">
+				</form>	
+				<div id="little-toggle">Toggle Navigation</div>										
+			</section>
+			
+			<nav class="nav-context" id="responsiveNav">
+				<ul class="nav nav-tabs container">
+					<li class="active"><a href="online-banking.html">Accounts</a></li>
+					<li><a href="#">Bill Pay</a></li>
+					<li><a href="#">Transfers</a></li>
+					<li><a href="amerideals.html">Cash Back Deals</a></li>
+					<li><a href="#">Tools &amp; Investing</a></li>
+					<li><a href="#">Help &amp; Support</a></li>
+				</ul>
+			</nav>			
+		</header>
+		
+				
+		<div class="container group">
+		
+			<aside class="topAside">
+				<h1>Hello, Robin Lee</h1>
+				<section id="welcomeBox" class="blue-callout">
+					<p><a href="#">You have <b>14</b> unread alerts</a></p>
+					<ul class="group">
+						<li>
+							<a href="#">robin.lee@gmail.com</a>
+						</li>
+						<li>
+							<a href="#">Update profile</a>
+						</li>
+					</ul>
+				</section>
+			</aside>
+			
+			<div id="mainContent">
+				
+				<div id="bankStatement">
+					<section id="bankAccounts">
+						<h1 class="canopy">Bank Accounts</h1>					
+						<div class="account group account-not-last">
+							<div class="left">
+								<h2><a href="checking.html">Checking #1234</a></h3>
+								<p class="account-detail"><a href="checking.html">Quick View</a></p>
+								<p class="account-detail low-balance">
+									<img src="_img/alert.jpg" alt="Alert">
+									Low balance
+								</p>
+							</div>
+							<div class="right">
+								<h3>$1,234.00</h3>
+								<p class="account-detail">Estimated balance $62.85</p>
+							</div>
+						</div>
+						
+						<div class="account group">
+							<div class="left">
+								<h2>Savings #5678</h3>
+								<p class="account-detail">Quick View</p>
+							</div>
+							<div class="right">
+								<h3>$2,000.00</h3>
+							</div>
+						</div>
+					</section>
+					
+					<section id="creditCards">
+						<h1 class="canopy">Credit Cards</h1>					
+						<div class="account group">
+							<div class="left">
+								<h2>Platinum Plus Visa</h3>
+								<p class="account-detail">Quick View</p>
+								<p class="account-detail low-balance">
+									<img src="_img/alert.jpg" alt="Alert">
+									Payment Due
+								</p>
+							</div>
+							<div class="right">
+								<h3>$2,000.00</h3>
+							</div>
+						</div>
+					</section>
+					
+					<section id="invAccounts">
+						<h1 class="canopy">Investment Accounts</h1>					
+						<div class="account group">
+							<div class="left group">
+								<div id="blueCow" class="left">
+									<img src="_img/logo_sm_merrill_lynch.png"><br>
+									<p class="account-detail">Quick view</p>
+								</div>
+								<div class="left">
+									<h2>
+										Merrill Lynch Value Fund - 6789
+										<span class="desktop">Last accessed on 01/08/2013</span>
+										<span class="mobile">Quick View</span>
+									</h2>
+								</div>
+							</div>
+							<div class="right">
+								<h3>$26,645.88</h3>
+							</div>
+						</div>
+					</section>
+					
+					<section id="collegeFund">
+						<h1 class="canopy">College Fund</h1>					
+						<div class="account group">
+							<div class="left">
+								<h2>College Fund</h3>
+								<p class="account-detail">Quick View</p>
+							</div>
+							<div class="right">
+								<h3>$50,000.00</h3>
+							</div>
+						</div>
+					</section>
+								
+					<section id="accountSummary" class="group">
+						<a href="#" id="showMore">Show More</a>
+						<div>
+							<img src="_img/add.png">
+							<a href="#">Add a new account</a>
+						</div>
+
+					</section>	
+					
+					
+				</div>	
+				<br>
+				
+				
+				<div id="accountMetaAccordion" class="accordion">						
+					<section class="group">
+						<div class="mobile">
+							<a>
+								<span>Spending</span>
+								<span class="mobile-arrow">v</span>
+							</a>
+						</div>
+						<div class="totals group">
+							<div class="left">
+								<p>
+									<b>Total Spending:</b>
+									<span class="amount">$1,500.00</span>
+								</p>
+								<p><a href="#">More details &raquo;</a></p>
+							</div>
+							<div class="right">
+								<img src="_img/graph.png">
+							</div>
+						</div>						
+					</section>
+					
+					<section class="group">
+						<div class="mobile">
+							<a>
+								<span>Budget</span>
+								<span class="mobile-arrow">v</span>
+							</a>
+						</div>
+						<div class="totals group">
+							<div class="left">
+								<p>
+									<b>Total Spending:</b>
+									<span class="amount">$1,500.00</span>
+								</p>
+								<p><a href="#">More details &raquo;</a></p>
+							</div>
+							<div class="right">
+								<img src="_img/graph.png">
+							</div>
+						</div>						
+					</section>
+					
+					<section class="group mobile-tabs-section">
+						<div class="mobile">
+							<a>
+								<span>Goals</span>
+								<span class="mobile-arrow">v</span>
+							</a>
+						</div>
+						<div class="totals group">
+							<div class="left">
+								<p>
+									<b>Total Spending:</b>
+									<span class="amount">$1,500.00</span>
+								</p>
+								<p><a href="#">More details &raquo;</a></p>
+							</div>
+							<div class="right">
+								<img src="_img/graph.png">
+							</div>
+						</div>						
+					</section>
+				
+				</div>
+			
+				
+				
+				<div id="accountMeta">
+
+					<div class="tabs">
+						<ul>
+							<li>
+								<a href="#tab-4">Spending</a>
+							</li>
+							<li>
+								<a href="#tab-5">Budget</a>
+							</li>
+							<li>
+								<a href="#tab-6">Goals</a>
+							</li>
+						</ul>
+						
+						<section id="tab-4" class="group">
+							<div class="mobile">
+								<h1>Spending</h1>
+								<hr>
+							</div>
+							<div class="totals group">
+								<div class="left">
+									<p>
+										<b>Total Spending:</b>
+										<span class="amount">$1,500.00</span>
+									</p>
+									<p><a href="#">More details &raquo;</a></p>
+								</div>
+								<div class="right">
+									<img src="_img/graph.png">
+								</div>
+							</div>						
+						</section>
+						
+						<section id="tab-5" class="group">
+							<div class="mobile">
+								<h1>Budget</h1>
+								<hr>
+							</div>
+							<div class="totals group">
+								<div class="left">
+									<p>
+										<b>Total Spending:</b>
+										<span class="amount">$1,500.00</span>
+									</p>
+									<p><a href="#">More details &raquo;</a></p>
+								</div>
+								<div class="right">
+									<img src="_img/graph.png">
+								</div>
+							</div>						
+						</section>
+						
+						<section id="tab-6" class="group mobile-tabs-section">
+							<div class="mobile">
+								<h1>Goals</h1>
+								<hr>
+							</div>
+							<div class="totals group">
+								<div class="left">
+									<p>
+										<b>Total Spending:</b>
+										<span class="amount">$1,500.00</span>
+									</p>
+									<p><a href="#">More details &raquo;</a></p>
+								</div>
+								<div class="right">
+									<img src="_img/graph.png">
+								</div>
+							</div>						
+						</section>
+									
+					</div>
+				</div>
+			</div>
+			<!-- Sidebar -->
+
+			<aside>
+				
+				<div id="actionsMobileNav">
+					<a href="#">
+						<span>Bill Pay</span>
+						<span class="mobile-arrow">&gt;</span>
+					</a>
+					<a href="#">
+						<span>Transfer</span>
+						<span class="mobile-arrow">&gt;</span>
+					</a>
+					<a href="#" class="mobile-nav-last">
+						<span>Schedule</span>
+						<span class="mobile-arrow">&gt;</span>
+					</a>
+				</div>
+								
+				<section id="actionsBox">	
+					<div class="tabs hide-on-single">
+						<ul>
+							<li>
+								<a href="#tab-1">
+									<img src="_img/icon_billpay.png" id="billPayIcon">
+									<span>Bill Pay</span>
+								</a>
+							</li>
+							<li>
+								<a href="#tab-2">
+									<img src="_img/icon_transfers.png">
+									<span>Transfer</span>
+								</a>
+							</li>
+							<li>
+								<a href="#tab-3">
+									<img src="_img/icon_schedule.png">
+									<span>Schedule</span>
+								</a>
+							</li>
+						</ul>
+						
+						
+						<section id="tab-1">
+							<div class="mobile">
+								<h1>Bill Pay</h1>
+								<hr>
+							</div>
+							<form>
+								<ol>
+									<li>
+										<label for="to">
+											<span class="label-name">To:</span>
+										</label>
+										<select name="to">
+											<option value="1">Checking</option>
+											<option value="2">Savings</option>
+											<option value="3">Merrill Lynch&trade; 401k</option>
+										</select>
+									</li>
+									
+									<li>
+										<label for="from">
+											<span class="label-name">From:</span>
+										</label>
+										<select name="from">
+											<option value="1">Checking</option>
+											<option value="2" selected="selected">Savings</option>
+											<option value="3">Merrill Lynch&trade; 401k</option>
+										</select>								
+									</li>
+								
+									<li>
+										<label for="amount">
+											<span class="label-name">Amount:</span>
+										</label>
+										$ <input type="text" name="amount" size="10">						
+									</li>
+									
+									<li>
+										<label for="when">
+											<span class="label-name">Date:</span>
+										</label>
+										<input type="date" name="when">	
+									</li>
+									
+									<li>
+										<label for="frequency">
+											<span class="label-name">Frequency:</span>
+										</label>
+										<select name="frequency">
+											<option value="1">Once</option>
+											<option value="2" selected="selected">Weekly</option>
+											<option value="3">Bi-weekly</option>
+											<option value="4">Monthly</option>
+										</select>			
+									</li>
+								</ol>													
+								<input type="submit" class="btn" value="Continue">
+							</form>
+						</section>
+						
+						<section id="tab-2">
+							<div class="mobile">
+								<h1>Transfers</h1>
+								<hr>
+							</div>
+							<form>
+								<ol>
+									<li>
+										<label for="to">
+											<span class="label-name">To:</span>
+										</label>
+										<select name="to">
+											<option value="1">Checking</option>
+											<option value="2">Savings</option>
+											<option value="3">Merrill Lynch&trade; 401k</option>
+										</select>
+									</li>
+									
+									<li>
+										<label for="from">
+											<span class="label-name">From:</span>
+										</label>
+										<select name="from">
+											<option value="1">Checking</option>
+											<option value="2" selected="selected">Savings</option>
+											<option value="3">Merrill Lynch&trade; 401k</option>
+										</select>								
+									</li>
+								
+									<li>
+										<label for="amount">
+											<span class="label-name">Amount:</span>
+										</label>
+										$ <input type="text" name="amount" size="10">						
+									</li>	
+								</ol>
+								<input type="submit" class="btn" value="Continue">
+							</form>
+						</section>
+						
+						
+						
+						<section id="tab-3" class="mobile-tabs-section">
+							<div class="mobile">
+								<h1>Schedule</h1>
+								<hr>
+							</div>
+							<form>
+								<ol>
+									<li>
+										<label for="to">
+											<span class="label-name">To:</span>
+										</label>
+										<select name="to">
+											<option value="1">Checking</option>
+											<option value="2">Savings</option>
+											<option value="3">Merrill Lynch&trade; 401k</option>
+										</select>
+									</li>
+									
+									<li>
+										<label for="from">
+											<span class="label-name">From:</span>
+										</label>
+										<select name="from">
+											<option value="1">Checking</option>
+											<option value="2" selected="selected">Savings</option>
+											<option value="3">Merrill Lynch&trade; 401k</option>
+										</select>								
+									</li>
+								
+									<li>
+										<label for="amount">
+											<span class="label-name">Amount:</span>
+										</label>
+										$ <input type="text" name="amount" size="10">						
+									</li>
+									
+									<li>
+										<label for="when">
+											<span class="label-name">Date:</span>
+										</label>
+										<input type="date" name="when">	
+									</li>
+									
+									<li>
+										<label for="frequency">
+											<span class="label-name">Frequency:</span>
+										</label>
+										<select name="frequency">
+											<option value="1">Once</option>
+											<option value="2" selected="selected">Weekly</option>
+											<option value="3">Bi-weekly</option>
+											<option value="4">Monthly</option>
+										</select>			
+									</li>
+								</ol>
+								<input type="submit" class="btn" value="Continue">
+							</form>
+						</section>				
+					</div>
+				</section>
+				
+				<div id="adsBox">
+					
+					<section id="adBoxSlider" class="blue-callout">
+						<h3>Based on a recent <b>Low Balance Alert</b> you may be interested in:</h3>
+						<div class="flexslider">
+							<ul class="slides">
+								<li>
+									<img src="_img/slide1.jpg">
+								</li>
+								
+								<li>
+									<img src="_img/slide1.jpg">
+								</li>
+								
+								<li>
+									<img src="_img/slide1.jpg">
+								</li>
+								
+								<li>
+									<img src="_img/slide1.jpg">
+								</li>
+								
+							</ul>
+						</div>
+					</section>
+					
+					<section class="brown-callout">
+						<h1>Talking Money With Teens</h1>
+						<p>Spending, saving, budgets & more.</p>
+						<p><a href="">View Infographic &raquo;</a></p>
+					</section>
+					
+					<section class="brown-callout">
+						<h1>Everything Together</h1>
+						<p>View your investing and banking on one page through one login.</p>
+						<p><a href="#">Read More &raquo;</a></p>
+					</section>	
+				</div>
+			</aside>
+			
+		</div>
+		
+		<footer class="group">
+			<nav>
+				<ul class="nav nav-pills">
+					<li><a href="#"><b>Online Banking Service Agreement</b></a></li>
+					<li><a href="#">Locations</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Accessible Banking</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Privacy &amp; Security</a></li>
+					<li><a href="#">Site Map</a></li>
+				</ul>
+			</nav>
+		</footer>		
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="_js/plugins.js"></script>	
+		<script src="_js/logged-in.js"></script>	
+		<script src="_modules/tabs/tabs.js"></script>	
+		<script src="_modules/slider/slider.js"></script>	
+		<script src="_js/main.js"></script>		
+		<script>
+		
+			$(document).ready(function() {
+			  
+				$('.accordion section').each(function(){
+					var elem = $(this);
+					
+					elem.children('.totals').slideUp();
+					elem.children('.mobile').children('a').on('click',function() {
+						$(this).parent('.mobile').siblings('.totals').slideToggle();
+					});
+					
+				});
+				
+				
+				$('#collegeFund').hide();
+				
+				$('#showMore').on('click', function(e) {
+					e.preventDefault();
+					
+					if ($(this).text() === "Show More") {
+						$(this).text('Show Less');
+					}	else {
+						$(this).text('Show More');
+					}
+					
+					$('#collegeFund').slideToggle();
+				});
+			
+			});
+		
+		
+		
+			var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+	</body>
+</html>
