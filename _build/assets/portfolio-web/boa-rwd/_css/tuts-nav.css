@@ -1,0 +1,171 @@
+/* --- Tuts Nav (used in Logged Out pages) -------------------- */	
+
+	#tutsNav .toggleMenu {
+	    display:  none;
+	   /*  background: #666; */
+	    padding: 10px 15px;
+	    color: #9A8C7F;
+	    text-transform: uppercase;
+	}
+	#tutsNav .nav {
+	    list-style: none;
+	     *zoom: 1;
+	     position: relative;
+	}
+	#tutsNav .nav:before,
+	#tutsNav .nav:after {
+	    content: ' ';
+	    display: table;
+	}
+	#tutsNav .nav:after {
+	    clear: both;
+	}
+	#tutsNav .nav ul {
+	    list-style: none;
+	    width: 12em;
+	}
+	#tutsNav .nav a {
+	    color: #333;
+	    font-size: 1.4em;
+	    padding: 10px 35px;
+	    *zoom: 1;
+	}
+	#tutsNav .nav > li {
+	    float: left;
+	    z-index: 200;
+	}
+	
+	#tutsNav .nav li.hover > a {
+		background-color: #fff;
+	}
+	
+	#tutsNav .nav > li > a {
+	    display: block;
+	}
+	#tutsNav .nav li ul {
+	    margin: 0;
+	    padding: 0;
+	    position: absolute;
+	    left: -9999px;
+	    z-index: 100;
+	}
+	#tutsNav .nav li li a {
+	    color: #333;
+	    display: block;
+	    background: #fff;
+	    font-size: 1em;
+	    padding: 3px 35px 3px 35px;
+	    position: relative;
+	    z-index:100;
+	}
+	
+	#tutsNav .nav li li a:hover,
+	#tutsNav .nav li li.active a {
+		background: #F1EFEA;
+		color: #333;
+		text-decoration: none;
+	}	
+	
+	#tutsNav .nav li li li a {
+	    background: #333;
+	    color: #fff;
+	    z-index:200;
+	}	
+	
+	#tutsNav .nav li {
+    position: relative;
+    }
+	#tutsNav .nav > li.hover > ul {
+	    left: 0;
+	}
+	
+	#tutsNav .nav li li .hover ul {
+	    left: 100%;
+	    top: 0;
+	}	
+	
+	#tutsNav .nav > li > .parent {
+	    background-position: 95% 50%;
+	}
+	#tutsNav .nav li .parent {
+	    background-image: url('../_img/downArrow.png');
+	    background-repeat: no-repeat;
+	    background-position: 86% 50%;
+	    padding-right: 50px;
+	}
+	
+	#tutsNav .nav a {
+    *zoom: 1;
+    }	
+    
+/* GREEN, Tablet-ish (800px = 50 Em) */
+@media only screen and (min-width: 50em) {
+
+#tutsNav .nav li ul {
+	background: #fff;
+	border: 1px #ccc solid;
+	border-radius: 0 0 10px 10px;
+	border-top: 0;
+	padding-bottom: 20px;
+	}
+	
+	#tutsNav .nav li ul li:first-child {
+		margin-top:20px;
+	}
+	
+		#tutsNav .nav li ul li a {
+			padding-top: 6px;
+			padding-bottom: 6px;
+		}
+		
+	#tutsNav .nav a {
+	    font-size: 1em;
+	    padding: 10px 20px;
+	}
+}
+
+/* BLUE, Laptop-ish (960px = 60 Em) */
+@media only screen and (min-width: 60em) {
+	
+	#tutsNav .nav a {
+	    font-size: 1.2em;
+	    padding: 10px 25px;
+	}	
+	
+}
+
+/* PURPLE, Desktop-ish (1140px = 70 Em) */
+@media only screen and (min-width: 1140px) {
+
+	#tutsNav .nav a {
+	    font-size: 1.4em;
+	    padding: 10px 35px;
+	}	
+
+}
+
+
+/* TUTSNAV, Everything below 800px (800px = 50 Em) */
+@media screen and (max-width: 50em) {
+    #tutsNav .nav > li {
+        float: none;
+    }
+    #tutsNav .nav ul {
+        display: block;
+        width: 100%;
+    }
+   #tutsNav .nav > li.hover > ul , 
+   #tutsNav .nav li li.hover ul {
+        position: static;
+    }
+    
+	#tutsNav .nav > li > .parent {
+	    background-position: 95% 50%;
+	}
+	#tutsNav .nav li .parent {
+	    background-image: url('../_img/downArrow.png');
+	    background-repeat: no-repeat;
+	    background-position: 95% 50%;
+	}
+}
+    

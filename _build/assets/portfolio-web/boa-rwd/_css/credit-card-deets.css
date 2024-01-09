@@ -1,0 +1,232 @@
+/*
+==================================================
+    No Breakpoint
+==================================================
+*/
+
+.credit-card-deets .container { width: 100%!important; }
+
+.credit-card-deets footer .container { width: 90%!important; }
+
+.credit-card-deets header .container { width: 90%!important; }
+
+.mobile-only { display: block; }
+
+p,
+li { font-size: 0.875em; /* 14px */}
+
+.credit-card-deets { background: #fff; }
+
+section#tab-2,
+section#tab-3 { display: none!important; }
+
+/* --- Top Section -------------------- */
+
+
+
+#ccdCTA { 
+	background: #F6F3EE;
+	padding: 2% 5%;
+	padding-bottom: 85px!important;
+	position: relative;
+}
+
+#ccdCTA .tabs {
+	bottom: 0px;
+	left: 5%;
+	position: absolute;
+	width: 65%;
+}
+
+#ccdCTA .container > div { 
+	padding-top: 4%;
+}
+
+#ccdCTA .tabs ul li {
+	padding: 0.5% 5%;
+}
+
+
+#ccdCTA .mobile-only {
+	bottom: 15px;
+	position: absolute;
+}
+
+
+#ccdTabs {
+	border-top: 1px solid #BBB1A3;
+}
+
+#ccdCTA img,
+#ccdCTA div { 
+	display: block;
+	float: none;
+	width: 100%; 
+}
+
+#ccdCTA > div div button { width: 100%; } 
+
+#ccdTabs .tabs ul { list-style: none; }
+
+#ccdTabs .tabs ul li { 
+	background: #fff; 
+	border: none;
+	line-height: 1.4em;
+	margin-bottom: 1em;
+}
+
+#ccdTabs .tabs > ul li {
+	background: #E5E2DA;
+	border: 1px solid #BBB1A3;
+	border-radius: 5px 5px 0 0;
+}
+
+#ccdTabs .tabs > ul li.active {
+	background: #fff;
+	border-bottom: 1px solid white;
+	color: #fff;
+}
+
+#ccdTabs .tabs > ul li a {
+	color: #535353;
+	font-family: Arial, sans-serif;
+	font-size: 0.92857142857143em; /* 13px */
+}
+
+#ccdTabs .tabs > ul li.active a { color: #333; }
+
+#ccdTabs .tabs section { border: none; }
+
+
+#planOffer ul { 
+	list-style: disc!important; 
+	margin-left: 0;
+}
+
+#planOffer ul li { margin-left: 20px; }
+
+#bonusOffer h3 { 
+	margin-bottom: 0; 
+	margin-top: 30px;
+}
+
+#alwaysGet ul,
+#specialServices ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#alwaysGet ul li {
+	vertical-align: top;
+}
+
+#alwaysGet ul li p {
+	font-size: 1em;
+	line-height: 1.4em;
+	margin: 6px 0 0;
+}
+
+	#alwaysGet ul li,
+	#alwaysGet ul li img { 
+		display: block;
+		float: left; 
+	}
+	
+	#alwaysGet ul li img {
+		margin-bottom: 20px;
+		margin-right: 5%; 
+		min-width: 50px;
+		background: #ccc;
+		}
+	
+
+/* --- Middle Section -------------------- */
+
+
+
+/*
+==================================================
+    Orange (30em)
+==================================================
+*/
+
+/*
+==================================================
+    Yellow (40em)
+==================================================
+*/
+@media only screen and (min-width: 40em) { 
+	#ccdCTA { max-height: 805px; }
+}
+
+/*
+==================================================
+    Green (50em)
+==================================================
+*/
+
+@media only screen and (min-width: 50em) { 
+	
+	.mobile-only { display: none!important; }
+	
+	#ccdCTA { max-height: 550px; }
+	
+	#ccdCTA img,
+	#ccdCTA > div div { float: left; }
+	
+	#ccdCTA img { width: 45%; }
+	
+	#ccdCTA .container > div { 
+		margin-left: 5%;
+		padding-top: 1%;
+		width: 50%; 
+	}
+	
+	#ccdCTA > div div p,
+	#ccdCTA > div div button { float: left; } 
+	
+	#ccdCTA > div div button { 
+		margin-right: 3%; 
+		max-width: 160px; 
+	}
+	
+}
+/*
+==================================================
+    Blue (60em)
+==================================================
+*/
+
+@media only screen and (min-width: 60em) { 
+	
+	#planOffer,
+	#planOfferSide { float: left; }
+	
+	#planOffer { 
+		margin-right: 5%; 
+		width: 60%;
+	}
+	
+	#planOfferSide { width: 35%; }
+	
+	#alwaysGet ul li {
+		float: left;
+		margin-left: 3%;
+		width: 31%;
+	}
+	
+	#alwaysGet ul li:first-child { margin-left: 0; }
+	
+
+
+	
+}
+
+
+/*
+==================================================
+    Purple (75em)
+==================================================
+*/
+

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Bank AmeriDeals (amerideals.html)</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="_css/normalize.css">
+		<link rel="stylesheet" href="_css/utilities.css">  
+		<link rel="stylesheet" href="_css/brown.css">
+		<link rel="stylesheet" href="_css/main.css">
+		<link rel="stylesheet" href="_css/skin.css">  
+		             		
+		<link rel="stylesheet" href="_modules/slider/slider.css">
+		<link rel="stylesheet" href="_modules/tabs/tabs.css">
+		
+		<script src="_js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	</head>
+	
+	<body class="amerideals">
+	
+		<header class="group">
+			
+			<section class="group container" id="subNav">
+				<ul class="group">
+				
+					
+					<li class="last-nav">
+						<a href="#">Sign Out</a>
+					</li>
+					
+					<li class="large-only">
+						<a href="#">Merrill Lynch</a>
+					</li>
+				
+					<li id="subNavProfile">
+						<a href="#">Profile &amp; Settings</a>
+					</li>
+				
+					<li class="large-only">
+						<a href="#">Last Login: 04/15/2012 14:30</a>
+					</li>
+					
+					
+					
+				</ul>
+			</section>
+			
+			<section class="hero container logo-hero">
+				<h1 class="logo-main">
+					<a href="homepage.html"><img src="_img/logo-header.png" alt="Bank of America logo"></a>
+					<span>BankAmeriDeals&trade;</span>
+				</h1>			
+				<form class="form-search">
+					<input type="text" class="search-query" placeholder="Search">
+					<img src="_img/search.png" id="headerSearchGlass">
+				</form>	
+				<div id="little-toggle">Toggle Navigation</div>										
+			</section>
+			
+			<nav class="nav-context" id="responsiveNav">
+				<ul class="nav nav-tabs container">
+					<li><a href="online-banking.html">Accounts</a></li>
+					<li><a href="#">Bill Pay</a></li>
+					<li><a href="#">Transfers</a></li>
+					<li class="active"><a href="amerideals.html">Cash Back Deals</a></li>
+					<li><a href="#">Tools &amp; Investing</a></li>
+					<li><a href="#">Help &amp; Support</a></li>
+				</ul>
+			</nav>			
+		</header>
+		
+		<div class="flexslider" id="adInstructions">
+			<ul class="slides">
+				<li>
+				<section class="adActivity">
+					<h1>BankAmerideals&trade; Offers Activity</h1>
+					<div class="group">
+						<p>Total cash back paid-to-date:<span>$120.25</span></p>
+						<p>Cash Back pending:<span>$25.25</span></p>
+						<p>Unselected deals:<span>0</span></p>
+						<p>Offers ready to use:<span>0</span></p>
+					</div>
+				</section>
+			
+					<div data-picture data-alt="BoA Placeholder">
+						<div data-src="_img/amerideals-banner-01.png"></div>
+						<div data-src="_img/amerideals-banner-01.png" data-media="(min-width: 640px)"></div>
+						<div data-src="_img/amerideals-banner-01.png" data-media="(min-width: 800px)"></div>
+						<div data-src="_img/amerideals-banner-01.png" data-media="(min-width: 960px)"></div>
+						<noscript><img src=="_img/amerideals-banner-01.png" alt="BoA Placeholder"></noscript>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		
+		<div class="container group">
+			
+			
+			<section class="adActivity">
+				<h1>BankAmerideals&trade; Activity</h1>
+				<div class="group">
+					<p>Total cash back paid-to-date:<span>$120.25</span></p>
+					<p>Cash Back pending:<span>$25.25</span></p>
+					<p>Unselected deals:<span>0</span></p>
+					<p>Offers ready to use:<span>0</span></p>
+				</div>
+			</section>
+			
+			
+			<div id="ameriTabs" class="group">
+				<div class="tabs group">
+					<ul class="large-only">
+						<li>Available</li>
+						<li>Earned</li>
+						<li>Expired</li>
+						<li>Preferences</li>
+						<li>How Deals Work</li>
+					</ul>
+				</div>	
+				<select class="mobile-only">
+					<option>Available</option>
+					<option>Earned</option>
+					<option>Expired</option>
+					<option>Preferences</option>
+					<option>How Deals Work</option>
+				</select>	
+				<select id="mobileSelectSort" class="mobile-only">
+					<option>Newest First</option>
+					<option>Oldest First</option>
+					<option>Expiring Soon</option>
+				</select>			
+			</div>
+			
+			
+			<section id="allDeals" class="group">
+
+				<div id="dealMenu" class="group">
+					<p class="deal-name">Vendor</p>
+					<p class="deal-expires">Expires</p>
+					<p class="deal-offer">Offer</p>
+					<p class="deal-button">Action</p>
+				</div>
+				
+				<section class="deal group">
+						<p class="deal-name">
+							<img src="_img/711.png">
+							7-Eleven
+							<p class="deal-expires"><span>expires in</span> 10 Days</p>
+						</p>						
+						<p class="deal-offer">
+							<span class="deal-description-short">Earn 25% cash back at 7-Eleven <span class="show-hide">Show More</span></span>
+							<span class="deal-description-long">Offer now active, Ready to use: <br><br>Purchase in-store and/or online <br><br>Note: Offer is only valid when you pay with your Bank of America debit or credit card.</span>
+						</p>
+						<button class="btn">Select</button>
+				</section>
+				
+				<section class="deal group even">
+						<p class="deal-name">
+							<img src="_img/autozone.png">
+							AutoZone
+							<p class="deal-expires"><span>expires in</span> 9 Days</p>
+						</p>						
+						<p class="deal-offer">
+							<span class="deal-description-short">Earn 5% cash back on every purchase from Autozone <span class="show-hide">Show More</span></span>
+							<span class="deal-description-long">Offer now active, Ready to use:<br><br>Purchase in-store and/or online<br><br>Note: Offer is only valid when you pay with your Bank of America debit or credit card.</span>
+						</p>
+						<button class="btn">Select</button>
+				</section>
+				
+				<section class="deal group">
+						<p class="deal-name">
+							<img src="_img/sports-authority.png">
+							Sports Authority
+							<p class="deal-expires"><span>expires in</span> 15 Days</p>
+						</p>						
+						<p class="deal-offer">
+							<span class="deal-description-short">Earn 10% cash back on your next purchase at any Sports Authority store or online. Not valid on gift card purchases. <span class="show-hide">Show More</span></span>
+							<span class="deal-description-long">©2012 Sports Authority, Inc. <br><br>Offer now active, Ready to use: Purchase in-store and/or online<br>Note: Offer is only valid when you pay with your Bank of America debit or credit card.</span>
+						</p>
+						<button class="btn">Select</button>
+				</section>
+				
+				<section class="deal group even last-deal">
+						<p class="deal-name">
+							<img src="_img/verizon.png">
+							Verizon
+							<p class="deal-expires"><span>expires in</span> 18 Days</p>
+						</p>						
+						<p class="deal-offer">
+							<span class="deal-description-short">Earn $100 cash back when you switch to Verizon! <span class="show-hide">Show More</span></span>
+							<span class="deal-description-long">Offer now active, Ready to use:<br><br>Purchase in-store and/or online<br><br>Note: Offer is only valid when you pay with your Bank of America debit or credit card.</span>
+						</p>
+						<button class="btn">Select</button>
+				</section>
+			</section>
+			
+			<aside id="adFAQ">
+				<h1>Related Resources</h1>
+				<section id="adDemo" class="group">
+					<h2>BankAmeriDeals&trade; Demo</h2>
+					<img src="_img/placeholder-50x50.gif">
+					<p><a href="#">How BankAmeriDeals&trade; works (1:03)</a></p>
+				</section>
+				<section>
+					<h2>BankAmeriDeals&trade; Offers Frequently Asked Questions</h2>
+					<ul>
+						<li>
+							<a href="#">How do I earn cash back with BankAmeriDeal&trade; offers?</a>
+						</li>
+						<li>
+							<a href="#">How do you determine what offers I get?</a>
+						</li>
+						<li>
+							<a href="#">Why don't I see any older available offers?</a>
+						</li>
+						<li>
+							<a href="#">What if I only see a few offers?</a>
+						</li>
+					</ul>
+				</section>
+			</aside>
+
+			
+			
+		</div>
+		
+		
+		<footer class="group">
+				<nav>
+					<ul class="nav nav-pills">
+						<li><a href="#"><b>Online Banking Service Agreement</b></a></li>
+						<li><a href="#">Locations</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Accessible Banking</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Privacy &amp; Security</a></li>
+						<li><a href="#">Site Map</a></li>
+					</ul>
+				</nav>
+			</footer>	
+		
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="_js/plugins.js"></script>	
+		<script src="_js/logged-in.js"></script>	
+		<script src="_modules/slider/slider.js"></script>	
+		<script src="_modules/tabs/tabs.js"></script>	
+		<script src="_js/main.js"></script>		
+		<script>
+			var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+	    <script>
+	      var navigation = responsiveNav("#nav-main", {
+	        insert: "after"
+	      });
+	    </script>				
+	</body>
+</html>

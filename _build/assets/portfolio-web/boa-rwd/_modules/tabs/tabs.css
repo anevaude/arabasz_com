@@ -1,0 +1,36 @@
+.tabs > ul { 
+	display: none;
+	list-style: none; 
+	padding-left: 0;
+	position: relative;
+	top: 1px;
+	z-index: 9999;
+}
+
+.tabs > ul > li {
+	border-size: 1px;
+	border-style: solid;
+	border-bottom: none;
+	border-radius: 3px 3px 0 0;
+	float: left;
+	margin-left: 2%;
+	padding: 4px;
+	text-align: center;
+}
+
+.tabs > ul > li:first-child { margin-left: 0; }
+
+.tabs > ul > li a:hover { cursor: pointer;  }
+
+.tabs > section { 
+	border: 1px solid #BBB1A3;
+	clear: both;
+	margin: 20px 0;
+	padding: 3% 6%;
+}
+
+
+
+@media screen and (min-width: 50em) {
+	.tabs ul { display: block; }
+}

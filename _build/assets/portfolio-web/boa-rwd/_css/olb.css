@@ -1,0 +1,656 @@
+/*
+==================================================
+    Red: No Breakpoint
+==================================================
+*/
+
+.desktop { display: none; }
+.mobile { display: block; }
+
+.account div { width: 50%; }
+.account div.right > * { text-align: right; }
+.account div.left .account-detail { float: left; }
+
+.olb #little-toggle {
+	position: relative;
+	top: 10px;
+}
+
+.olb header .container { margin-top: 0px!important; }
+
+.olb .container { 
+	margin-top: 20px !important; 
+	max-width: 992px;
+}
+
+.olb footer .container a b {
+	line-height: 1.2em;
+}
+
+/* .olb footer { margin-top: 100px; } */
+
+
+/* --- Sidebar -------------------- */
+
+aside { 
+	margin-top: 15px; 
+}
+
+aside section { margin-bottom: 20px; }
+
+aside section h4 { 
+	margin-bottom: 0; 
+	margin-top: 8px;
+}
+
+aside section p { 
+	margin-bottom: 8px;
+	margin-top: 0; 
+}
+
+aside section h4 { font-size: 1.125em; }
+
+.status { 
+	color: #3F3F40;
+	font-size: 1.125em;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-transform: lowercase;
+}
+
+/* --- Hello, Robin Lee -------------------- */
+
+#welcomeBox {
+	padding: 10px 5% 1px 5%;
+}
+
+#welcomeBox p,
+#welcomeBox ul li a {
+	font-size: 0.8125em; /* 13px */
+}
+
+#welcomeBox p {
+	border-bottom: 1px solid #CCCCCC;
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+}
+
+#welcomeBox ul { 
+	list-style: none; 
+	margin-left: 0;
+	padding: 0;
+}
+
+#welcomeBox ul li { 
+	border-left: 1px solid #3366CC;
+	float: left; 
+	height: 15px;
+	padding: 0 3.333333333333%;
+}
+
+#welcomeBox ul li:first-child { 
+	border: none; 
+	padding-left: 0;
+} 
+
+#welcomeBox ul li a {
+	position: relative;
+	top: -4px;
+} 
+
+/* --- Form Tabs -------------------- */
+
+#actionsBox,
+#accountMeta { 
+	background: #ddd7cd; 
+	border-bottom: none;
+	padding: 1% 2%;
+}
+
+#actionsBox section,
+#accountMeta section { 
+	margin: 0 0 1em 0;
+}
+
+.mobile-tabs-section { margin-bottom: 0!important; }
+
+
+#actionsBox ul,
+#actionsBox ol,
+#accountMeta ul,
+#accountMeta ol { 
+	list-style: none;
+	margin: 0;
+	padding: 0; 
+}
+
+#actionsBox { display: none; }
+#accountMeta { display: none; }
+
+#actionsMobileNav,
+#accountMetaAccordion { 
+	background: #ddd7cd;
+	display: block; 
+	margin-bottom: 20px;
+}
+
+#actionsMobileNav a,
+#accountMetaAccordion .mobile a {
+	border-bottom: 1px solid #F2F0EC;
+	color: #615A53;
+	display: block;
+	padding: 2%;
+	width: 100%;
+}
+
+#actionsMobileNav a:hover,
+#accountMetaAccordion .mobile a:hover {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#actionsMobileNav a.mobile-nav-last { border-bottom: none; }
+
+#actionsMobileNav a span,
+#accountMetaAccordion .mobile a span {
+	padding: 0 4%;
+}
+
+.mobile-arrow { float: right; } 
+
+
+#accountMetaAccordion .totals {
+	background: white;
+	padding: 2% 0;
+}
+
+.tabs ul {
+	height: 80px;
+	margin-bottom: 5px;
+}
+
+.tabs ul li {
+	border: 1px solid #e5e2da;
+	border-radius: 5px;
+	display: block;
+	height: 77px;
+	max-width: inherit;
+	position: relative;
+	width: 32%;
+}
+
+.tabs ul li.active { 
+	border-bottom: none;
+	border-radius: 5px 5px 0 0;
+	height: 82px; 
+	left: -1px;
+	position: relative;
+	z-index: -2;
+}
+
+.tabs ul li a { 
+	color: #574E46;
+	font-family: Arial, sans-serif;
+	font-size: 0.75em; /* 12px */ 
+}
+
+.tabs ul li.active a { color: #333333; } 
+
+.tabs ul li a span { 
+	bottom: 2px;
+	display: block; 
+	margin-left: 11.901639%;
+	position: absolute;
+	text-align: center;
+	width: 68%;
+}
+
+.tabs ul li.active a span { bottom: 8px; }
+
+#billPayIcon { 
+	position: relative;
+	top: 8px;
+}
+
+#billPayIcon ~ span { margin-left: 15.901639%!important; }
+
+
+#actionsBox ol li {
+	margin-bottom: 10px;
+}
+
+#actionsBox ol li label {
+	display: inline-block;
+	margin-right: 5%;
+	text-align: right;
+	width: 20%;
+}
+
+#actionsBox ol li input[type="text"] { width: 69%; }
+#actionsBox ol li select,
+#actionsBox ol li input { width: 73%; }
+#actionsBox ol li select[name="frequency"] { width: 35%; }
+#actionsBox ol li input[name="amount"] { width: 43.333333333333%; }
+#actionsBox input[type="submit"] { 
+	margin-left: 26%; 
+	margin-top: 10px;
+}
+
+.brown-callout p { margin: 1em 0;}
+
+
+/* --- Slider -------------------- */
+
+#adBoxSlider {
+	padding-bottom: 1px;
+}
+
+#adBoxSlider h3 {
+	font-size: 0.9375em; /* 15px */
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+
+/* --- Main Content Area -------------------- */
+
+.account-detail { margin: 0 0 1em 0; }
+
+.account-detail img {
+	display: none;
+	margin-right: 7px;
+	position: relative;
+	top: 2px;
+}
+
+
+.account > div.right h3 {
+	font-size: 1em;
+	position: relative;
+	top: 0px;
+}
+
+.account > div.right p.account-detail {
+	position: relative;
+	top: -15px;
+}
+
+
+#invAccounts { border-bottom: 4px solid #DDD7CD; }
+
+#invAccounts .account > div.left { width: 65% }
+#invAccounts .account > div.right { width: 35% }
+#invAccounts .account > div.left > div.left { width: 90% }
+
+
+
+
+
+#blueCow {
+	display: none;
+	margin: 0.83em 0 0 5.791505791506%;
+	padding-top: 10px;
+	width: 30%!important;
+}
+
+#blueCow p {
+	position: relative;
+	left: -17px;
+}
+
+#accountSummary #showMore,
+#accountSummary div { float: left; }
+
+#accountSummary { margin-top: -9px; }
+
+#showMore {
+	background: #DDD7CD;
+	border-radius: 0 0 5px 5px;
+	color: #726861;
+	font-size: 1em;
+	left: 0.978473581213%;
+	padding: 12px 15px 10px 15px;
+	position: relative;
+	top: 8px;
+}
+
+#accountSummary div {
+	margin-left: 3.5%;
+	margin-top: 10px;
+	width: 57%;
+}
+
+#accountSummary div img {
+	position: relative;
+	top: 8px;
+}
+
+#accountSummary div a {
+	color: #736962;
+	font-size: 0.8125em; /* 13px */
+	font-weight: bold;
+	margin-left: 4%;
+}
+
+
+#accountMeta { margin-top: 50px; margin-bottom: 20px;}
+#accountMeta .tabs { display: none; }
+#accountMeta .tabs ul { height: 50px; }
+
+#accountMeta .tabs ul li { 
+	height: 41px; 
+	line-height: 34px;
+	margin: 0 6px 0 0;
+	max-width: inherit;
+	padding: 4px 0;
+	width: 20%;
+}
+
+#accountMeta .accordion { display: block; }
+
+#accountMeta .tabs ul li a { font-size: 1em; }
+#accountMeta .tabs ul li.active { height: 47px; }
+
+.totals div { padding: 0 5%; }
+
+.totals div.left { margin-top: 15px; }
+
+.totals p { 
+	color: #333333; 
+	margin-bottom: 20px;
+}
+
+.totals p b {
+	display: block;
+	font-size: 0.92857142857143em;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.totals p span {
+	color: #666666;
+	display: block;
+	font-size: 2.125em; /* 34px */ 
+}
+
+.totals p a {
+	font-size: 1em;
+} 
+
+
+/*
+==================================================
+    Orange: 30em
+==================================================
+*/
+
+@media only screen and (min-width: 30em) {
+	
+	.account > div.right h3 {
+		font-size: 1.5em;
+		top: -10px;
+	}
+
+
+}
+
+
+
+
+
+
+/*
+==================================================
+    Yellow: 40em
+==================================================
+*/
+
+@media only screen and (min-width: 40em) {
+	
+	
+
+	
+}
+
+
+
+
+/*
+==================================================
+    Green: 50em
+==================================================
+*/
+
+@media only screen and (min-width: 50em) {
+	
+	.large-only { display: inline-block!important; }
+	
+	aside {  
+		max-width: 350px;
+	}
+	
+	/* Header */
+header h1.logo-main {
+	float: left;
+	margin-top: -5px;
+	width: 60%;
+}
+
+	header h1.logo-main > span {
+		display: inline-block;
+		margin: 4px 0 0 15px;
+	}
+
+	header #nav-main,
+	header .nav-tertiary,
+	header form.form-login {
+		clear: right;
+		float: right;
+	}
+	
+	header .form-search {
+		clear: right;
+		float: right;
+	}
+
+	header .nav-tabs > li{
+		display: inline-block;
+		float: left;
+	}			
+	
+			#responsiveNav.opened {
+			background: #e5e2da;
+		}		
+		
+	header .nav-pills > li,
+	footer .nav-pills > li	{
+		float: left;
+	}
+	
+	header .nav-tabs > li.active a {
+			border-bottom: none;
+			
+		}	
+	
+			header .nav-pills > li > a,
+			footer .nav-pills > li > a	{
+				border: 0;
+			}	
+			
+			footer .nav-pills > li > a {
+				font-size: .9em;
+			}
+			
+			
+			
+			form.form-search { 
+				margin-top: 8px;
+				margin-bottom: 8px;
+				padding: 4px 6px;
+				width: 40%; 
+			}
+			
+			form.form-search input {
+				clear: right;
+				float: right;
+				height: 25px;
+				max-width: 210px;
+				padding: 4px 6px;
+			}
+			
+			#headerSearchGlass {
+				left: 203px;
+				top: 7px;
+			}
+
+			
+#responsiveNav {
+	max-height: none;	
+	position: relative !important;	
+}			
+
+	header .nav-tabs > li > a { 
+		border-color: #fff;
+		border-top: 0;
+		border-left: 0;
+		border-bottom: 0;
+		}
+			
+#little-toggle {
+	display: none;
+}
+
+header .nav-tabs > li > a { 
+	font-size: 0.8125em; /* 13 / 16 = */
+	}
+
+	
+	.desktop { display: block; }
+	.mobile { display: none; }
+	
+	#mainContent { margin-top: 51px; }
+	
+	.account-detail img { display: inline-block; }
+	
+	.low-balance {
+		margin: 0;
+		position: relative;
+		top: -3px;
+	}
+	
+	.tabs section { border-radius: 0 0 5px 5px; }
+	
+	aside { margin-top: 0; }
+	
+	#actionsBox {
+		padding: 5px;
+	}
+	
+	#accountMeta {
+		padding: 7px;
+	}
+	
+	#actionsBox section,
+	#accountMeta section {
+		border: none;
+		margin: 0;
+		padding: 4px;
+		position: relative;
+		top: -2px;
+	}
+	
+	#actionsBox { display: block; }	
+		#actionsBox section {
+			padding: 15px;
+		}
+		#actionsBox .tabs ul li img {
+			position: relative;
+			top:8px;
+		}
+		
+		#actionsBox .tabs ul li a span {
+			bottom: 8px;
+		}
+		
+		#actionsBox .tabs ul li.active a span {
+			bottom: 12px;
+		}		
+	
+	#actionsMobileNav { display: none; }
+	
+	#accountMeta,
+	#accountMeta .tabs { display: block; }
+	#accountMetaAccordion { display: none; }
+	
+	#invAccounts .account > div.left > div.left { width: 52% }
+	
+	#blueCow { display: block; }
+	
+	.olb #mainContent {
+		float: right;
+		width: 63%;
+	}
+	
+	.olb aside { 
+		float: left;
+		margin-right: 2%; 
+		width: 35%
+	}
+	
+	#actionsBox ol li label {
+		display: inline-block;
+		margin-right: 0;
+		text-align: left;
+		width: 100%;
+	}
+	
+	#actionsBox input[type="submit"] { margin-left: 0; }
+	
+	
+}
+
+
+
+
+/*
+==================================================
+    Blue: 60em
+==================================================
+*/
+
+@media only screen and (min-width: 60em) {
+	
+	#actionsBox ol li label {
+		display: inline-block;
+		margin-right: 5%;
+		text-align: right;
+		width: 20%;
+	}
+	
+	#actionsBox input[type="submit"] { margin-left: 26%; }
+	
+	#blueCow { width: 22%!important; }
+	
+	#invAccounts .account > div.left > div.left { width: 72% }
+	
+	
+}
+
+
+
+
+/*
+==================================================
+    Purple: 75em
+==================================================
+*/
+
+@media only screen and (min-width: 75em) {
+	
+	.olb section#actionsBox form .label-name {
+		min-width: 81px;
+	}	
+	
+}
+
+

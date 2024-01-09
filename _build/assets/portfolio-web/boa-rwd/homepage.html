@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Homepage (index.html)</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="_css/normalize.css">
+		<link rel="stylesheet" href="_css/utilities.css">  
+		<link rel="stylesheet" href="_css/main.css">
+		<link rel="stylesheet" href="_css/skin.css">       
+		<link rel="stylesheet" href="_css/logged-out.css">    
+		<link rel="stylesheet" href="_css/tuts-nav.css">              				       				          				       		
+		<link rel="stylesheet" href="_modules/slider/slider.css">
+		
+		<script src="_js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	</head>
+	
+	<body class="homepage logged-out">
+	
+		<header class="group">
+			
+			<section class="container">
+				<h1 class="logo-main">
+					<a href="homepage.html"><img src="_img/logo-header-blue.png" alt="Bank of America logo"></a>
+					<span>Welcome</span>
+				</h1>			
+				<a href="online-banking.html"><button class="login btn">Sign In</button></a>				
+				<form class="form-search">
+					<input type="text" class="search-query" placeholder="Search">
+					<img src="_img/search.png" id="headerSearchGlass">
+				</form>	
+			</section>
+			
+			<nav class="nav-context" id="tutsNav">
+<!--			<a class="toggleMenu" href="#">Menu</a> -->
+				<ul class="nav nav-tabs" style="display:block;">
+					<li><a href="credit-card.html">Bank</a></li>
+					<li>
+						<a href="#">Borrow</a>
+						<ul>
+							<li><a href="credit-card.html">Credit Card</a></li>
+							<li><a href="#">Mortgage</a></li>
+							<li><a href="#">Refinance</a></li>
+							<li><a href="#">Home Equity</a></li>
+							<li><a href="#">Auto Loans</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Invest</a>						
+					</li>
+					<li><a href="#">Protect</a></li>
+					<li><a href="#">Learn</a></li>
+				</ul>
+			</nav>			
+		</header>
+		
+		<!-- Slider -->
+		
+		<div class="flexslider">
+			<ul class="slides">
+				<li>
+					<div data-picture data-alt="BoA Placeholder">
+						<div data-src="_img/homebanner-480.jpg"></div>
+						<div data-src="_img/homebanner-480.jpg" data-media="(min-width: 480px)"></div>						
+						<div data-src="_img/homebanner-640.jpg" data-media="(min-width: 640px)"></div>
+						<div data-src="_img/homebanner-800.jpg" data-media="(min-width: 800px)"></div>
+						<div data-src="_img/homebanner-960.jpg" data-media="(min-width: 960px)"></div>
+						<noscript><img src="_img/homebanner-1138.jpg" alt="Homepage Banner"></noscript>
+					</div>
+				</li>				
+			</ul>
+		</div>
+		
+		<div class="container group">
+	
+			<!-- Region Selector -->
+			<section id="location-chooser" class="group">
+				<section class="group">
+					<h4 class="header">Information for:</h4>
+					<form class="form-inline">
+						<select>
+							<option>California</option> 						
+							<option>New Hampshire</option> 
+							<option>Hawaii</option>
+						</select>
+					</form>
+					<p class="ad-practices"><a href="#">Website Ad Practices</a></p>
+				</section>
+			</section>
+			
+			<!-- Ad Buckets -->
+			<section id="home-ad-buckets" class="bucket-holder group">
+			
+				<section class="odd">
+					<h2 class="header">Save as you shop</h2>				
+					<span class="ad-pic"><img src="_img/icon-cards.png" alt="Placeholder image"></span>
+					<p>BankAmericard Corp Rewards credit card</p>
+					<p><a href="">Get cash back</a></p>
+				</section>
+							
+				<section class="even">
+					<h2 class="header">BankAmeriDeals</h2>				
+					<span class="ad-pic"><img src="_img/icon-pin.png" alt="Placeholder image"></span>
+					<p>Find deals at places all around you.</p>
+					<p><a href="#">Learn more</a></p>
+				</section>
+				
+				<section class="odd">
+					<h2 class="header">Quick deposits</h2>				
+					<span class="ad-pic"><img src="_img/icon-piggy.png" alt="Placeholder image"></span>
+					<p>Check deposits. No ATM required.</p>
+					<p><a href="">Get app</a></p>
+				</section>
+				
+				<section class="even last">
+					<h2 class="header">Talking Money with Teens</h2>				
+					<span class="ad-pic"><img src="_img/icon-chat.png" alt="Placeholder image"></span>
+					<p>Spending, saving, budgets and more.</p>
+					<p><a href="">View Infographic</a></p>
+				</section>				
+					
+			</section>
+				
+				
+			<section id="home-service-buckets" class="bucket-holder group">
+			
+				<section class="odd">
+					<h2>New Checking Clarity Statement&trade;</h2>
+					<p>At Bank of America, we’re committed to providing the information you need to help you manage your accounts. Our new Checking Clarity Statement clearly explains the most common fees and policies in a simple easy-to-read format.</p>
+					<p><a href="">View our Checking Clarity Statement &raquo;</a></p>
+				</section>
+						
+				<section class="even">
+					<h2>Home loan payment difficulties?</h2>
+					<p>Bank of America is committed to helping homeowners understand all their financial options. Find out about home loan assistance programs, including our participation in the mortgage settlement agreement with federal and state government officials.</p>
+					<p><a href="#">Learn more about home loan assistance &raquo;</a></p>
+					<p><a href="#">Learn more about the National Mortgage Settlement &raquo;</a></p>
+				</section>
+				
+				<section class="odd">
+					<section id="privacy">
+					<h2>Your privacy & security</h2>
+						<ul class="tan-bullets">
+							<li><a href="">Report phishing email</a></li>
+							<li><a href="">Get McAfee&reg; Internet Security</a></li>
+							<li><a href="">View our security commitment</a></li>
+							<li><a href="">Get Rapport&reg; online fraud protection from Trusteer</a></li>
+						</ul>
+					</section>
+					<section id="announcements">
+					<h2>Announcements</h2>
+					<p>Need help managing your credit card or unsecured personal loan debt?</p>
+					<p><a href="">Learn about ways we can help &raquo;</a></p>	
+					</section>					
+				</section>
+				
+				<section class="even last">
+					<section id="locations">
+						<h2 class="header">Locations</h2>
+							<form class="form-search">
+								<input type="text" class="search-query" size="15" placeholder="City, state or ZIP code">
+								<button type="submit" class="btn">Go</button></form>								
+							</form>	
+							<p><a href="">More search options</a></p>
+					</section>						
+					<section id="services">
+						<h2 class="header">Other Services</h2>
+						<form class="form-inline">   
+							<select>
+								<option>Select a service</option> 
+								<option>Service 1</option>
+								<option>Service 2</option>	
+								<option>Service 3</option>																				
+							</select>
+							<button type="submit" class="btn">Go</button></form>
+					</section>
+				</section>				
+
+			</section>
+		
+		</div>
+		
+		<footer class="group">
+			<nav>
+				<ul class="nav nav-pills">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Privacy &amp; Security</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Site Map</a></li>
+					<li><a href="#">Website Ad Practices</a></li>
+				</ul>
+			</nav>
+			<p class="container">Bank of America, N.A. Member FDIC <br>Equal Housing Lender <br> &copy; 2013 Bank of America Corporation. All rights reserved.</p>
+		</footer>		
+			
+		
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="_js/plugins.js"></script>	
+		<script src="_modules/slider/slider.js"></script>	
+		<script src="_js/main.js"></script>		
+		<script>
+			var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>	
+	</body>
+</html>
