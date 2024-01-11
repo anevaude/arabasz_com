@@ -1,0 +1,143 @@
+/**
+* ==================================================
+*	 CSS for CSS Check Page Only (css-check.html)		
+* ==================================================
+*/
+@import url(../vendor/normalize.css/normalize.css);
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.sample-grid {
+  background: #D5EEFB;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sample-grid::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.sample-grid div {
+  background: #AADBF5;
+  font-size: .8em;
+  height: 6.472em;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+.sample-grid div#alpha {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%;
+}
+.sample-grid div#alpha:last-child {
+  margin-right: 0;
+}
+.sample-grid div#beta {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 91.4702%;
+}
+.sample-grid div#beta:last-child {
+  margin-right: 0;
+}
+.sample-grid div#gamma {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+}
+.sample-grid div#gamma:last-child {
+  margin-right: 0;
+}
+.sample-grid div#delta {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+}
+.sample-grid div#delta:last-child {
+  margin-right: 0;
+}
+.sample-grid div#epsilon {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+}
+.sample-grid div#epsilon:last-child {
+  margin-right: 0;
+}
+.sample-grid div#zeta {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+}
+.sample-grid div#zeta:last-child {
+  margin-right: 0;
+}
+.sample-grid div#eta {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+}
+.sample-grid div#eta:last-child {
+  margin-right: 0;
+}
+.sample-grid div#theta {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+}
+.sample-grid div#theta:last-child {
+  margin-right: 0;
+}
+.sample-grid div#iota {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+}
+.sample-grid div#iota:last-child {
+  margin-right: 0;
+}
+.sample-grid div#kappa {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+}
+.sample-grid div#kappa:last-child {
+  margin-right: 0;
+}
+.sample-grid div#lambda {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+.sample-grid div#lambda:last-child {
+  margin-right: 0;
+}
+.sample-grid div#mu {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+.sample-grid div#mu:last-child {
+  margin-right: 0;
+}
+.sample-grid div#beta, .sample-grid div#delta, .sample-grid div#zeta, .sample-grid div#theta, .sample-grid div#kappa, .sample-grid div#mu {
+  margin-right: 0;
+}

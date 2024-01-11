@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!--[if IE]><html class="is-ie" lang="en" dir="ltr"><![endif]-->
+<!--[if !IE]><!--><html class="not-ie" lang="en" dir="ltr"><!--<![endif]-->
+
+<head>
+	<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<title>Pages</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../vendor/normalize.css/normalize.css">
+	<link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">		
+	<link rel="stylesheet" href="../styles/all.css">	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>			
+</head>
+<body>
+
+	<div class="page-wrapper">
+<header class="header-primary" role="banner">
+	<div class="container-full-width bar-top">
+		<div class="container-special-width">
+			<div class="logo-container">
+				<a class="logo" href="home.html">
+					<img src="../assets/logo-fhm.png" alt="Logo Image">
+				</a>
+				<a class="logo-member">
+					<img src="../assets/logo-atk.png" alt="Member Logo Image">
+				</a>	
+			</div>		
+
+			<div class="navigation-tools">
+
+				<a href="javascript:void(0)" class="navigation-menu-button btn" id="js-mobile-menu-button"><span class="fa fa-bars"></span> Menu</a>
+
+
+
+				<div class="profile">
+					<p class="profile-greeting">Hi, Bob!</p>
+					<button class="btn">Logout</button>
+				</div>		
+
+				<div class="search-bar">
+					<form role="search">
+						<input type="search" placeholder="Search" />
+						<button type="submit">
+							<img src="../assets/icon-magnifying-glass.png" alt="Search Icon">
+						</button>
+					</form>
+				</div>						
+			</div>
+		</div>	
+	</div>
+
+	<div class="container-full-width bar-bottom">
+		<div class="container-standard-width">
+
+<nav role="navigation" class="nav-primary">
+	<ul id="js-navigation-menu" class="navigation-menu show">
+		<li class="nav-link nav-home nav-1"><a href="home.html">Home</a></li>
+		<li class="nav-link nav-2"><a href="plan-ahead.html">Plan Ahead</a></li>
+		<li class="nav-link nav-3"><a href="get-answers.html">Get Answers</a></li>
+	</ul>
+</nav>
+<nav role="navigation" class="nav-secondary">
+	<ul id="js-navigation-menu-sub" class="navigation-menu show">
+		<li class="nav-link contact-us">
+			<span class="icon icon-contact-bubble"></span>
+			<a href="contact.html">Contact us:</a>
+		</li>
+		<li class="nav-link">
+			<span class="tooltip-target">
+				<a href="contact.html">Call</a>
+				<div class="tooltip">
+	    			<p><a href="tel:8002964015">1-800-296-4015</a></p>
+	  			</div>
+			</span>
+		</li>
+		<li class="nav-link"><a href="contact.html">Chat</a></li>
+		<li class="nav-link"><a href="contact.html#test">Email</a></li>
+	</ul>
+</nav>		
+		</div>
+	</div>
+
+</header>
+<div class="container-full-width container-theme-gray-light">
+		<div class="container-standard-width">
+			<nav role="navigation" class="nav-tertiary">
+				<ul id="js-navigation-menu-tert" class="navigation-menu show">
+					<li class="nav-link nav-1"><a href="library-landing.html">Library</a></li>
+					<li class="nav-link nav-2"><a href="javascript:void(0)">Glossary</a></li>
+					<li class="nav-link nav-3 contact"><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+	</div>
+</div>
+	<div class="container-full-width container-theme-whitesmoke columns-8-and-4">
+		<div class="container-standard-width">
+			<section class="section-content">
+				<div class="copy-margin">
+					<h1>Ask Us Anything...</h1>
+					<form class="form-get-answers" action="#">
+						<div>
+							<label for="search">Type your question</label>
+							<input type="text" id="search" class="twitter-typeahead">
+						</div>
+						<button class="btn btn-blue typeahead-submit" type="button">Ask</button>
+					</form>
+
+					<div class="answer-area">
+
+						<!-- No Answer -->
+						<div class="no-answer" style="display: none;">
+							<h2>We’re still looking for an answer, and we’ll get back to you.</h2>
+							<p>We could not find an answer to your question. If you would like to reach out to us, you can submit your question below, <a href="#">start a chat session</a>, or call 1-800-296-4015.</p>
+
+							<form class="form-contact" action="">
+								<div class="field-row">
+									<label for="firstName">First Name</label>
+									<input type="text" id="firstName">
+								</div>
+								<div class="field-row">
+									<label for="lastName">Last Name</label>
+									<input type="text" id="lastName">
+								</div>
+								<div class="field-row">
+									<label for="email">Email</label>
+									<input type="email" id="email">
+								</div>
+								<div class="field-row">
+									<label for="phone">Phone (optional)</label>
+									<input type="tel" id="phone">
+								</div>
+								<div class="field-row">
+									<label for="inquiryType">Inquiry Type</label>
+									<select name="inquiryType" id="inquiryType">
+										<option value="Get Answers" selected="selected">Get Answers</option>										
+										<option value="Can't log in">Can't log in</option>
+										<option value="Benefit question">Benefit question</option>
+										<option value="Open enrollment support">Open enrollment support</option>
+										<option value="Other">Other</option>
+									</select>
+								</div>
+								<div class="field-row">
+									<label for="inquiryType">Message</label>
+									<textarea></textarea>
+								</div>
+								<input class="btn btn-blue" type="submit" value="Submit">
+							</form>
+						
+						</div>
+
+						<!-- Has Answer -->
+						<div class="has-answer" style="display: none;">
+							<h2>Answer</h2>
+							<p>This is a placeholder answer to your question.</p>
+							
+							<hr>
+
+							<h3>Did this answer your question?</h3>
+							<p>If not, submit your question or <a href="#">start a chat session</a>.</p>
+
+							<form class="form-contact" action="">
+								<div class="field-row">
+									<label for="firstName">First Name</label>
+									<input type="text" id="firstName">
+								</div>
+								<div class="field-row">
+									<label for="lastName">Last Name</label>
+									<input type="text" id="lastName">
+								</div>
+								<div class="field-row">
+									<label for="email">Email</label>
+									<input type="email" id="email">
+								</div>
+								<div class="field-row">
+									<label for="phone">Phone (optional)</label>
+									<input type="tel" id="phone">
+								</div>
+								<div class="field-row">
+									<label for="inquiryType">Inquiry Type</label>
+									<select name="inquiryType" id="inquiryType">
+										<option value="Get Answers" selected="selected">Get Answers</option>										
+										<option value="Can't log in">Can't log in</option>
+										<option value="Benefit question">Benefit question</option>
+										<option value="Open enrollment support">Open enrollment support</option>
+										<option value="Other">Other</option>
+									</select>
+								</div>
+								<div class="field-row">
+									<label for="inquiryType">Message</label>
+									<textarea></textarea>
+								</div>
+								<input class="btn btn-blue" type="submit" value="Submit">
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-content">
+				<h2>Frequently Asked Questions</h2>
+				
+				<ul class="list-arrows">
+					<li><a href="#">What will it cost to add a family member to my plan?</a></li>
+					<li><a href="#">Does my insurance cover braces?</a></li>
+					<li><a href="#">I need to see a specialist, what should I expect?</a></li>
+				</ul>
+			</section>
+		</div>
+	</div>
+
+	<div class="container-full-width">
+		<div class="container-standard-width">
+			<section class="section-content">
+				<h1>Library</h1>
+				<hr>
+				<h2>Featured Articles</h2>
+				<div class="cards article-cards">
+				  <div class="card">
+				    <div class="card-image">
+				      <img src="../assets/placeholder-running.png" alt="">
+				    </div>
+				    <div class="card-copy">
+				      <p><a href="#">How an FSA can save you money</a></p>
+				    </div>
+				  </div>
+
+				  <div class="card">
+				    <div class="card-image">
+				      <img src="../assets/placeholder-running.png" alt="">
+				    </div>
+				    <div class="card-copy">
+				      <p><a href="#">Why your doctor examines your neck &amp; throat</a></p>
+				    </div>
+				  </div>
+
+				  <div class="card">
+				    <div class="card-image">
+				      <img src="../assets/placeholder-running.png" alt="">
+				    </div>
+				    <div class="card-copy">
+				      <p><a href="#">Learn how to do a proper squat</a></p>
+				    </div>
+				  </div>			  
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<div class="container-full-width columns-10-and-2">
+		<div class="container-standard-width">
+			<h2>All Articles</h2>
+			<div class="filter-bar">
+				<form action="#">
+					<select name="selectTopic">
+						<option value="Topic" disabled selected>Topic</option>
+					  <option value="value1">Topic 1</option> 
+					  <option value="value2">Topic 2</option>
+					  <option value="value3">Topic 3</option>
+					</select>
+					<select name="selectDate">
+						<option value="Date" disabled selected>Date</option>
+					  <option value="value1">Date 1</option> 
+					  <option value="value2">Date 2</option>
+					  <option value="value3">Date 3</option>
+					</select>
+					<select name="selectFormat">
+						<option value="Format" disabled selected>Format</option>
+					  <option value="value1">Format 1</option> 
+					  <option value="value2">Format 2</option>
+					  <option value="value3">Format 3</option>
+					</select>
+				</form>
+			</div>
+			<section class="section-content article-cards">
+				<div class="cards">
+				  <div class="card">
+				    <div class="card-image">
+				      <img src="../assets/placeholder-running-small.png" alt="">
+				    </div>
+				    <div class="card-copy">
+				      <p><a href="#">Simplifying decisions: Think of us as your personal shopper</a></p>
+				    </div>
+				  </div>
+
+				  <div class="card">
+				    <div class="card-image">
+				      <img src="../assets/placeholder-working.png" alt="">
+				    </div>
+				    <div class="card-copy">
+				      <p><a href="#">Health &amp; Wellness Tool: We've got something for everyone</a></p>
+				    </div>
+				  </div>
+
+				  <div class="card">
+				    <div class="card-image">
+				      <img src="../assets/placeholder-touching.png" alt="">
+				    </div>
+				    <div class="card-copy">
+				      <p><a href="#">What to think about when choosing a hospice care provider</a></p>
+				    </div>
+				  </div>
+
+				  <div class="card">
+				    <div class="card-image">
+				      <img src="../assets/placeholder-touching.png" alt="">
+				    </div>
+				    <div class="card-copy">
+				      <p><a href="#">Simplifying decisions: Think of us as your personal shopper</a></p>
+				    </div>
+				  </div>
+
+				  <div class="card">
+				    <div class="card-image">
+				      <img src="../assets/placeholder-running-small.png" alt="">
+				    </div>
+				    <div class="card-copy">
+				      <p><a href="#">Simplifying decisions: Think of us as your personal shopper</a></p>
+				    </div>
+				  </div>
+
+				  <div class="card">
+				    <div class="card-image">
+				      <img src="../assets/placeholder-working.png" alt="">
+				    </div>
+				    <div class="card-copy">
+				      <p><a href="#">Simplifying decisions: Think of us as your personal shopper</a></p>
+				    </div>
+				  </div>
+
+				  <div class="card">
+				    <div class="card-image">
+				      <img src="../assets/placeholder-working.png" alt="">
+				    </div>
+				    <div class="card-copy">
+				      <p><a href="#">Simplifying decisions: Think of us as your personal shopper</a></p>
+				    </div>
+				  </div>
+
+				  <div class="card">
+				    <div class="card-image">
+				      <img src="../assets/placeholder-touching.png" alt="">
+				    </div>
+				    <div class="card-copy">
+				      <p><a href="#">Simplifying decisions: Think of us as your personal shopper</a></p>
+				    </div>
+				  </div>
+
+				  <div class="card">
+				    <div class="card-image">
+				      <img src="../assets/placeholder-running-small.png" alt="">
+				    </div>
+				    <div class="card-copy">
+				      <p><a href="#">Simplifying decisions: Think of us as your personal shopper</a></p>
+				    </div>
+				  </div>			  
+				</div>
+			</section>
+			<section class="section-content">
+				<h3>Categories</h3>
+				<div class="list-links">
+					<a href="#">Living Well</a>
+					<a href="#">Fitness</a>
+					<a href="#">Nutrition</a>
+					<a href="#">Sleep</a>
+					<a href="#">Stress</a>
+					<a href="#">Using Your Benefits</a>									
+				</div>
+			</section>
+		</div>
+	</div>	
+
+</div> <!-- end .page-wrapper -->
+
+<footer class="footer-primary">
+
+<div class="container-full-width pre-footer">
+	<div class="container-standard-width">
+		<section class="section-content site-map">
+			<nav role="navigation">
+				<h3>Site</h3>
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="plan-ahead.html">Plan Ahead</a></li>
+					<li><a href="get-answers.html">Get Answers</a></li>
+					<li><a href="logged-out.html">Log Out</a></li>				
+				</ul>
+			</nav>
+			<nav role="navigation">
+				<h3>About FHM</h3>
+				<ul>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="about.html">About FHM</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			<nav role="navigation">
+				<h3>References</h3>
+				<ul>
+					<li><a href="all-tools.html">All Tools</a></li>
+					<li><a href="life-changing-event.html">Life Changing Event</a></li>
+				</ul>
+			</nav>						
+		</section>
+		<section class="section-content nav">
+<nav role="navigation" class="nav-secondary">
+	<ul id="js-navigation-menu-sub" class="navigation-menu show">
+		<li class="nav-link contact-us">
+			<span class="icon icon-contact-bubble"></span>
+			<a href="contact.html">Contact us:</a>
+		</li>
+		<li class="nav-link">
+			<span class="tooltip-target">
+				<a href="contact.html">Call</a>
+				<div class="tooltip">
+	    			<p><a href="tel:8002964015">1-800-296-4015</a></p>
+	  			</div>
+			</span>
+		</li>
+		<li class="nav-link"><a href="contact.html">Chat</a></li>
+		<li class="nav-link"><a href="contact.html#test">Email</a></li>
+	</ul>
+</nav>			</section>
+				
+	</div>
+</div>
+
+	<div class="container-full-width footer-main">
+		<div class="container-standard-width">
+			<section class="section-content footer-copy">
+				<p>&copy; 2016 FMR LLC. All Rights Reserved</p>
+				<p>Terms of Use Privacy Licensing</p>
+				<p>Fidelity, Fidelity Investments, the Fidelity Investments and Pyramid Design logo, NetBenefits, and Fidelity HSA are registered service marks of FMR LLC.</p>
+			</section>
+			<section class="section-content footer-logo">
+				<a class="logo" href="javascript:void(0)">
+					<img src="../assets/logo-fidelity-light.png" alt="Logo Image">
+				</a>		
+			</section>
+		</div>	
+	</div>
+</footer>
+	
+	<!-- JS -->
+	<script src="../vendor/twitter-typeahead/typeahead.bundle.min.js"></script>	
+	<script src="../scripts/site/utilities.js"></script>	
+	<script src="../scripts/site/app.js"></script>
+
+	</body>
+</html>

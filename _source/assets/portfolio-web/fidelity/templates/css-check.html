@@ -1,0 +1,435 @@
+<html>
+	<head>
+		<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<title>CSS Check Page</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">		
+		<link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">		
+		<link rel="stylesheet" href="../vendor/style-boilerplate/sg-style.css">
+		<link rel="stylesheet" href="../styles/all.css">	
+		<link rel="stylesheet" href="../styles/css-check.css">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<style>
+			body {
+				background: #f2f2f2;
+			}
+
+			.sg-h1:first-child {
+				margin: 0;
+			}
+
+			.sg-section {
+				background: #fff;
+				box-sizing: border-box;
+				padding: 2%;
+			}
+		</style>
+
+	</head>
+	<body>
+
+	<div class="sg-container" style="max-width: 960px; margin: 1em auto;">
+
+		<h1 class="sg-h1">CSS Check</h1>
+		<p>The purpose of this file is to show how core elements appear as we make changes to the project's CSS. It is intended as a tool to help prevent common style mistakes as default styles are modified.</p><br>
+
+		<div class="sg-colors sg-section">
+			<h2 id="sg-colors" class="sg-h2">Colors</h2>
+			<h3 id="sg-colors" class="sg-h3">Main Corporate Colors</h2>
+
+			<div class="sg-color-grid">
+				<div class="sg-color">
+					<div class="sg-color-swatch green-medium"></div>
+					<div class="sg-color-name">Green</div>
+					<div class="sg-color-value">#046a38</div>
+				</div>
+				<div class="sg-color">
+					<div class="sg-color-swatch green-light"></div>
+					<div class="sg-color-name">Light Green</div>
+					<div class="sg-color-value">#78be20</div>
+				</div>
+				<div class="sg-color">
+					<div class="sg-color-swatch orange-medium"></div>
+					<div class="sg-color-name">Orange</div>
+					<div class="sg-color-value">#ff9933</div>
+				</div>
+				<div class="sg-color">
+					<div class="sg-color-swatch gradient-green-to-orange"></div>
+					<div class="sg-color-name">Gradient <br>(Light Green to Orange)</div>
+					<div class="sg-color-value">#78be20 to #ff9933</div>
+				</div>				
+			</div><!--/.sg-color-grid-->
+
+			<h3 id="sg-colors" class="sg-h3">Accent Colors</h2>
+
+			<div class="sg-color-grid">
+				<div class="sg-color">
+					<div class="sg-color-swatch orange-dark"></div>
+					<div class="sg-color-name">Dark Orange</div>
+					<div class="sg-color-value">#df7527</div>
+				</div>
+				<div class="sg-color">
+					<div class="sg-color-swatch orange-medium"></div>
+					<div class="sg-color-name">Orange</div>
+					<div class="sg-color-value">#ff9933</div>
+				</div>
+				<div class="sg-color">
+					<div class="sg-color-swatch gray-medium"></div>
+					<div class="sg-color-name">Gray</div>
+					<div class="sg-color-value">#d9d9d9</div>
+				</div>
+				<div class="sg-color">
+					<div class="sg-color-swatch gray-light"></div>
+					<div class="sg-color-name">Gray Light</div>
+					<div class="sg-color-value">#e6e6e5</div>
+				</div>			
+			</div><!--/.sg-color-grid-->	
+
+			<h3 id="sg-colors" class="sg-h3">Neutral Colors</h2>
+
+			<div class="sg-color-grid">
+				<div class="sg-color">
+					<div class="sg-color-swatch blue-medium"></div>
+					<div class="sg-color-name">Blue</div>
+					<div class="sg-color-value">#1f83be</div>
+				</div>
+				<div class="sg-color">
+					<div class="sg-color-swatch blue-light"></div>
+					<div class="sg-color-name">Light Blue</div>
+					<div class="sg-color-value">#49b0d8</div>
+				</div>		
+			</div><!--/.sg-color-grid-->
+
+			<h3 id="sg-colors" class="sg-h3">Other Colors</h2>
+
+			<div class="sg-color-grid">
+				<div class="sg-color">
+					<div class="sg-color-swatch blue-slate"></div>
+					<div class="sg-color-name">Blue Slate</div>
+					<div class="sg-color-value">#353f49</div>
+				</div>	
+				<div class="sg-color">
+					<div class="sg-color-swatch blue-mist"></div>
+					<div class="sg-color-name">Blue Mist</div>
+					<div class="sg-color-value">#74828b</div>
+				</div>	
+				<div class="sg-color">
+					<div class="sg-color-swatch gray-whitesmoke"></div>
+					<div class="sg-color-name">Gray Whitesmoke</div>
+					<div class="sg-color-value">#f5f5f4</div>
+				</div>	
+				<div class="sg-color">
+					<div class="sg-color-swatch gray-for-borders"></div>
+					<div class="sg-color-name">Gray For Borders</div>
+					<div class="sg-color-value">#c9c9c9</div>
+				</div>												
+			</div><!--/.sg-color-grid-->			
+
+
+		</div><!--/.sg-colors-->
+
+		<div class="sg-font-stacks sg-section">
+			<h2 id="sg-fontStacks" class="sg-h2">Font Stacks</h2>
+			<dl class="sg-font-list">
+				<dt>Primary Font:</dt>
+				<dd style="font-family: 'Fidelity Sans', sans-serif;">'Fidelity Sans', sans-serif;</dd>
+
+				<dt>Primary Font Italic:</dt>
+				<dd style="font-family: 'Fidelity Sans', sans-serif; font-style: italic;">'Fidelity Sans', sans-serif;</dd>
+
+
+				<dt>Primary Font Bold:</dt>
+				<dd style="font-family: 'Fidelity Sans', sans-serif; font-weight: bold;">'Fidelity Sans', sans-serif;</dd>
+
+
+			</dl>
+		</div><!--/.sg-font-stacks-->	
+
+		<div class="sg-markup sg-section">
+			<div class="sg-display">
+				<h2 id="sg-headings-1" class="sg-h2">Headings</h2>
+				<h1>Heading 1 with <small>small text</small> and a <a href="#">link</a></h1>
+				<h2>Heading 2 with <small>small text</small> and a <a href="#">link</a></h2>
+				<h3>Heading 3 with <small>small text</small> and a <a href="#">link</a></h3>
+				<h4>Heading 4 with <small>small text</small> and a <a href="#">link</a></h4>
+				<h5>Heading 5 with <small>small text</small> and a <a href="#">link</a></h5>
+				<h6>Heading 6 with <small>small text</small> and a <a href="#">link</a></h6>
+			</div>
+		</div>
+
+		<div class="sg-markup sg-section">
+			<div class="sg-display">
+				<h2 class="sg-h2">Paragraphs</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo, si semel tristior effectus est, hilara vita amissa est? Aperiendum est igitur, quid sit voluptas; Nulla profecto est, quin suam vim retineat a primo ad extremum. Sed nimis multa. Murenam te accusante defenderem. </p>
+				<p>An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit? Hoc enim constituto in philosophia constituta sunt omnia. Quis hoc dicit? Facile est hoc cernere in primis puerorum aetatulis. Non est ista, inquam, Piso, magna dissensio. Ego vero volo in virtute vim esse quam maximam; </p>
+				<p>Quorum altera prosunt, nocent altera. Egone non intellego, quid sit don Graece, Latine voluptas? Sic vester sapiens magno aliquo emolumento commotus cicuta, si opus erit, dimicabit. Duo Reges: constructio interrete. </p>
+			</div>
+		</div>
+
+		<div class="sg-markup sg-section">
+			<div class="sg-display">
+				<h2 class="sg-h2">Ordered Lists</h2>
+				<ol>
+				  <li>list item 1</li>
+				  <li>list item 1
+				    <ol>
+				      <li>list item 2</li>
+				      <li>list item 2
+				        <ol>
+				          <li>list item 3</li>
+				          <li>list item 3</li>
+				        </ol>
+				      </li>
+				      <li>list item 2</li>
+				      <li>list item 2</li>
+				    </ol>
+				  </li>
+				  <li>list item 1</li>
+				  <li>list item 1</li>
+				</ol>
+			</div>
+		</div>		
+
+		<div class="sg-markup sg-section">
+			<div class="sg-display">
+				<h2 class="sg-h2">Unordered Lists</h2>
+				<ul>
+				  <li>list item 1</li>
+				  <li>list item 1
+				    <ol>
+				      <li>list item 2</li>
+				      <li>list item 2
+				        <ol>
+				          <li>list item 3</li>
+				          <li>list item 3</li>
+				        </ol>
+				      </li>
+				      <li>list item 2</li>
+				      <li>list item 2</li>
+				    </ol>
+				  </li>
+				  <li>list item 1</li>
+				  <li>list item 1</li>
+				</ul>
+
+				<br>
+				<br>
+
+				<h3>.list-arrows</h3>
+				<ul class="list-arrows">
+				  <li>list item 1</li>
+				  <li>list item 1</li>
+				  <li>list item 1</li>
+				</ul>	
+
+				<br>
+				<br>
+
+				<h3>.list-angles</h3>
+				<ul class="list-angles">
+				  <li>list item 1</li>
+				  <li>list item 1</li>
+				  <li>list item 1</li>
+				</ul>
+
+				<br>
+				<br>
+
+				<h3>.list-checks</h3>
+				<ul class="list-checks">
+				  <li>list item 1</li>
+				  <li>list item 1</li>
+				  <li>list item 1</li>
+				</ul>				
+
+			</div>
+		</div>	
+
+		<div class="sg-markup sg-section">
+			<div class="sg-display">
+				<h2 class="sg-h2">Mixed Content Example</h2>
+				<h1>Ex quo, id quod omnes expetunt, beate vivendi ratio inveniri et comparari potest.</h1>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ita graviter et severe voluptatem secrevit a bono. Sed tu istuc dixti bene Latine, parum plane. Hoc enim identidem dicitis, non intellegere nos quam dicatis voluptatem. Quo plebiscito decreta a senatu est consuli quaestio Cn. Quae cum ita sint, effectum est nihil esse malum, quod turpe non sit. Duo Reges: constructio interrete. <b>Et nemo nimium beatus est;</b> An tu me de L. Hoc tu nunc in illo probas. </p>
+
+				<p>Nemo igitur esse beatus potest. Quid enim? Nam Pyrrho, Aristo, Erillus iam diu abiecti. Quis enim potest ea, quae probabilia videantur ei, non probare? <a href='http://loripsum.net/' target='_blank'>Recte, inquit, intellegis.</a> Equidem etiam Epicurum, in physicis quidem, Democriteum puto. Quare ad ea primum, si videtur; Ea, quae dialectici nunc tradunt et docent, nonne ab illis instituta sunt aut inventa sunt? Ita multo sanguine profuso in laetitia et in victoria est mortuus. <i>Confecta res esset.</i> </p>
+
+				<ul>
+					<li>Non igitur de improbo, sed de callido improbo.</li>
+					<li>Atqui, inquam, Cato, si istud optinueris, traducas me ad te totum licebit.</li>
+				</ul>
+
+
+				<p>Ubet igitur nos Pythius Apollo noscere nosmet ipsos. Non est enim vitium in oratione solum, sed etiam in moribus. Aliter enim nosmet ipsos nosse non possumus. </p>
+
+				<h2>Quid est, quod ab ea absolvi et perfici debeat?</h2>
+
+				<p><b>At enim sequor utilitatem.</b> <a href='http://loripsum.net/' target='_blank'>Si quae forte-possumus.</a> Sed ad rem redeamus; Quid turpius quam sapientis vitam ex insipientium sermone pendere? Aliter homines, aliter philosophos loqui putas oportere? Aliter homines, aliter philosophos loqui putas oportere? Nonne videmus quanta perturbatio rerum omnium consequatur, quanta confusio? Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus.</p>
+
+				<h3>Ut placet, inquit, etsi enim illud erat aptius, aequum cuique concedere.</h3>
+
+				<p>Quid enim ab antiquis ex eo genere, quod ad disserendum valet, praetermissum est? Itaque vides, quo modo loquantur, nova verba fingunt, deserunt usitata. Nam quid possumus facere melius? Duarum enim vitarum nobis erunt instituta capienda. <a href='http://loripsum.net/' target='_blank'>Quod ea non occurrentia fingunt, vincunt Aristonem;</a> Sed ea mala virtuti magnitudine obruebantur. </p>
+
+				<ol>
+					<li>Conferam tecum, quam cuique verso rem subicias;</li>
+					<li>At iam decimum annum in spelunca iacet.</li>
+					<li>Sed vos squalidius, illorum vides quam niteat oratio.</li>
+					<li>Apparet statim, quae sint officia, quae actiones.</li>
+				</ol>
+
+			</div>
+		</div>
+
+		<div class="sg-markup sg-section">
+			<div class="sg-display">
+				<h2 class="sg-h2">Grid Width Values</h2>	
+				<p>Use your CSS inspector to look up the current value. Since CSS is a work in progress at the time this document was made, the values may change.</p>			
+
+				<section class="sample-grid">
+					<div id="alpha">
+						<code>(1)</code>
+					</div>
+					<div id="beta">
+						<code>(11)</code>
+					</div>
+
+					<div id="gamma">
+						<code>(2)</code>
+					</div>
+					<div id="delta">
+						<code>(10)</code>
+					</div>
+
+					<div id="epsilon">
+						<code>(3)</code>
+					</div>
+					<div id="zeta">
+						<code>(9)</code>
+					</div>
+
+					<div id="eta">
+						<code>(4)</code>
+					</div>
+					<div id="theta">
+						<code>(8)</code>
+					</div>
+
+					<div id="iota">
+						<code>(5)</code>
+					</div>
+					<div id="kappa">
+						<code>(7)</code>
+					</div>
+
+					<div id="lambda">
+						<code>(6)</code>
+					</div>
+					<div id="mu">
+						<code>(6)</code>
+					</div>
+				</section>
+
+			</div>
+		</div>	
+
+		<div class="sg-markup sg-section">
+			<div class="sg-display">
+				<h2 class="sg-h2">Progress Bars</h2>	
+
+				<div class="progress-bar">
+				  <span class="meter" style="width: 0%">
+				    <p>0%</p>
+				  </span>
+				</div>		
+
+				<br>		
+
+				<div class="progress-bar">
+				  <span class="meter" style="width: 60%">
+				    <p>60%</p>
+				  </span>
+				</div>
+
+				<br>
+
+				<div class="progress-bar">
+				  <span class="meter" style="width: 100%">
+				    <p>100%</p>
+				  </span>
+				</div>				
+
+			</div>		
+		</div>	
+
+
+		<div class="sg-markup sg-section">
+			<div class="sg-display">
+				<h2 class="sg-h2">Accordions</h2>	
+				<ul class="accordion">
+				  <li>
+				    <a href="javascript:void(0)" class="js-accordion-trigger">Accordion Item</a>
+				    <ul class="submenu">
+				      <li>
+				        <a href="javascript:void(0)">Sub Item 1</a>
+				      </li>
+				      <li>
+				        <a href="javascript:void(0)">Sub Item 2</a>
+				      </li>
+				    </ul>
+				  </li>
+				  <li>
+				    <a href="javascript:void(0)" class="js-accordion-trigger">Another Item</a>
+				    <ul class="submenu">
+				      <li>
+				        <a href="javascript:void(0)">Sub Item 1</a>
+				      </li>
+				      <li>
+				        <a href="javascript:void(0)">Sub Item 2</a>
+				      </li>
+				    </ul>
+				  </li>
+				</ul>
+				
+			</div>		
+		</div>		
+
+		<div class="sg-markup sg-section">
+			<div class="sg-display">
+				<h2 class="sg-h2">Icons</h2>	
+
+				<h3>Image based</h3>
+				<p><span class="icon icon-contact-bubble"></span> .icon-contact-bubble</p>				
+				<p><span class="icon icon-benefits-medical"></span> .icon-benefits-medical</p>
+				<p><span class="icon icon-benefits-dental"></span> .icon-benefits-dental</p>
+				<p><span class="icon icon-benefits-vision"></span> .icon-benefits-vision</p>								
+				<p><span class="icon icon-benefits-life"></span> .icon-benefits-life</p>								
+				<p><span class="icon icon-benefits-disability"></span> .icon-benefits-disability</p>								
+				<p><span class="icon icon-arrow-right-green-lg"></span>.icon-arrow-right-green-lg</p>
+				
+
+				<br>
+				<h3>Font Awesome based</h3>
+				<p><span class="fa fa-angle-right"></span> .fa .fa-angle-right</p>
+				<p><span class="fa fa-arrow-right"></span> .fa .fa-arrow-right</p>				
+				<p><span class="fa fa-exclamation"></span> .fa .fa-exclamation</p>
+
+				<br>
+				<h3>Alternate styles</h3>
+				<p><span class="fa fa-angle-right icon-circle"></span> .icon-circle</p>
+
+			</div>		
+		</div>					
+
+	</div>	<!-- end .sg-container -->
+
+	<!-- JS -->
+	<script src="../vendor/twitter-typeahead/typeahead.bundle.min.js"></script>	
+	<script src="../scripts/site/utilities.js"></script>	
+	<script src="../scripts/site/app.js"></script>	
+
+	</body>
+</html>

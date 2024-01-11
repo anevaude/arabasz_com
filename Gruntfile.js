@@ -35,6 +35,8 @@ module.exports = function (grunt) {
             "_source/templates/pages/project-boa.mustache",
           "_build/project-abbvie.html":
             "_source/templates/pages/project-abbvie.mustache",
+          "_build/project-fidelity.html":
+            "_source/templates/pages/project-fidelity.mustache",
         },
       },
     },
