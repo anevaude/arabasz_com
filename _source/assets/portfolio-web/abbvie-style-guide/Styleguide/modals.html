@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie9 lt-ie10"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta charset="utf-8">
+	  <title>PSM Styleguide</title>
+	  <meta name="description" content="">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  <link rel="stylesheet" href="../_sg_components/font-awesome-bower/css/font-awesome.css" />
+
+	  <link rel="stylesheet" href="../css/main.css">
+	  <link rel="stylesheet" href="../css/styleguide.css">
+
+	  <script src="../Scripts/vendor/modernizr.min.js"></script>
+
+	  <script src="../Scripts/vendor/SyntaxHighlighter/scripts/shCore.js"></script>
+	  <script src="../Scripts/vendor/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+	  <script src="../Scripts/vendor/SyntaxHighlighter/scripts/shBrushXml.js"></script>
+	  <script src="../Scripts/vendor/SyntaxHighlighter/scripts/shBrushCss.js"></script>
+
+	  <link rel="stylesheet" href="../Scripts/vendor/SyntaxHighlighter/styles/shCore.css">
+		<link rel="stylesheet" href="../Scripts/vendor/SyntaxHighlighter/styles/shThemeDefault.css">
+
+	</head>
+	<body>		
+		<header class="styleguide-navigation">
+
+			<nav class="container container-outer">
+				<a class="logo-area" href="index.html"><b>Abbvie</b> Style Guide</a>
+				<ul>
+					<li class="nav-branding"><a href="index.html">Colors & Branding</a></li>
+					<li class="nav-typography"><a href="typography.html">Typography</a></li>
+					<li class="nav-navigation"><a href="navigation.html">Navigation & Containers</a></li>					
+					<li class="nav-forms"><a href="forms.html">Forms</a></li>
+					<li class="nav-tables"><a href="tables.html">Tables</a></li>
+					<li class="nav-modals"><a href="modals.html">Modals</a></li>
+					<li class="nav-modules"><a href="modules.html">UI Modules</a></li>										
+				</ul>
+			</nav>
+		</header>
+		<div class="container container-outer">
+<section class="accordion-sg">
+	<h1>Modal - Basic Style</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>Modals should only be needed when we need the users full attention on something.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>Each modal has at least one button to allow closing or continuation. Aside from that there is an "X" in the top right corner that the users can return to the page under the modal.</p>
+	</div>
+</div>
+
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+	<div class="center_button">
+		<a data-reveal-id="modalExample" data-animation="fadeAndPop" data-animationspeed="300" data-closeonbackgroundclick="true" data-dismissmodalclass="close-reveal-modal" data-reveal-ajax="true" class="btn btn-primary">Open the Modal</a>
+	</div>
+
+	<div id="modalExample" class="reveal-modal small" data-reveal="">
+		<div class="modal-header">
+			<h1>Hello!</h1>		
+		</div>		
+		<div class="modal-body">
+			<p>This is an example of a modal. Click the "X" in the top right corner to close this modal.</p>
+
+			<div class="center_button">
+				<a href="#" class="btn btn-primary">Button</a>
+			</div>
+		</div>
+
+	  	<a class="close-reveal-modal">&#215;</a>
+	</div>
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+		<div class="center_button">
+			<a data-reveal-id="successModal" data-animation="fadeAndPop" data-animationspeed="300" data-closeonbackgroundclick="true" data-dismissmodalclass="close-reveal-modal" data-reveal-ajax="true" class="btn btn-primary">Request Prior Authorization</a>
+		</div>
+
+		<div id="successModal" class="reveal-modal" data-reveal="">
+		  <h1>Success!</h1>
+			<h4>Request for Prior Authorization for:</h4>
+			<p>Jane Doe</p>
+			<p>11/12/1974</p>
+
+			<h4>Has been sent to:</h4>
+			<p>
+				Blue Cross and Blue Shield of Texas (BCBSTX)<br>
+				<strong>Phone</strong>: 800-451-0287<br>
+				<strong>Fax</strong>: 972-766-0371
+			</p>
+
+			<p style="margin-top: 35px">The approximate turnaround time is 24-72 hours after initiation with the insurance company. The insurer will send you the Prior Authorization status via fax.</p>
+
+			<div class="center_button">
+				<a href="#" class="btn btn-primary">View Patient</a>
+			</div>
+		  <a class="close-reveal-modal">&#215;</a>
+		</div>
+	</pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+		.reveal-modal-bg {
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+			background: #000;
+			display: none;
+			filter: alpha(opacity=80);
+			height: 100%;
+			left: 0;
+			opacity: .8;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 100;
+		}
+
+		.reveal-modal {
+			-moz-border-radius: 5px;
+			-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+			-webkit-border-radius: 5px;
+			-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+			background: #fff;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+			left: 50%;
+			margin-left: -250px;
+			padding: 30px 40px 34px;
+			position: absolute;
+			top: 100px;
+			visibility: hidden;
+			width: 520px;
+			z-index: 101;
+		}
+
+		.reveal-modal .close-reveal-modal {
+			color: #aaa;
+			cursor: pointer;
+			font-size: 22px;
+			font-weight: bold;
+			line-height: .5;
+			position: absolute;
+			right: 11px;
+			text-shadow: 0 -1px 1px rbga(0, 0, 0, 0.6);
+			top: 8px;
+		}
+
+		.reveal-modal .center_button {	margin-top: 20px }
+		.reveal-modal .center_button .btn {	 margin-top: 22px }
+		.reveal-modal h4 {
+			font-size: 14px;
+			text-transform: uppercase;
+		}
+
+		.reveal-modal h1 {	margin-bottom: 35px }
+		.reveal-modal p {	 margin: 10px 0 2px 0 }
+		.list-modal {	 font-size: 25px }
+		.list-modal .fa-check-circle {	color: #5C9922 }
+		.list-modal .loading {
+			left: -5px;
+			margin-right: 5px;
+			position: relative;
+			top: 10px;
+		}
+
+		.list-modal .fa {
+			font-size: 36px;
+			margin-right: 13px;
+			position: relative;
+			top: 4px;
+		}
+
+		.reveal-modal.small {
+			margin-left: -140px;
+			width: 200px;
+		}
+
+		.reveal-modal.medium {
+			margin-left: -240px;
+			width: 400px;
+		}
+
+		.reveal-modal.large {
+			margin-left: -340px;
+			width: 600px;
+		}
+
+		.reveal-modal.xlarge {
+			margin-left: -440px;
+			width: 800px;
+		}</pre>
+</div>
+
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">
+		$('a[data-reveal-id]').on('click', function () {
+		  var id = $(this).attr('data-reveal-id');
+		  $("#" + id).reveal('open');
+		  return false;
+		});
+	</pre>
+</div>
+	</div>
+</section>
+
+<section class="accordion-sg">
+	<h1>Modal - Modal Sizes</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>Modals can take on other sizes. We recommend sticking to the defaults unless a different modal is necessary.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>Adding a class to the modal controls different sizes.</p>
+	</div>
+</div>
+
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+	<div class="center_button">
+		<a data-reveal-id="modalSmall" data-animation="fadeAndPop" data-animationspeed="300" data-closeonbackgroundclick="true" data-dismissmodalclass="close-reveal-modal" data-reveal-ajax="true" class="btn btn-primary">.small</a>
+		<a data-reveal-id="modalMedium" data-animation="fadeAndPop" data-animationspeed="300" data-closeonbackgroundclick="true" data-dismissmodalclass="close-reveal-modal" data-reveal-ajax="true" class="btn btn-primary">.medium</a>	
+		<a data-reveal-id="modalLarge" data-animation="fadeAndPop" data-animationspeed="300" data-closeonbackgroundclick="true" data-dismissmodalclass="close-reveal-modal" data-reveal-ajax="true" class="btn btn-primary">.large</a>			
+	</div>
+
+	<div id="modalSmall" class="reveal-modal small" data-reveal="">
+		<div class="modal-body">
+			<h1>Small Modal</h1>
+			<p>This is small modal. It takes up 40% of the screen.</p>
+
+			<div class="center_button">
+				<a href="#" class="btn btn-primary">Button</a>
+			</div>
+		</div>
+
+	  	<a class="close-reveal-modal">&#215;</a>
+	</div>
+
+	<div id="modalMedium" class="reveal-modal medium" data-reveal="">
+		<div class="modal-body">
+			<h1>Medium Modal</h1>
+			<p>This is medium modal. It takes up 60% of the screen.</p>
+
+			<div class="center_button">
+				<a href="#" class="btn btn-primary">Button</a>
+			</div>
+		</div>
+
+	  	<a class="close-reveal-modal">&#215;</a>
+	</div>	
+
+	<div id="modalLarge" class="reveal-modal large" data-reveal="">
+		<div class="modal-body">
+			<h1>Large Modal</h1>
+			<p>This is large modal. It takes up 70% of the screen.</p>
+
+			<div class="center_button">
+				<a href="#" class="btn btn-primary">Button</a>
+			</div>
+		</div>
+
+	  	<a class="close-reveal-modal">&#215;</a>
+	</div>		
+
+
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+<div id="modalSmall" class="reveal-modal small" data-reveal="">
+		<div class="modal-body">
+			<h1>Small Modal</h1>
+			<p>This is small modal. It takes up 40% of the screen.</p>
+
+			<div class="center_button">
+				<a href="#" class="btn btn-primary">Button</a>
+			</div>
+		</div>
+
+	  	<a class="close-reveal-modal">&#215;</a>
+	</div>
+
+	<div id="modalMedium" class="reveal-modal medium" data-reveal="">
+		<div class="modal-body">
+			<h1>Medium Modal</h1>
+			<p>This is medium modal. It takes up 60% of the screen.</p>
+
+			<div class="center_button">
+				<a href="#" class="btn btn-primary">Button</a>
+			</div>
+		</div>
+
+	  	<a class="close-reveal-modal">&#215;</a>
+	</div>	
+
+	<div id="modalLarge" class="reveal-modal large" data-reveal="">
+		<div class="modal-body">
+			<h1>Large Modal</h1>
+			<p>This is large modal. It takes up 70% of the screen.</p>
+
+			<div class="center_button">
+				<a href="#" class="btn btn-primary">Button</a>
+			</div>
+		</div>
+	</div>
+	</pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+.reveal-modal.small {
+  width: 40%;
+}
+
+.reveal-modal.medium {
+  width: 60%;
+}
+
+.reveal-modal.large {
+  width: 70%;
+}
+
+.reveal-modal.xlarge {
+  width: 95%;
+}
+
+.reveal-modal.full {
+  width: 100%;
+  top: 0;
+  min-height: 100vh;
+  max-width: none !important;
+  height: 100%;
+  height: 100vh;
+}
+	</pre>
+</div>
+
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">
+		$('a[data-reveal-id]').on('click', function () {
+		  var id = $(this).attr('data-reveal-id');
+		  $("#" + id).reveal('open');
+		  return false;
+		});
+	</pre>
+</div>
+	</div>
+</section>
+
+<section class="accordion-sg">
+	<h1>Modal - Warning</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>Warning modals are used to confirm the user intends to continue with their action.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>Warning modals present the user with the option to confirm or cancel an action by clicking on the buttons at the bottom.</p>
+	</div>
+</div>
+
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+	<div class="center_button">
+		<a data-reveal-id="modalWarning" data-animation="fadeAndPop" data-animationspeed="300" data-closeonbackgroundclick="true" data-dismissmodalclass="close-reveal-modal" data-reveal-ajax="true" class="btn btn-primary">Open the Warning Modal</a>
+	</div>
+
+	<div id="modalWarning" class="reveal-modal modal-warning small" data-reveal="">
+		<div class="modal-header">
+			<h1><i class="fa fa-exclamation-triangle"></i> Warning</h1>		
+		</div>
+		<div class="modal-body">
+			<p>You are about to delete the training <b>scheduled for April 28, 2016.</b></p>
+			<p>Do you wish to continue?</p>
+			<div class="center_button">
+				<button class="btn btn-transparent">Cancel</button>
+				<button class="btn btn-primary">Yes</button>
+			</div>
+	  	</div>
+	  	<a class="close-reveal-modal">&#215;</a>
+	</div>
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+<div id="modalWarning" class="reveal-modal modal-warning small" data-reveal="">
+	<div class="modal-header">
+		<h1><i class="fa fa-exclamation-triangle"></i> Warning</h1>		
+	</div>
+	<div class="modal-body">
+		<p>You are about to delete the training <b>scheduled for April 28, 2016.</b></p>
+		<p>Do you wish to continue?</p>
+		<div class="center_button">
+			<button class="btn btn-transparent">Cancel</button>
+			<button class="btn btn-primary">Yes</button>
+		</div>
+  	</div>
+  	<a class="close-reveal-modal">&#215;</a>
+</div>		
+	</pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+/** --- Modals -------------------- */
+.reveal-modal-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  opacity: .8;
+  z-index: 100;
+  display: none;
+  top: 0;
+  left: 0;
+}
+
+.reveal-modal {
+  visibility: hidden;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 55.55556rem;
+  width: 80%;
+  background: #fff;
+  position: fixed;
+  z-index: 101;
+  padding: 0;
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.reveal-modal h1 {
+  margin-bottom: 35px;
+}
+.reveal-modal h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.reveal-modal p {
+  margin: 10px 0 2px 0;
+}
+.reveal-modal .modal-header {
+  background: #fff;
+  color: #6F2A81;
+  padding: 28px 40px;
+  text-align: center;
+}
+.reveal-modal .modal-header h1 {
+  font-size: 24px;
+  letter-spacing: 3px;
+  margin: 0;
+}
+.reveal-modal .modal-body {
+  padding: 25px 40px 25px;
+}
+.reveal-modal .modal-header + .modal-body {
+  padding: 0 40px 25px;
+}
+.reveal-modal .close-reveal-modal {
+  color: #404040;
+}
+.reveal-modal .center_button {
+  margin-top: 20px;
+}
+.reveal-modal .center_button .btn {
+  margin-top: 22px;
+}
+
+.list-modal {
+  font-size: 25px;
+}
+.list-modal .fa {
+  font-size: 36px;
+  margin-right: 13px;
+  position: relative;
+  top: 4px;
+}
+.list-modal .fa-check-circle {
+  color: #84BD41;
+}
+.list-modal .loading {
+  position: relative;
+  left: -5px;
+  top: 10px;
+  margin-right: 5px;
+}
+
+.reveal-modal.small {
+  width: 40%;
+}
+
+.reveal-modal.medium {
+  width: 60%;
+}
+
+.reveal-modal.large {
+  width: 70%;
+}
+
+.reveal-modal.xlarge {
+  width: 95%;
+}
+
+.reveal-modal.full {
+  width: 100%;
+  top: 0;
+  min-height: 100vh;
+  max-width: none !important;
+  height: 100%;
+  height: 100vh;
+}
+
+.reveal-modal .close-reveal-modal {
+  font-size: 30px;
+  line-height: auto;
+  position: absolute;
+  top: 15px;
+  right: 13px;
+  color: .reveal-modal .close-reveal-modal grayMed;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px rbga(0, 0, 0, 0.6);
+  font-weight: bold;
+  cursor: pointer;
+}
+.reveal-modal .close-reveal-modal:hover {
+  text-decoration: none;
+}
+
+/* Warning Modal */
+.modal-warning .modal-header {
+  background: #DE5D42;
+  color: #fff;
+}
+.modal-warning .modal-header + .modal-body {
+  padding-top: 25px;
+}
+.modal-warning .close-reveal-modal {
+  color: #fff;
+}
+
+/* Capture Signature Modal */
+.modal-signature form .row .column:first-child {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+}
+.modal-signature form .row .column:first-child:last-child {
+  margin-right: 0;
+}
+.modal-signature form .row .column:last-child {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+  margin-right: 0;
+}
+.modal-signature form .row .column:last-child:last-child {
+  margin-right: 0;
+}
+.modal-signature form .row .column .btn.add-recipient {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 38px;
+}
+
+/* Remote Capture Signature Modal */
+.modal-remote-signature .signature-container {
+  border: 1px #ddd solid;
+  height: 300px;
+}
+
+/* LT-IE9 Specific */
+.lt-ie9 .reveal-modal-bg {
+  position: fixed;
+}
+.lt-ie9 .reveal-modal {
+  z-index: 99999 !important;
+  top: 100px !important;
+  filter: alpha(opacity=100) !important;
+}
+	</pre>
+</div>
+
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">
+		$('a[data-reveal-id]').on('click', function () {
+		  var id = $(this).attr('data-reveal-id');
+		  $("#" + id).reveal('open');
+		  return false;
+		});
+	</pre>
+</div>
+	</div>
+</section>
+
+<section class="accordion-sg">
+	<h1>Modal - Capture Signature</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>This is an example of a modal used for signature capture.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>This modal is intended to be used with your signature capture plug-in. Functionality is not included in this example.</p>
+	</div>
+</div>
+
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+	<div class="center_button">
+		<a data-reveal-id="modalSignature" data-animation="fadeAndPop" data-animationspeed="300" data-closeonbackgroundclick="true" data-dismissmodalclass="close-reveal-modal" data-reveal-ajax="true" class="btn btn-primary">Open the Capture Signature Modal</a>
+	</div>
+
+	<div id="modalSignature" class="reveal-modal modal-signature small" data-reveal="">
+		<div class="modal-header">
+			<h1>Capture Signature</h1>		
+		</div>
+		<div class="modal-body">
+			<p>Signature capture for <b>Cameron Burgess, MD</b></p>
+			<br>
+			
+			<form>
+				<div class="row">
+					<div class="column">
+						<label for="nolabel">
+							<span>Prescriber's Email</span>
+							<input type="text" id="nolabel" size="5" name="nolabel">
+						</label>	
+					</div>
+					<div class="column">		
+						<label for="nolabel">
+							<span>Link Expires After</span>
+							<select id="nolabel" name="nolabel">
+								<option value="" selected=""></option>
+								<option value="1">1 week</option>
+								<option value="2">2 weeks</option>							
+							</select>
+						</label>		
+					</div>				
+				</div>
+				<div class="row">
+					<div class="column">
+						<label for="nolabel">
+							<span>Sent Notifications To</span>
+							<input type="text" id="nolabel" size="5" name="nolabel">
+						</label>	
+					</div>
+					<div class="column">
+						<button class="btn btn-transparent add-recipient">Add Recipient</button>
+					</div>			
+				</div>
+
+				<div class="center_button">
+					<button class="btn btn-transparent">Cancel</button>
+					<button class="btn btn-primary">Send Capture Request</button>
+				</div>
+			</form>
+
+	  	</div>
+	  	<a class="close-reveal-modal">&#215;</a>
+	</div>
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+<div id="modalSignature" class="reveal-modal modal-signature small" data-reveal="">
+	<div class="modal-header">
+		<h1>Capture Signature</h1>		
+	</div>
+	<div class="modal-body">
+		<p>Signature capture for <b>Cameron Burgess, MD</b></p>
+		<br>
+		
+		<form>
+			<div class="row">
+				<div class="column">
+					<label for="nolabel">
+						<span>Prescriber's Email</span>
+						<input type="text" id="nolabel" size="5" name="nolabel">
+					</label>	
+				</div>
+				<div class="column">		
+					<label for="nolabel">
+						<span>Link Expires After</span>
+						<select id="nolabel" name="nolabel">
+							<option value="" selected=""></option>
+							<option value="1">1 week</option>
+							<option value="2">2 weeks</option>							
+						</select>
+					</label>		
+				</div>				
+			</div>
+			<div class="row">
+				<div class="column">
+					<label for="nolabel">
+						<span>Sent Notifications To</span>
+						<input type="text" id="nolabel" size="5" name="nolabel">
+					</label>	
+				</div>
+				<div class="column">
+					<button class="btn btn-transparent add-recipient">Add Recipient</button>
+				</div>			
+			</div>
+
+			<div class="center_button">
+				<button class="btn btn-transparent">Cancel</button>
+				<button class="btn btn-primary">Send Capture Request</button>
+			</div>
+		</form>
+
+  	</div>
+  	<a class="close-reveal-modal">&#215;</a>
+</div>
+	</pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+/** --- Modals -------------------- */
+.reveal-modal-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  opacity: .8;
+  z-index: 100;
+  display: none;
+  top: 0;
+  left: 0;
+}
+
+.reveal-modal {
+  visibility: hidden;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 55.55556rem;
+  width: 80%;
+  background: #fff;
+  position: fixed;
+  z-index: 101;
+  padding: 0;
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.reveal-modal h1 {
+  margin-bottom: 35px;
+}
+.reveal-modal h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.reveal-modal p {
+  margin: 10px 0 2px 0;
+}
+.reveal-modal .modal-header {
+  background: #fff;
+  color: #6F2A81;
+  padding: 28px 40px;
+  text-align: center;
+}
+.reveal-modal .modal-header h1 {
+  font-size: 24px;
+  letter-spacing: 3px;
+  margin: 0;
+}
+.reveal-modal .modal-body {
+  padding: 25px 40px 25px;
+}
+.reveal-modal .modal-header + .modal-body {
+  padding: 0 40px 25px;
+}
+.reveal-modal .close-reveal-modal {
+  color: #404040;
+}
+.reveal-modal .center_button {
+  margin-top: 20px;
+}
+.reveal-modal .center_button .btn {
+  margin-top: 22px;
+}
+
+.list-modal {
+  font-size: 25px;
+}
+.list-modal .fa {
+  font-size: 36px;
+  margin-right: 13px;
+  position: relative;
+  top: 4px;
+}
+.list-modal .fa-check-circle {
+  color: #84BD41;
+}
+.list-modal .loading {
+  position: relative;
+  left: -5px;
+  top: 10px;
+  margin-right: 5px;
+}
+
+.reveal-modal.small {
+  width: 40%;
+}
+
+.reveal-modal.medium {
+  width: 60%;
+}
+
+.reveal-modal.large {
+  width: 70%;
+}
+
+.reveal-modal.xlarge {
+  width: 95%;
+}
+
+.reveal-modal.full {
+  width: 100%;
+  top: 0;
+  min-height: 100vh;
+  max-width: none !important;
+  height: 100%;
+  height: 100vh;
+}
+
+.reveal-modal .close-reveal-modal {
+  font-size: 30px;
+  line-height: auto;
+  position: absolute;
+  top: 15px;
+  right: 13px;
+  color: .reveal-modal .close-reveal-modal grayMed;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px rbga(0, 0, 0, 0.6);
+  font-weight: bold;
+  cursor: pointer;
+}
+.reveal-modal .close-reveal-modal:hover {
+  text-decoration: none;
+}
+
+/* Warning Modal */
+.modal-warning .modal-header {
+  background: #DE5D42;
+  color: #fff;
+}
+.modal-warning .modal-header + .modal-body {
+  padding-top: 25px;
+}
+.modal-warning .close-reveal-modal {
+  color: #fff;
+}
+
+/* Capture Signature Modal */
+.modal-signature form .row .column:first-child {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+}
+.modal-signature form .row .column:first-child:last-child {
+  margin-right: 0;
+}
+.modal-signature form .row .column:last-child {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+  margin-right: 0;
+}
+.modal-signature form .row .column:last-child:last-child {
+  margin-right: 0;
+}
+.modal-signature form .row .column .btn.add-recipient {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 38px;
+}
+
+/* Remote Capture Signature Modal */
+.modal-remote-signature .signature-container {
+  border: 1px #ddd solid;
+  height: 300px;
+}
+
+/* LT-IE9 Specific */
+.lt-ie9 .reveal-modal-bg {
+  position: fixed;
+}
+.lt-ie9 .reveal-modal {
+  z-index: 99999 !important;
+  top: 100px !important;
+  filter: alpha(opacity=100) !important;
+}
+	</pre>
+</div>
+
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">
+		$('a[data-reveal-id]').on('click', function () {
+		  var id = $(this).attr('data-reveal-id');
+		  $("#" + id).reveal('open');
+		  return false;
+		});
+	</pre>
+</div>
+	</div>
+</section>
+
+<section class="accordion-sg">
+	<h1>Modal - Capture Remote Signature</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>This is an example of a modal used for remote signature capture.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>This modal is intended to be used with your signature capture plug-in. Functionality is not included in this example.</p>
+	</div>
+</div>
+
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+	<div class="center_button">
+		<a data-reveal-id="modalRemoteSignature" data-animation="fadeAndPop" data-animationspeed="300" data-closeonbackgroundclick="true" data-dismissmodalclass="close-reveal-modal" data-reveal-ajax="true" class="btn btn-primary">Open the Capture Signature Modal</a>
+	</div>
+
+	<div id="modalRemoteSignature" class="reveal-modal modal-remote-signature xlarge" data-reveal="">
+		<div class="modal-header">
+			<h1>Remote Capture Signature</h1>		
+		</div>
+		<div class="modal-body">
+			<p>Signature capture for <b>Cameron Burgess, MD</b></p>
+			<br>
+			
+			<div class="signature-container"></div>
+
+				<div class="center_button">
+					<button class="btn btn-transparent">Cancel</button>
+					<button class="btn btn-primary">Done</button>
+				</div>			
+
+	  	</div>
+	  	<a class="close-reveal-modal">&#215;</a>
+	</div>
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+<div id="modalRemoteSignature" class="reveal-modal modal-remote-signature xlarge" data-reveal="">
+	<div class="modal-header">
+		<h1>Remote Capture Signature</h1>		
+	</div>
+	<div class="modal-body">
+		<p>Signature capture for <b>Cameron Burgess, MD</b></p>
+		<br>
+		
+		<div class="signature-container"></div>
+
+			<div class="center_button">
+				<button class="btn btn-transparent">Cancel</button>
+				<button class="btn btn-primary">Done</button>
+			</div>			
+
+  	</div>
+  	<a class="close-reveal-modal">&#215;</a>
+</div>
+	</pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+/** --- Modals -------------------- */
+.reveal-modal-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  opacity: .8;
+  z-index: 100;
+  display: none;
+  top: 0;
+  left: 0;
+}
+
+.reveal-modal {
+  visibility: hidden;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 55.55556rem;
+  width: 80%;
+  background: #fff;
+  position: fixed;
+  z-index: 101;
+  padding: 0;
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.reveal-modal h1 {
+  margin-bottom: 35px;
+}
+.reveal-modal h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.reveal-modal p {
+  margin: 10px 0 2px 0;
+}
+.reveal-modal .modal-header {
+  background: #fff;
+  color: #6F2A81;
+  padding: 28px 40px;
+  text-align: center;
+}
+.reveal-modal .modal-header h1 {
+  font-size: 24px;
+  letter-spacing: 3px;
+  margin: 0;
+}
+.reveal-modal .modal-body {
+  padding: 25px 40px 25px;
+}
+.reveal-modal .modal-header + .modal-body {
+  padding: 0 40px 25px;
+}
+.reveal-modal .close-reveal-modal {
+  color: #404040;
+}
+.reveal-modal .center_button {
+  margin-top: 20px;
+}
+.reveal-modal .center_button .btn {
+  margin-top: 22px;
+}
+
+.list-modal {
+  font-size: 25px;
+}
+.list-modal .fa {
+  font-size: 36px;
+  margin-right: 13px;
+  position: relative;
+  top: 4px;
+}
+.list-modal .fa-check-circle {
+  color: #84BD41;
+}
+.list-modal .loading {
+  position: relative;
+  left: -5px;
+  top: 10px;
+  margin-right: 5px;
+}
+
+.reveal-modal.small {
+  width: 40%;
+}
+
+.reveal-modal.medium {
+  width: 60%;
+}
+
+.reveal-modal.large {
+  width: 70%;
+}
+
+.reveal-modal.xlarge {
+  width: 95%;
+}
+
+.reveal-modal.full {
+  width: 100%;
+  top: 0;
+  min-height: 100vh;
+  max-width: none !important;
+  height: 100%;
+  height: 100vh;
+}
+
+.reveal-modal .close-reveal-modal {
+  font-size: 30px;
+  line-height: auto;
+  position: absolute;
+  top: 15px;
+  right: 13px;
+  color: .reveal-modal .close-reveal-modal grayMed;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px rbga(0, 0, 0, 0.6);
+  font-weight: bold;
+  cursor: pointer;
+}
+.reveal-modal .close-reveal-modal:hover {
+  text-decoration: none;
+}
+
+/* Warning Modal */
+.modal-warning .modal-header {
+  background: #DE5D42;
+  color: #fff;
+}
+.modal-warning .modal-header + .modal-body {
+  padding-top: 25px;
+}
+.modal-warning .close-reveal-modal {
+  color: #fff;
+}
+
+/* Capture Signature Modal */
+.modal-signature form .row .column:first-child {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+}
+.modal-signature form .row .column:first-child:last-child {
+  margin-right: 0;
+}
+.modal-signature form .row .column:last-child {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+  margin-right: 0;
+}
+.modal-signature form .row .column:last-child:last-child {
+  margin-right: 0;
+}
+.modal-signature form .row .column .btn.add-recipient {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 38px;
+}
+
+/* Remote Capture Signature Modal */
+.modal-remote-signature .signature-container {
+  border: 1px #ddd solid;
+  height: 300px;
+}
+
+/* LT-IE9 Specific */
+.lt-ie9 .reveal-modal-bg {
+  position: fixed;
+}
+.lt-ie9 .reveal-modal {
+  z-index: 99999 !important;
+  top: 100px !important;
+  filter: alpha(opacity=100) !important;
+}
+	</pre>
+</div>
+
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">
+		$('a[data-reveal-id]').on('click', function () {
+		  var id = $(this).attr('data-reveal-id');
+		  $("#" + id).reveal('open');
+		  return false;
+		});
+	</pre>
+</div>
+	</div>
+</section>
+
+		</div>
+ 		<!-- jQuery -->
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+
+		<!-- Sammy -->
+		<script src="../_sg_components/sammy/lib/sammy.js"></script>
+		<script src="../_sg_components/sammy/lib/plugins/sammy.template.js"></script>
+
+		<!-- Uniform -->
+		<script src="../Scripts/vendor/jquery.uniform.min.js"></script>
+
+		<!-- jQuery Dropdown -->
+		<script src="../Scripts/vendor/jquery.dropdown.js"></script>
+
+		<!-- jQuery Date Select Boxes -->
+		<script src="../Scripts/vendor/jquery.dateSelectBoxes.js"></script>
+
+		<!-- jQuery Dropzone -->
+		<script src="../Scripts/vendor/dropzone/dropzone.js"></script>
+
+		<!-- Reveal -->
+		<script src="../Scripts/vendor/jquery.reveal.js"></script>
+
+		<!-- Datepicker -->
+		<script src="../Scripts/vendor/datepicker.js"></script>
+
+		<!-- Multiselect -->
+		<script src="../Scripts/vendor/jquery.multiselect.min.js"></script>
+
+		<!-- Typeahead -->
+		<script src="../Scripts/vendor/typeahead.js/typeahead.bundle.min.js"></script>
+
+		<!-- pDrop -->
+		<script src="../Scripts/vendor/pdrop.js"></script>
+
+		<!-- Pushy -->
+		<script src="../Scripts/vendor/pushy/js/pushy.js"></script>		
+
+		<!--[if lt IE 9]>
+		  <script src="html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->				
+
+
+		<script src="../Scripts/site/utilities.js"></script>
+		<script src="../Scripts/site/checker.js"></script>
+		<script src="../Scripts/site/app.js"></script>
+	  	<script src="../Scripts/site/styleguide.js"></script>
+
+	</body>
+</html>

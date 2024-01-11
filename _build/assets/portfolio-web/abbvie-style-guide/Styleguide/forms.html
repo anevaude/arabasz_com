@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie9 lt-ie10"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta charset="utf-8">
+	  <title>PSM Styleguide</title>
+	  <meta name="description" content="">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  <link rel="stylesheet" href="../_sg_components/font-awesome-bower/css/font-awesome.css" />
+
+	  <link rel="stylesheet" href="../css/main.css">
+	  <link rel="stylesheet" href="../css/styleguide.css">
+
+	  <script src="../Scripts/vendor/modernizr.min.js"></script>
+
+	  <script src="../Scripts/vendor/SyntaxHighlighter/scripts/shCore.js"></script>
+	  <script src="../Scripts/vendor/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+	  <script src="../Scripts/vendor/SyntaxHighlighter/scripts/shBrushXml.js"></script>
+	  <script src="../Scripts/vendor/SyntaxHighlighter/scripts/shBrushCss.js"></script>
+
+	  <link rel="stylesheet" href="../Scripts/vendor/SyntaxHighlighter/styles/shCore.css">
+		<link rel="stylesheet" href="../Scripts/vendor/SyntaxHighlighter/styles/shThemeDefault.css">
+
+	</head>
+	<body>		
+		<header class="styleguide-navigation">
+
+			<nav class="container container-outer">
+				<a class="logo-area" href="index.html"><b>Abbvie</b> Style Guide</a>
+				<ul>
+					<li class="nav-branding"><a href="index.html">Colors & Branding</a></li>
+					<li class="nav-typography"><a href="typography.html">Typography</a></li>
+					<li class="nav-navigation"><a href="navigation.html">Navigation & Containers</a></li>					
+					<li class="nav-forms"><a href="forms.html">Forms</a></li>
+					<li class="nav-tables"><a href="tables.html">Tables</a></li>
+					<li class="nav-modals"><a href="modals.html">Modals</a></li>
+					<li class="nav-modules"><a href="modules.html">UI Modules</a></li>										
+				</ul>
+			</nav>
+		</header>
+		<div class="container container-outer">
+<section class="accordion-sg">
+	<h1>Buttons</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>Buttons are available for use with forms, but can be used standalone. Below are examples of the various button styles available.</p>
+		<p>Buttons can be used with either &lt;button&gt; or &lt;a&gt; elements. Use whichever is more semantically appropriate for your need.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>Execute appropriate action and move the user to the next step.</p>
+	</div>
+</div>
+
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+
+	<h3>Regular Buttons</h3>
+
+	<a href="#" class="btn btn-primary">btn btn-primary</a>
+  <a href="#" class="btn btn-primary inactive">btn btn-primary disabled</a>
+	<a href="#" class="btn btn-secondary">btn secondary</a>
+	<a href="#" class="btn btn-transparent">btn btn-transparent</a>
+	<br><br><br>
+
+	<h3>Small Buttons</h3>
+	<a href="#" class="btn btn-primary btn-small">btn btn-primary</a>
+	<a href="#" class="btn btn-secondary btn-small">btn btn-primary</a>
+	<br><br><br>
+
+
+	<h3>Special Styles</h3>
+	<a href="#" class="btn btn-counter">
+		<span class="text">button with number</span><span class="number">12</span>
+	</a>
+	<br>
+	<br>
+	<a href="#" class="btn btn-transparent no-padding">btn btn-transparent no-padding</a>
+	<br>
+	<br>
+	<a href="#" class="btn btn-primary btn-small"><i class="fa fa-user"></i>icon</a>
+  <br>
+  <br>
+  <div class="center_button">
+    <a class="btn btn-primary">Centered Button</a>
+  </div>
+
+
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+<h3>Regular Buttons</h3>
+
+<a href="#" class="btn btn-primary">btn btn-primary</a>
+<a href="#" class="btn btn-secondary">btn secondary</a>
+<a href="#" class="btn btn-primary inactive">btn btn-primary disabled</a>
+<a href="#" class="btn btn-transparent">btn btn-transparent</a>
+<br><br><br>
+
+<h3>Small Buttons</h3>
+<a href="#" class="btn btn-primary btn-small">btn btn-primary</a>
+<a href="#" class="btn btn-secondary btn-small">btn btn-primary</a>
+<br><br><br>
+
+
+<h3>Special Styles</h3>
+<a href="#" class="btn btn-counter">
+	<span class="text">button with number</span><span class="number">12</span>
+</a>
+<br>
+<br>
+<a href="#" class="btn btn-transparent no-padding">btn btn-transparent no-padding</a>
+<br>
+<br>
+<a href="#" class="btn btn-primary btn-small"><i class="fa fa-user"></i>icon</a>
+<br>
+<br>
+<div class="center_button">
+  <a class="btn btn-primary">Centered Button</a>
+</div>
+
+	</pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+.btn {
+  background: #ccc;
+  border: 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  margin-right: 10px;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  /* icon */
+}
+.btn.inactive {
+  background: #f3f3f3;
+  border-color: #ddd;
+  color: #ddd !important;
+  cursor: pointer;
+  text-shadow: none;
+}
+.btn:hover {
+  color: #333;
+  text-decoration: none;
+}
+.btn:last-child {
+  margin-right: 0;
+}
+.btn .fa {
+  margin-right: 8px;
+  position: relative;
+  top: 1px;
+}
+
+/* styling */
+.btn.btn-primary,
+.btn.btn-secondary {
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.btn.btn-primary.inactive,
+.btn.btn-secondary.inactive {
+  cursor: pointer !important;
+}
+
+.btn.btn-primary {
+  background-color: #07A9DF;
+  background-image: -webkit-linear-gradient(#07A9DF, #1683b8);
+  background-image: linear-gradient(#07A9DF, #1683b8);
+  color: #fff;
+}
+.btn.btn-primary.inactive {
+  background: #ddd !important;
+  color: #fff !important;
+}
+.btn.btn-primary:active {
+  background: #999;
+}
+.btn.btn-primary:hover {
+  background: #1683b8;
+  color: #fff;
+}
+
+.btn.btn-secondary {
+  background-color: #949494;
+  background-image: -webkit-linear-gradient(#cbc8c8, #949494);
+  background-image: linear-gradient(#cbc8c8, #949494);
+  color: #fff;
+}
+.btn.btn-secondary.inactive {
+  background: #949494 !important;
+  color: #fff !important;
+}
+.btn.btn-secondary:active {
+  background: #999;
+}
+.btn.btn-secondary:hover {
+  background: #949494;
+  color: #fff;
+}
+
+.btn.btn-transparent {
+  background: transparent;
+  color: #1683b8;
+  font-weight: 700;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.btn.btn-transparent.inactive {
+  background: transparent !important;
+  color: #ddd !important;
+  cursor: pointer !important;
+}
+.btn.btn-transparent:active {
+  background: #999;
+}
+.btn.btn-transparent:hover {
+  color: #141F48;
+  text-decoration: underline;
+}
+
+.btn.btn-small {
+  font-weight: 300;
+  padding: 7px 12px;
+  text-transform: none;
+}
+
+.btn.btn-counter {
+  background: transparent;
+  color: #fff;
+  font-weight: 700;
+  margin-right: 0;
+  overflow: hidden;
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn.btn-counter .text,
+.btn.btn-counter .number {
+  background: #07A9DF;
+  display: inline-block;
+  padding: 15px 25px;
+}
+.btn.btn-counter .text {
+  border-radius: 30px 0 0 30px;
+  background-color: #07A9DF;
+  background-image: -webkit-linear-gradient(#07A9DF, #1683b8);
+  background-image: linear-gradient(#07A9DF, #1683b8);
+}
+.btn.btn-counter .text.inactive {
+  cursor: pointer !important;
+}
+.btn.btn-counter .number {
+  background-color: #1683b8;
+  border-radius: 0 30px 30px 0;
+  background-image: -webkit-linear-gradient(#0296c7, #056fa1);
+  background-image: linear-gradient(#0296c7, #056fa1);
+  margin-right: 5px;
+  padding-left: 18px;
+}
+
+.center_button {
+  text-align: center;
+}
+
+/* Button Actions */
+.btn,
+.btn-function,
+.btn-action {
+  cursor: pointer;
+}
+
+.btn .fa,
+.btn-function .fa,
+.btn-action .fa {
+  margin-right: 7px;
+}
+
+.btn .fa:hover,
+.btn-function .fa:hover,
+.btn-action .fa:hover {
+  color: inherit;
+}
+	</pre>
+</div>
+
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">// No JavaScript Required</pre>
+</div>
+	</div>
+</section>
+
+
+<section class="accordion-sg">
+	<h1>Checkboxes</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>The check boxes are used when the user is allowed to make multiple selections from a list of items. A checked item marks a selection by the user.</p>
+		<p>A required input field is marked with an orange star.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>Styling is controlled using <a href="https://github.com/AudithSoftworks/Uniform">UniformJS</a>.</p>
+	</div>
+</div>
+
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+
+	<h3>Checkboxes, Block Style</h3>
+	<form>
+		<ul class="checklist">
+			<li>
+				<input type="checkbox" id="opt_1" name="opt" value="opt_1">
+				<label for="opt_1">Option 1</label>
+			</li>
+			<li>
+				<input type="checkbox" id="opt_2" name="opt" value="opt_2">
+				<label for="opt_2">Option 2</label>
+			</li>
+			<li>
+				<input type="checkbox" id="opt_3" name="opt" value="opt_3">
+				<label for="opt_3">Option 3</label>
+			</li>
+		</ul>
+	</form>
+
+	<br>
+	<h3>Checkboxes, Inline Style</h3>
+
+	<form>
+		<ul class="checklist">
+			<li class="inline-field">
+				<input type="checkbox" id="opt_1" name="opt" value="opt_1">
+				<label for="opt_1">Option 1</label>
+			</li>
+			<li class="inline-field">
+				<input type="checkbox" id="opt_2" name="opt" value="opt_2">
+				<label for="opt_2">Option 2</label>
+			</li>
+		</ul>
+	</form>
+
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+		<form>
+			<ul class="checklist">
+				<li>
+					<input type="checkbox" id="opt_1" name="opt" value="opt_1">
+					<label for="opt_1">Option 1</label>
+				</li>
+				<li>
+					<input type="checkbox" id="opt_2" name="opt" value="opt_2">
+					<label for="opt_2">Option 2</label>
+				</li>
+				<li>
+					<input type="checkbox" id="opt_3" name="opt" value="opt_3">
+					<label for="opt_3">Option 3</label>
+				</li>
+			</ul>
+		</form></pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+		ul.checklist li {
+			float: left;
+			margin-right: 20px;
+			min-width: 33.3%;
+		}
+
+		ul.checklist .checker {	 float: left }
+		ul.checklist label {
+			float: left;
+			top: 2px;
+			width: 90%;
+		}
+
+		div.selector {
+			background-position: 0 -275px;
+			height: 55px;
+			line-height: 55px;
+			margin-left: -3px;
+			overflow: hidden;
+			padding: 0 0 0 10px;
+			position: relative;
+		}
+
+		div.selector select {
+			-moz-opacity: 0;
+			background: none;
+			border: none;
+			filter: alpha(opacity=0);
+			height: 50px;
+			left: 0px;
+			opacity: 0;
+			position: absolute;
+			top: 2px;
+			width: 100%;
+		}
+
+		div.selector span {
+			background-position: right 0;
+			cursor: pointer;
+			display: block;
+			display: block;
+			height: 55px;
+			line-height: 55px;
+			overflow: hidden;
+			padding-right: 55px;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			width: 100%;
+		}
+
+		div.selector.fixedWidth {	 width: 100% }
+		div.selector.fixedWidth span {	width: 100% }
+		div.selector.active {	 background-position: 0 -330px }
+		div.selector.active span {	background-position: right -55px }
+		div.selector.hover, div.selector.focus {	background-position: 0 -440px }
+		div.selector.hover span, div.selector.focus span {	background-position: right -55px !important }
+		div.selector.hover span, div.selector.focus span {	background-position: right -165px }
+		div.selector.hover.active, div.selector.focus.active {	background-position: 0 -440px }
+		div.selector.hover.active span, div.selector.focus.active span {	background-position: right -165px }
+		div.selector.disabled, div.selector.disabled.active {	 background-position: 0 -495px }
+		div.selector.disabled span, div.selector.disabled.active span {	 background-position: right -220px }
+		div.selector {	background-position: 0 -276px !important }
+		div.selector.hover, div.selector.focus {	background-position: 0 -331px !important }</pre>
+</div>
+
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">
+		$("select, input[type=text], input[type=checkbox], input[type=radio], input[type=password], input[type=search]").uniform({
+			selectAutoWidth: false
+		});
+		$('input[type="checkbox"]').prop('checked', false);
+		$.uniform.update();</pre>
+</div>
+	</div>
+</section>
+
+<section class="accordion-sg">
+	<h1>Date of Birth</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>When the user needs to enter the date of birth for the patient they'll use drop downs to select month/date/year. This was selected as a usable alternative to a date-picker which confuses many users, particularly in selecting the correct year.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>These behave just as any other drop downs. Content as shown.</p>
+	</div>
+</div>
+
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+
+	<label><span>Date of Birth</span></label>
+
+	<label id="dob-month" for="dob-month">
+		<select name="dob-month">
+			<option value="" selected="">December</option>
+		</select>
+	</label>
+
+	<label id="dob-day" for="dob-day">
+		<select name="dob-day">
+			<option value="" selected="">1</option>
+		</select>
+	</label>
+	
+	<label id="dob-year" for="dob-year">
+		<select name="dob-year">
+			<option value="" selected="">1980</option>
+		</select>
+	</label>
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+	<label><span>Date of Birth</span></label>
+
+	<label id="dob-month" for="dob-month">
+		<select name="dob-month">
+			<option value="" selected="">December</option>
+		</select>
+	</label>
+
+	<label id="dob-day" for="dob-day">
+		<select name="dob-day">
+			<option value="" selected="">1</option>
+		</select>
+	</label>
+	
+	<label id="dob-year" for="dob-year">
+		<select name="dob-year">
+			<option value="" selected="">1980</option>
+		</select>
+	</label>
+	</pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+/* DOB */
+label[id^='dob-'] .selector.fixedWidth {
+  margin-top: 0;
+  width: 100px;
+}
+label[id^='dob-'] .selector.fixedWidth span {
+  max-width: 1100px;
+  width: 100%;
+}
+	</pre>
+</div>
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">
+// Initilizes UniformJS
+$("select, input[type=text], input[type=checkbox], input[type=radio], input[type=password], input[type=search]").uniform({
+	selectAutoWidth: false
+});
+</pre>
+</div>	</div>
+</section>
+
+<section class="accordion-sg">
+	<h1>Datepicker</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>The date picker is used to aid the user in entering a date. It displays a small calendar and the user can navigate back and forth to pick at date.  NOT applicable for date of birth. Then we will use separate drop downs for month/date/year.  The user can edit the date once selected or enter the date by typing it in.</p>
+		<p>A required input field is marked with an orange star.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>Allow the user to enter a date successfully.</p>
+	</div>
+</div>
+
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+	<form>
+	 	<div class="datepicker-wrapper">
+		    <label for="dateTB">
+		      <span>Date</span>
+		      <input type="text" id="dateTB" name="dateTB" class="datepicker text">
+		      <div class="datepicker_icon">
+		          <i class="fa fa-calendar"></i>
+		      </div>
+		    </label>
+	    </div>
+	</form>
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+	<form>
+	 	<div class="datepicker-wrapper">
+		    <label for="dateTB">
+		      <span>Date</span>
+		      <input type="text" id="dateTB" name="dateTB" class="datepicker text">
+		      <div class="datepicker_icon">
+		          <i class="fa fa-calendar"></i>
+		      </div>
+		    </label>
+	    </div>
+	</form></pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+/* --- Datepicker  http://fengyuanchen.github.io/datepicker/ -------------------- */
+.datepicker-container {
+  font-size: 12px;
+  font-family: arial, helvetica, sans-serif;
+  line-height: 30px;
+  float: left;
+  position: absolute;
+  z-index: 201312;
+}
+
+.datepicker-arrow,
+.datepicker-arrow:after {
+  border: 5px solid transparent;
+  display: block;
+  height: 0;
+  width: 0;
+}
+
+.datepicker-arrow {
+  border-bottom-color: #9cf;
+  margin: 0 10px;
+  position: relative;
+}
+
+.datepicker-arrow:after {
+  border-bottom-color: #fff;
+  content: " ";
+  left: -5px;
+  position: absolute;
+  top: -4px;
+}
+
+.datepicker-content {
+  border: 1px solid #ccc;
+  border-top-color: #9cf;
+  box-shadow: 0 0 3px #ccc;
+  width: 210px;
+  box-sizing: content-box;
+}
+
+.datepicker-prev,
+.datepicker-next {
+  font-size: 18px;
+}
+
+.datepicker-content ul:before,
+.datepicker-content ul:after {
+  content: "";
+  display: table;
+}
+
+.datepicker-content ul:after {
+  clear: both;
+}
+
+.datepicker-content ul {
+  margin: 0;
+  padding: 0;
+  width: 102%;
+  *zoom: 1;
+}
+
+.datepicker-content li {
+  background-color: #fff;
+  cursor: pointer;
+  float: left;
+  height: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 30px;
+}
+
+.datepicker-content .col-1 {
+  width: 30px;
+}
+
+.datepicker-content .col-2 {
+  width: 60px;
+}
+
+.datepicker-content .col-3 {
+  width: 90px;
+}
+
+.datepicker-content .col-4 {
+  width: 120px;
+}
+
+.datepicker-content .col-5 {
+  width: 150px;
+}
+
+.datepicker-content .col-6 {
+  width: 180px;
+}
+
+.datepicker-content .col-7 {
+  width: 210px;
+}
+
+.datepicker-content li:hover {
+  background-color: #eee;
+}
+
+.datepicker-content .selected,
+.datepicker-content .selected:hover {
+  color: #36f;
+}
+
+.datepicker-content .disabled,
+.datepicker-content .disabled:hover {
+  color: #ccc;
+}
+
+.datepicker-years li,
+.datepicker-months li {
+  height: 52.5px;
+  line-height: 52.5px;
+  width: 52.5px;
+}
+
+.datepicker-week li,
+.datepicker-week li:hover {
+  background-color: #fff;
+  cursor: default;
+}
+	</pre>
+</div>
+
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">
+var now = Date.now();
+$("#dateTBD").datepicker({
+	isDisabled: function(date) {
+		return date.valueOf() < now ? true : false;
+	}
+});
+        </pre>
+</div>
+	</div>
+</section>
+
+<section class="accordion-sg">
+	<h1>Input Boxes</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>The input boxes are one of the primary ways for collecting user input.  Here you can see input boxes in two states, default and error. When a user has submitted a page and we validate the input we use the red box to highlight those that we were unable to validate.</p>
+		<p>A required input field is marked with an orange star.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>Allow users to enter text.</p>
+	</div>
+</div>
+
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+	<form>
+		<label for="first_name">
+			<span>First Name <sup class="req">*</sup></span>
+			<input type="text" id="first_name" size="5" name="first_name">
+		</label>
+
+		<label for="last_name">
+			<span>Last Name <sup class="req">*</sup></span>
+			<input type="text" id="last_name" size="5" name="last_name">
+		</label>
+
+		<label for="city">
+			<span>City <sup class="req">*</sup></span>
+			<input type="text" id="city" size="5" class="error" name="city">
+		</label>
+	</form>
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+		<form>
+			<label for="first_name">
+				<span>First Name <sup class="req">*</sup></span>
+				<input type="text" id="first_name" size="5" name="first_name">
+			</label>
+
+			<label for="last_name">
+				<span>Last Name <sup class="req">*</sup></span>
+				<input type="text" id="last_name" size="5" name="last_name">
+			</label>
+
+			<label for="city">
+				<span>City <sup class="req">*</sup></span>
+				<input type="text" id="city" size="5" class="error" name="city">
+			</label>
+		</form></pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+/** --- Forms -------------------- */
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+  color: #ddd;
+  font-size: 1em;
+}
+
+input, select {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+input.error, select.error {
+  border-color: #ee5a4a;
+}
+input.validated, select.validated {
+  border-color: #b4be00;
+}
+
+input[disabled] {
+  background-color: #ccc !important;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="date"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+select,
+textarea,
+datalist + input {
+  background-color: #fff;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #4A4A4A;
+  margin: 0 0 10px 0;
+  outline: none;
+  padding: 0.4em 1em;
+}
+input[type="text"]:active,
+input[type="email"]:active,
+input[type="tel"]:active,
+input[type="url"]:active,
+input[type="date"]:active,
+input[type="password"]:active,
+input[type="number"]:active,
+input[type="search"]:active,
+select:active,
+textarea:active,
+datalist + input:active {
+  outline: none;
+}
+
+input[type="search"] {
+  font-size: 18px;
+  padding-left: 3em;
+}
+input[type="search"]::-webkit-input-placeholder {
+  color: #4A4A4A;
+}
+input[type="search"]:-moz-placeholder {
+  color: #4A4A4A;
+}
+input[type="search"]::-moz-placeholder {
+  color: #4A4A4A;
+}
+input[type="search"]:-ms-input-placeholder {
+  color: #4A4A4A;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.lt-ie9 input[type="text"] {
+  background: #fff;
+  -webkit-filter: none;
+          filter: none;
+  line-height: 32px;
+}
+.lt-ie9 .input_prepend {
+  background: #fff;
+  border: 1px solid #dcd8d8;
+  border-radius: 0px;
+  color: #4A4A4A;
+  font-size: 16px;
+  margin: 0 0 10px 0;
+  outline: none;
+  padding: 0.4em 1em;
+}
+.lt-ie9 .input_prepend:active {
+  outline: none;
+}
+.lt-ie9 .input_prepend input {
+  background: none;
+  border: none;
+  -webkit-filter: none;
+          filter: none;
+  overflow: visible;
+  padding: 13px 0 0 0 !important;
+}
+
+		</pre>
+</div>
+
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">
+// Initilizes UniformJS
+$("select, input[type=text], input[type=checkbox], input[type=radio], input[type=password], input[type=search]").uniform({
+	selectAutoWidth: false
+});
+</pre>
+</div>	</div>
+</section>
+
+<section class="accordion-sg">
+	<h1>Radio Buttons</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>The radio buttons are used when the user is only allowed to select one from a short list of items (usually 5 or less). A dot marks a selection by the user.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>Styling is controlled using <a href="https://github.com/AudithSoftworks/Uniform">UniformJS</a>.</p>
+	</div>
+</div>
+
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+
+	<h3>Radio List, Block Example</h3>
+	<form>
+		<ul class="radiolist">
+			<li>
+				<input type="radio" id="gender_male" name="gender" value="male">
+				<label for="gender_male">Male</label>
+			</li>
+			<li>
+				<input type="radio" id="gender_female" name="gender" value="female" />
+				<label for="gender_female">Female</label>
+			</li>
+		</ul>
+	</form>
+
+	<br>
+	<h3>Radio List, Inline Example</h3>
+	<form>
+		<ul class="radiolist">
+			<li class="inline-field">
+				<input type="radio" name="placeholder7" value="yes">
+				<label>Yes</label>
+			</li>
+			<li class="inline-field">
+				<input type="radio" name="placeholder7" value="no" />
+				<label>No</label>
+			</li>
+		</ul>
+	</form>
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+<form>
+	<ul class="radiolist">
+		<li>
+			<input type="radio" id="gender_male" name="gender" value="male">
+			<label for="gender_male">Male</label>
+		</li>
+		<li>
+			<input type="radio" id="gender_female" name="gender" value="female" />
+			<label for="gender_female">Female</label>
+		</li>
+	</ul>
+</form>
+
+<br>
+<h3>Radio List, Inline Example</h3>
+<form>
+	<ul class="radiolist">
+		<li class="inline-field">
+			<input type="radio" name="placeholder7" value="yes">
+			<label>Yes</label>
+		</li>
+		<li class="inline-field">
+			<input type="radio" name="placeholder7" value="no" />
+			<label>No</label>
+		</li>
+	</ul>
+</form>
+	</pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+/* Radio Lists - Block */
+.radiolist {
+  list-style: none;
+  margin: 0;
+  overflow: auto;
+}
+.radiolist::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.radiolist:after {
+  display: table-cell;
+}
+.radiolist li.inline-field {
+  width: auto;
+}
+.radiolist div.radio {
+  float: left;
+}
+.radiolist div.radio + label {
+  display: block;
+  margin-left: 32px;
+  position: relative;
+  top: 3px;
+}
+	</pre>
+</div>
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">
+// Initilizes UniformJS
+$("select, input[type=text], input[type=checkbox], input[type=radio], input[type=password], input[type=search]").uniform({
+	selectAutoWidth: false
+});
+</pre>
+</div>
+	</div>
+</section>
+
+<section class="accordion-sg">
+	<h1>Select Dropdown</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>These are used when the user is supposed to make a selection from a long list of items.</p>
+		<p>A required input field is marked with an orange star.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>Styling is controlled using <a href="https://github.com/AudithSoftworks/Uniform">UniformJS</a>.</p>
+	</div>
+</div>
+
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+	<form>
+		<label for="diagnosis">
+			<span>Diagnosis <sup class="req">*</sup></span>
+			<select id="diagnosis" name="diagnosis">
+				<option value="" selected="">Long Word Goes Here</option>
+				<option value="1">Crohn's Disease – Regional enteritis of small intestine (555.0)</option>
+				<option value="2">Crohn's Disease – Regional enteritis of large intestine (555.1)</option>
+				<option value="3">Crohn's Disease – Regional enteritis of small intestines with large intestine(555.2)</option>
+				<option value="4">Crohn's Disease – Regional enteritis of unspecified site (555.9)</option>
+				<option value="5">Ulcerative Colitis – Ulcerative (chronic) protosigmoiditis (556.3)</option>
+				<option value="6">Ulcerative Colitis – Left-sided ulcerative (chronic) colitis (556.5)</option>
+				<option value="7">Ulcerative Colitis – Universal ulcerative (chronic) colitis (556.6)</option>
+				<option value="8">Ulcerative Colitis – Other ulcerative colitis (556.8)</option>
+				<option value="9">Ulcerative Colitis (Ulcerative colitis, unspecified (556.9)</option>
+				<option value="other">Other</option>
+			</select>
+		</label>
+	</form>
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+		<form>
+			<label for="diagnosis">
+				<span>Diagnosis <sup class="req">*</sup></span>
+				<select id="diagnosis" name="diagnosis">
+					<option value="" selected=""></option>
+					<option value="1">Crohn's Disease – Regional enteritis of small intestine (555.0)</option>
+					<option value="2">Crohn's Disease – Regional enteritis of large intestine (555.1)</option>
+					<option value="3">Crohn's Disease – Regional enteritis of small intestines with large intestine(555.2)</option>
+					<option value="4">Crohn's Disease – Regional enteritis of unspecified site (555.9)</option>
+					<option value="5">Ulcerative Colitis – Ulcerative (chronic) protosigmoiditis (556.3)</option>
+					<option value="6">Ulcerative Colitis – Left-sided ulcerative (chronic) colitis (556.5)</option>
+					<option value="7">Ulcerative Colitis – Universal ulcerative (chronic) colitis (556.6)</option>
+					<option value="8">Ulcerative Colitis – Other ulcerative colitis (556.8)</option>
+					<option value="9">Ulcerative Colitis (Ulcerative colitis, unspecified (556.9)</option>
+					<option value="other">Other</option>
+				</select>
+			</label>
+		</form></pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+/* Select */
+div.selector {
+  /* start cap */
+  background-position: 0 -246px;
+  line-height: 46px;
+  height: 46px;
+  margin-left: -3px;
+  padding: 0 0 0 13px;
+  position: relative;
+  overflow: hidden;
+}
+div.selector span {
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  background-position: right -18px;
+  cursor: pointer;
+  display: block;
+  height: 46px;
+  line-height: 46px;
+  padding-right: 46px;
+  width: 100%;
+}
+div.selector.fixedWidth {
+  width: 100%;
+}
+div.selector.fixedWidth span {
+  width: 100%;
+}
+div.selector select {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  border: none;
+  background: none;
+  position: absolute;
+  height: 46px;
+  top: 0;
+  left: 0px;
+  width: 100%;
+}
+div.selector.active {
+  background-position: 0 -303px;
+}
+div.selector.active span {
+  background-position: right -75px;
+}
+div.selector.hover, div.selector.focus {
+  background-position: 0 -303px;
+}
+div.selector.hover span, div.selector.focus span {
+  background-position: right -75px;
+}
+div.selector.hover.active, div.selector.focus.active {
+  background-position: 0 -303px;
+}
+div.selector.hover.active span, div.selector.focus.active span {
+  background-position: right -75px;
+}
+div.selector.disabled, div.selector.disabled.active {
+  background-position: 0 -246px;
+}
+div.selector.disabled span, div.selector.disabled.active span {
+  background-position: right -18px;
+}
+		</pre>
+</div>
+
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">
+// Initilizes UniformJS
+$("select, input[type=text], input[type=checkbox], input[type=radio], input[type=password], input[type=search]").uniform({
+	selectAutoWidth: false
+});
+</pre>
+</div>	</div>
+</section>
+
+<section class="accordion-sg">
+	<h1>Sizing & Positioning Helpers</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>By default, form fields will take up the length of their container. If you would like more control, the container can be given a CSS class with a width set. Below are examples of that CSS class being used.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>Not applicable.</p>
+	</div>
+</div>
+
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>	
+
+	<h3>Sizing</h3>
+	<p>Containers can be given a class of <code>.input-small</code>, <code>.input-medium</code> or <code>.input-large.</code> </p>
+	<br>
+
+	<label for="time" class="input-small">
+		<span>Small</span>
+		<select id="Time" name="time">
+			<option value="" selected="" disabled selected hidden>Select</option>
+			<option value="1">XXX</option>
+			<option value="2">YYY</option>
+			<option value="3">ZZZ</option>						
+		</select>
+	</label>
+
+	<label for="time" class="input-medium">
+		<span>Medium</span>
+		<select id="Time" name="time">
+			<option value="" selected="" disabled selected hidden>Select</option>
+			<option value="1">XXX</option>
+			<option value="2">YYY</option>
+			<option value="3">ZZZ</option>						
+		</select>
+	</label>	
+
+	<label for="time" class="input-large">
+		<span>Large</span>
+		<select id="Time" name="time">
+			<option value="" selected="" disabled selected hidden>Select</option>
+			<option value="1">XXX</option>
+			<option value="2">YYY</option>
+			<option value="3">ZZZ</option>						
+		</select>
+	</label>	
+
+	<label for="time" class="input-xlarge">
+		<span>X Large</span>
+		<select id="Time" name="time">
+			<option value="" selected="" disabled selected hidden>Select</option>
+			<option value="1">XXX</option>
+			<option value="2">YYY</option>
+			<option value="3">ZZZ</option>						
+		</select>
+	</label>	
+
+	<label for="time">
+		<span>Default</span>
+		<select id="Time" name="time">
+			<option value="" selected="" disabled selected hidden>Select</option>
+			<option value="1">XXX</option>
+			<option value="2">YYY</option>
+			<option value="3">ZZZ</option>						
+		</select>
+	</label>		
+
+	<br>
+	<h3>Positioning</h3> 
+	<p>Containers with a CSS class of <code>.inline-field</code> will stack next to each other. Objects floated next to one another should reside in a clearfixed container.</p>
+	<br>
+
+	<div class="clearfix">
+		<label for="time" class="inline-field input-medium">
+			<span>One</span>
+			<select id="Time" name="time">
+				<option value="" selected="" disabled selected hidden>Select</option>
+				<option value="1">XXX</option>
+				<option value="2">YYY</option>
+				<option value="3">ZZZ</option>						
+			</select>
+		</label>		
+
+		<label for="time" class="inline-field input-medium">
+			<span>Two</span>
+			<select id="Time" name="time">
+				<option value="" selected="" disabled selected hidden>Select</option>
+				<option value="1">XXX</option>
+				<option value="2">YYY</option>
+				<option value="3">ZZZ</option>						
+			</select>
+		</label>
+
+		<label for="time" class="inline-field input-large">
+			<span>Three</span>
+			<select id="Time" name="time">
+				<option value="" selected="" disabled selected hidden>Select</option>
+				<option value="1">XXX</option>
+				<option value="2">YYY</option>
+				<option value="3">ZZZ</option>						
+			</select>
+		</label>		
+	</div>		
+
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+<label for="time" class="input-small">
+	<span>Small</span>
+	<select id="Time" name="time">
+		<option value="" selected="" disabled selected hidden>Select</option>
+		<option value="1">XXX</option>
+		<option value="2">YYY</option>
+		<option value="3">ZZZ</option>						
+	</select>
+</label>
+
+<label for="time" class="input-medium">
+	<span>Medium</span>
+	<select id="Time" name="time">
+		<option value="" selected="" disabled selected hidden>Select</option>
+		<option value="1">XXX</option>
+		<option value="2">YYY</option>
+		<option value="3">ZZZ</option>						
+	</select>
+</label>	
+
+<label for="time" class="input-large">
+	<span>Large</span>
+	<select id="Time" name="time">
+		<option value="" selected="" disabled selected hidden>Select</option>
+		<option value="1">XXX</option>
+		<option value="2">YYY</option>
+		<option value="3">ZZZ</option>						
+	</select>
+</label>	
+
+<label for="time">
+	<span>Default</span>
+	<select id="Time" name="time">
+		<option value="" selected="" disabled selected hidden>Select</option>
+		<option value="1">XXX</option>
+		<option value="2">YYY</option>
+		<option value="3">ZZZ</option>						
+	</select>
+</label>		
+
+<br>
+<h3>Positioning</h3> 
+<p>Containers with a CSS class of <code>.inline-field</code> will stack next to each other. Objects floated next to one another should reside in a clearfixed container.</p>
+<br>
+
+<div class="clearfix">
+	<label for="time" class="inline-field input-medium">
+		<span>One</span>
+		<select id="Time" name="time">
+			<option value="" selected="" disabled selected hidden>Select</option>
+			<option value="1">XXX</option>
+			<option value="2">YYY</option>
+			<option value="3">ZZZ</option>						
+		</select>
+	</label>		
+
+	<label for="time" class="inline-field input-medium">
+		<span>Two</span>
+		<select id="Time" name="time">
+			<option value="" selected="" disabled selected hidden>Select</option>
+			<option value="1">XXX</option>
+			<option value="2">YYY</option>
+			<option value="3">ZZZ</option>						
+		</select>
+	</label>
+
+	<label for="time" class="inline-field input-large">
+		<span>Three</span>
+		<select id="Time" name="time">
+			<option value="" selected="" disabled selected hidden>Select</option>
+			<option value="1">XXX</option>
+			<option value="2">YYY</option>
+			<option value="3">ZZZ</option>						
+		</select>
+	</label>		
+</div>		
+	</pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+/* Field Widths -------------------- */
+.input-small {
+  display: block;
+  width: 80px;
+}
+
+.input-medium {
+  display: block;
+  width: 180px;
+}
+
+.input-large {
+  display: block;
+  width: 280px;
+}
+
+/* --- Inline Stacking Forms (place class on Label) -------------------- */
+.inline-field {
+  display: inline-block;
+  float: left;
+  margin-right: 25px;
+  min-width: 80px;
+}
+.inline-field:last-child {
+  margin-right: 0;
+}
+
+	</pre>
+</div>
+
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">/* Not Applicable */</pre>
+</div>	</div>
+</section>
+
+<section class="accordion-sg">
+	<h1>Telephone</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>Whenever the user need to enter a phone or fax number. This format helps to minimize input mistakes by the user by splitting the number up in familiar chunks.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>Styling is controlled using <a href="https://github.com/AudithSoftworks/Uniform">UniformJS</a>.</p>
+	</div>
+</div>
+
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+	<label for="preferred-area-code" class="input_group phone_number">
+		<span>Preferred Phone Number <sup class="req">*</sup></span> 
+		<input type="text" id="preferred-area-code" size="4" name="preferred-area-code" class="uniform-input text">
+		<input type="text" id="preferred-prefix" size="4" name="preferred-prefix" class="uniform-input text">
+		<input type="text" id="preferred-suffix" size="6" name="preferred-suffix" class="uniform-input text">
+	</label>
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+	<label for="preferred-area-code" class="input_group phone_number">
+		<div><span>Preferred Phone Number</span> <sup class="req">*</sup></div>
+		<input type="text" id="preferred-area-code" size="4" name="preferred-area-code" class="uniform-input text">
+		<input type="text" id="preferred-prefix" size="4" name="preferred-prefix" class="uniform-input text">
+		<input type="text" id="preferred-suffix" size="6" name="preferred-suffix" class="uniform-input text">
+	</label></pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+		label.input_group.phone_number input {
+			float: left;
+			margin-right: 5px;
+			width: 70px;
+		}
+
+		label.input_group.phone_number input:last-child { width: 86px; }</pre>
+</div>
+
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">
+// Initilizes UniformJS
+$("select, input[type=text], input[type=checkbox], input[type=radio], input[type=password], input[type=search]").uniform({
+	selectAutoWidth: false
+});
+</pre>
+</div>	</div>
+</section>
+
+
+		</div>
+ 		<!-- jQuery -->
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+
+		<!-- Sammy -->
+		<script src="../_sg_components/sammy/lib/sammy.js"></script>
+		<script src="../_sg_components/sammy/lib/plugins/sammy.template.js"></script>
+
+		<!-- Uniform -->
+		<script src="../Scripts/vendor/jquery.uniform.min.js"></script>
+
+		<!-- jQuery Dropdown -->
+		<script src="../Scripts/vendor/jquery.dropdown.js"></script>
+
+		<!-- jQuery Date Select Boxes -->
+		<script src="../Scripts/vendor/jquery.dateSelectBoxes.js"></script>
+
+		<!-- jQuery Dropzone -->
+		<script src="../Scripts/vendor/dropzone/dropzone.js"></script>
+
+		<!-- Reveal -->
+		<script src="../Scripts/vendor/jquery.reveal.js"></script>
+
+		<!-- Datepicker -->
+		<script src="../Scripts/vendor/datepicker.js"></script>
+
+		<!-- Multiselect -->
+		<script src="../Scripts/vendor/jquery.multiselect.min.js"></script>
+
+		<!-- Typeahead -->
+		<script src="../Scripts/vendor/typeahead.js/typeahead.bundle.min.js"></script>
+
+		<!-- pDrop -->
+		<script src="../Scripts/vendor/pdrop.js"></script>
+
+		<!-- Pushy -->
+		<script src="../Scripts/vendor/pushy/js/pushy.js"></script>		
+
+		<!--[if lt IE 9]>
+		  <script src="html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->				
+
+
+		<script src="../Scripts/site/utilities.js"></script>
+		<script src="../Scripts/site/checker.js"></script>
+		<script src="../Scripts/site/app.js"></script>
+	  	<script src="../Scripts/site/styleguide.js"></script>
+
+	</body>
+</html>

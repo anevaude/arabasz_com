@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie9 lt-ie10"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta charset="utf-8">
+	  <title>PSM Styleguide</title>
+	  <meta name="description" content="">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  <link rel="stylesheet" href="../_sg_components/font-awesome-bower/css/font-awesome.css" />
+
+	  <link rel="stylesheet" href="../css/main.css">
+	  <link rel="stylesheet" href="../css/styleguide.css">
+
+	  <script src="../Scripts/vendor/modernizr.min.js"></script>
+
+	  <script src="../Scripts/vendor/SyntaxHighlighter/scripts/shCore.js"></script>
+	  <script src="../Scripts/vendor/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+	  <script src="../Scripts/vendor/SyntaxHighlighter/scripts/shBrushXml.js"></script>
+	  <script src="../Scripts/vendor/SyntaxHighlighter/scripts/shBrushCss.js"></script>
+
+	  <link rel="stylesheet" href="../Scripts/vendor/SyntaxHighlighter/styles/shCore.css">
+		<link rel="stylesheet" href="../Scripts/vendor/SyntaxHighlighter/styles/shThemeDefault.css">
+
+	</head>
+	<body>		
+		<header class="styleguide-navigation">
+
+			<nav class="container container-outer">
+				<a class="logo-area" href="index.html"><b>Abbvie</b> Style Guide</a>
+				<ul>
+					<li class="nav-branding"><a href="index.html">Colors & Branding</a></li>
+					<li class="nav-typography"><a href="typography.html">Typography</a></li>
+					<li class="nav-navigation"><a href="navigation.html">Navigation & Containers</a></li>					
+					<li class="nav-forms"><a href="forms.html">Forms</a></li>
+					<li class="nav-tables"><a href="tables.html">Tables</a></li>
+					<li class="nav-modals"><a href="modals.html">Modals</a></li>
+					<li class="nav-modules"><a href="modules.html">UI Modules</a></li>										
+				</ul>
+			</nav>
+		</header>
+		<div class="container container-outer">
+<section class="accordion-sg">
+	<h1>Agreements Scrollbox</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>This shows an example of an agreement in a scrollable window. Pagination may be included at the top of the form.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>Not applicable.</p>
+	</div>
+</div>
+ 
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+
+	<div class="tab-container">
+		<ul>
+			<li class="tab selected">
+				<a href="#">License Agreement with Abbvie</a>
+			</li>
+			<li class="tab">
+				<a href="#">Service Agreement with Pharmacy Solutions</a>
+			</li>			
+		</ul>
+	</div>	
+
+	<form>
+		<div class="content-box">
+			<section class="content-box-body">
+				<div class="agreement-container">
+					<img alt="agreement" src="../Images/agreement-example.jpg">
+				</div>
+
+				<div class="agreement-form">
+					
+						<div class="row">					
+							<div class="column">
+								<label for="practice_name">
+									<span>Practice Name</span>
+									<input type="text" id="practice_name" size="5" name="practice_name">
+								</label>	
+								<label for="title">
+									<span>Title</span>
+									<input type="text" id="title" size="5" name="title">
+								</label>	
+								<label for="auth_signature">
+									<span>Authorized Signature</span>
+									<input type="text" id="auth_signature" size="5" name="auth_signature">
+								</label>																	
+							</div>
+							<div class="column">
+								<label for="preferred-area-code" class="input_group phone_number">
+									<span>Work Number</span>
+									<input type="text" id="preferred-area-code" size="4" name="preferred-area-code" class="uniform-input text">
+									<input type="text" id="preferred-prefix" size="4" name="preferred-prefix" class="uniform-input text">
+									<input type="text" id="preferred-suffix" size="6" name="preferred-suffix" class="uniform-input text">
+								</label>	
+								<label for="email">
+									<span>Email Address</span>
+									<input type="text" id="email" size="5" name="email">
+								</label>										
+							</div>
+						</div>
+						<div class="row">
+							<br>
+							<ul class="checklist">
+								<li>
+									<input type="checkbox" name="group1" value="item1">
+									<label>By typing my name in the Authorized Signature box, I acknowledge and agree that my signature shall constitute an original signature for purpose of this Agreement.</label>
+								</li>
+							</ul>
+						</div>
+				</div>
+			</section>
+		</div><!-- end CONTENT-BOX -->
+		<button class="btn btn-primary">Submit</button>
+	</form>
+
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+	<div class="tab-container">
+		<ul>
+			<li class="tab selected">
+				<a href="#">License Agreement with Abbvie</a>
+			</li>
+			<li class="tab">
+				<a href="#">Service Agreement with Pharmacy Solutions</a>
+			</li>			
+		</ul>
+	</div>	
+
+	<form>
+		<div class="content-box">
+			<section class="content-box-body">
+				<div class="agreement-container">
+					<img alt="agreement" src="../Images/agreement-example.jpg">
+				</div>
+
+				<div class="agreement-form">
+					
+						<div class="row">					
+							<div class="column">
+								<label for="practice_name">
+									<span>Practice Name</span>
+									<input type="text" id="practice_name" size="5" name="practice_name">
+								</label>	
+								<label for="title">
+									<span>Title</span>
+									<input type="text" id="title" size="5" name="title">
+								</label>	
+								<label for="auth_signature">
+									<span>Authorized Signature</span>
+									<input type="text" id="auth_signature" size="5" name="auth_signature">
+								</label>																	
+							</div>
+							<div class="column">
+								<label for="preferred-area-code" class="input_group phone_number">
+									<span>Work Number</span>
+									<input type="text" id="preferred-area-code" size="4" name="preferred-area-code" class="uniform-input text">
+									<input type="text" id="preferred-prefix" size="4" name="preferred-prefix" class="uniform-input text">
+									<input type="text" id="preferred-suffix" size="6" name="preferred-suffix" class="uniform-input text">
+								</label>	
+								<label for="email">
+									<span>Email Address</span>
+									<input type="text" id="email" size="5" name="email">
+								</label>										
+							</div>
+						</div>
+						<div class="row">
+							<br>
+							<ul class="checklist">
+								<li>
+									<input type="checkbox" name="group1" value="item1">
+									<label>By typing my name in the Authorized Signature box, I acknowledge and agree that my signature shall constitute an original signature for purpose of this Agreement.</label>
+								</li>
+							</ul>
+						</div>
+				</div>
+			</section>
+		</div><!-- end CONTENT-BOX -->
+		<button class="btn btn-primary">Submit</button>
+	</form>
+	</pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+/* --- Agreements Container -------------------- */
+.agreement-container {
+  border: 1px #ddd solid;
+  height: 400px;
+  margin-bottom: 30px;
+  overflow-y: auto;
+  width: 100%;
+}
+.agreement-container > img {
+  max-width: 100%;
+}
+
+.agreement-form::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.agreement-form .column {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+}
+.agreement-form .column:last-child {
+  margin-right: 0;
+}
+
+.lt-ie9 .agreement-container > img {
+  width: 100%;
+}
+	</pre>
+</div>
+
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">/* No JavaScript Required */</pre>
+</div>
+	</div>
+</section>
+
+<section class="accordion-sg">
+	<h1>Example: Insurance Form</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>This is an example of how you might use elements in the style guide to contruct an Insurance Form design.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>Not applicable.</p>
+	</div>
+</div>
+ 
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+	<div class="insurance-form">
+
+		<div class="row">
+
+			<span class="required_fields_indicator">
+				<sup class="req">*</sup> Mandatory Fields
+			</span>		
+
+			<label for="time" class="inline-field input-medium">
+				<span>Insurance is <sup class="req">*</sup></span>
+				<select id="Time" name="time">
+					<option value="" selected="" disabled selected hidden>Select</option>
+					<option value="1">XXX</option>
+					<option value="2">YYY</option>
+					<option value="3">ZZZ</option>						
+				</select>
+			</label>
+
+			<label for="time" class="inline-field input-large">
+				<span>Insurance Company Type <sup class="req">*</sup></span>
+				<select id="Time" name="time">
+					<option value="" selected="" disabled selected hidden>Select</option>
+					<option value="1">XXX</option>
+					<option value="2">YYY</option>
+					<option value="3">ZZZ</option>						
+				</select>
+			</label>
+
+			<label for="time" class="inline-field input-medium">
+				<span>Insurance Type <sup class="req">*</sup></span>
+				<select id="Time" name="time">
+					<option value="" selected="" disabled selected hidden>Select</option>
+					<option value="1">XXX</option>
+					<option value="2">YYY</option>
+					<option value="3">ZZZ</option>						
+				</select>
+			</label>						
+
+		</div><!-- end ROW -->
+
+		<div class="row">
+
+			<label for="placeholder" class="inline-field input-xlarge">
+			    <span>Insurance Company Name <sup class="req">*</sup></span>
+			    <input type="text" id="placeholder" size="5" name="placeholder" class="text">
+			</label>
+
+			<label for="placeholder" class="inline-field input-medium">
+			    <span>Phone Number <sup class="req">*</sup></span>
+			    <input type="text" id="placeholder" size="5" name="placeholder" class="text">
+			</label>
+
+			<label for="placeholder" class="inline-field input-medium">
+			    <span>Fax Number</span>
+			    <input type="text" id="placeholder" size="5" name="placeholder" class="text">
+			</label>			
+
+		</div><!-- end ROW -->
+
+		<div class="row">
+
+			<label for="placeholder" class="inline-field input-xlarge">
+			    <span>Policy Holder Name</span>
+			    <input type="text" id="placeholder" size="5" name="placeholder" class="text">
+			</label>		
+
+		</div><!-- end ROW -->		
+
+		<div class="row">
+
+			<label for="placeholder" class="inline-field input-medium">
+			    <span>RX Bin</span>
+			    <input type="text" id="placeholder" size="5" name="placeholder" class="text">
+			</label>
+
+			<label for="placeholder" class="inline-field input-medium">
+			    <span>RX GRP</span>
+			    <input type="text" id="placeholder" size="5" name="placeholder" class="text">
+			</label>
+
+			<label for="placeholder" class="inline-field input-medium">
+			    <span>RX PCN</span>
+			    <input type="text" id="placeholder" size="5" name="placeholder" class="text">
+			</label>
+
+			<label for="placeholder" class="inline-field input-medium">
+			    <span>Issuer</span>
+			    <input type="text" id="first_name" size="5" name="placeholder" class="text">
+			</label>
+
+			<label for="placeholder" class="inline-field input-medium">
+			    <span>RX ID</span>
+			    <input type="text" id="placeholder" size="5" name="placeholder" class="text">
+			</label>														
+
+		</div><!-- end ROW -->
+
+		<div class="row">
+			<button class="btn btn-primary">Save</button>
+			<button class="btn btn-secondary">Back</button>
+		</div><!-- end ROW -->			
+
+	</div>
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+	<div class="insurance-form">
+
+		<div class="row">
+
+			<span class="required_fields_indicator">
+				<sup class="req">*</sup> Mandatory Fields
+			</span>		
+
+			<label for="time" class="inline-field input-medium">
+				<span>Insurance is <sup class="req">*</sup></span>
+				<select id="Time" name="time">
+					<option value="" selected="" disabled selected hidden>Select</option>
+					<option value="1">XXX</option>
+					<option value="2">YYY</option>
+					<option value="3">ZZZ</option>						
+				</select>
+			</label>
+
+			<label for="time" class="inline-field input-large">
+				<span>Insurance Company Type <sup class="req">*</sup></span>
+				<select id="Time" name="time">
+					<option value="" selected="" disabled selected hidden>Select</option>
+					<option value="1">XXX</option>
+					<option value="2">YYY</option>
+					<option value="3">ZZZ</option>						
+				</select>
+			</label>
+
+			<label for="time" class="inline-field input-medium">
+				<span>Insurance Type <sup class="req">*</sup></span>
+				<select id="Time" name="time">
+					<option value="" selected="" disabled selected hidden>Select</option>
+					<option value="1">XXX</option>
+					<option value="2">YYY</option>
+					<option value="3">ZZZ</option>						
+				</select>
+			</label>						
+
+		</div><!-- end ROW -->
+
+		<div class="row">
+
+			<label for="placeholder" class="inline-field input-xlarge">
+			    <span>Insurance Company Name <sup class="req">*</sup></span>
+			    <input type="text" id="placeholder" size="5" name="placeholder" class="text">
+			</label>
+
+			<label for="placeholder" class="inline-field input-medium">
+			    <span>Phone Number <sup class="req">*</sup></span>
+			    <input type="text" id="placeholder" size="5" name="placeholder" class="text">
+			</label>
+
+			<label for="placeholder" class="inline-field input-medium">
+			    <span>Fax Number</span>
+			    <input type="text" id="placeholder" size="5" name="placeholder" class="text">
+			</label>			
+
+		</div><!-- end ROW -->
+
+		<div class="row">
+
+			<label for="placeholder" class="inline-field input-xlarge">
+			    <span>Policy Holder Name</span>
+			    <input type="text" id="placeholder" size="5" name="placeholder" class="text">
+			</label>		
+
+		</div><!-- end ROW -->		
+
+		<div class="row">
+
+			<label for="placeholder" class="inline-field input-medium">
+			    <span>RX Bin</span>
+			    <input type="text" id="placeholder" size="5" name="placeholder" class="text">
+			</label>
+
+			<label for="placeholder" class="inline-field input-medium">
+			    <span>RX GRP</span>
+			    <input type="text" id="placeholder" size="5" name="placeholder" class="text">
+			</label>
+
+			<label for="placeholder" class="inline-field input-medium">
+			    <span>RX PCN</span>
+			    <input type="text" id="placeholder" size="5" name="placeholder" class="text">
+			</label>
+
+			<label for="placeholder" class="inline-field input-medium">
+			    <span>Issuer</span>
+			    <input type="text" id="first_name" size="5" name="placeholder" class="text">
+			</label>
+
+			<label for="placeholder" class="inline-field input-medium">
+			    <span>RX ID</span>
+			    <input type="text" id="placeholder" size="5" name="placeholder" class="text">
+			</label>														
+
+		</div><!-- end ROW -->
+
+		<div class="row">
+			<button class="btn btn-primary">Save</button>
+			<button class="btn btn-secondary">Back</button>
+		</div><!-- end ROW -->			
+
+	</div>
+	</pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+/* --- Insurance Form Example -------------------- */
+.insurance-form {
+  overflow: auto;
+}
+.insurance-form::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.insurance-form::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.insurance-form .row {
+  margin-bottom: 20px;
+}
+.insurance-form .row:last-child {
+  margin-bottom: 0;
+}
+	</pre>
+</div>
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">/* No JavaScript Required */</pre>
+</div>
+	</div>
+</section>
+
+<section class="accordion-sg">
+	<h1>Example: Patient Form</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>This is an example of how you might use elements in the style guide to contruct a Patient Form design.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>Not applicable.</p>
+	</div>
+</div>
+ 
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+	<div class="patient-form">
+		
+		<form>
+			<div class="row">
+
+				<span class="required_fields_indicator">
+					<sup class="req">*</sup> Mandatory Fields
+				</span>
+
+			    <label for="placeholder" class="inline-field input-medium">
+			        <span>First Name <sup class="req">*</sup></span>
+			        <input type="text" id="first_name" size="5" name="placeholder" class="text" placeholder="Robin">
+			    </label>
+
+			    <label for="placeholder" class="inline-field input-medium">
+			        <span>Last Name <sup class="req">*</sup></span>
+			        <input type="text" id="first_name" size="5" name="placeholder" class="text" placeholder="Bourdeau">
+			    </label>		
+
+				<label class="inline-field">
+					<span>Gender</span>
+					<ul class="radiolist">
+						<li class="inline-field">
+							<input type="radio" name="placeholder7" value="Female">
+							<label>Female</label>
+						</li>
+						<li class="inline-field">
+							<input type="radio" name="placeholder7" value="Male" />
+							<label>Male</label>
+						</li>
+					</ul>	
+				</label>
+
+			    <label for="placeholder" class="inline-field">
+			        <span>Date of Birth <sup class="req">*</sup></span>
+			        <input type="text" id="placeholder" size="5" name="placeholder" class="text" placeholder="01/01/1960">
+			    </label>						    	    
+
+			</div><!-- end ROW -->
+
+			<div class="row">
+
+			    <label for="placeholder" class="inline-field input-large">
+			        <span>Address <sup class="req">*</sup></span>
+			        <input type="text" id="placeholder" size="10" name="placeholder" class="text" placeholder="30 Congress Street">
+			    </label>	
+
+			    <label for="placeholder" class="inline-field">
+			        <span>Suite</span>
+			        <input type="text" id="placeholder" size="5" name="placeholder" class="text">
+			    </label>			    
+
+			</div><!-- end ROW -->
+
+			<div class="row">
+
+			    <label for="placeholder" class="inline-field">
+			        <span>Zip Code</span>
+			        <input type="text" id="first_name" size="5" name="placeholder" class="text" placeholder="12345">
+			    </label>
+
+			    <label for="placeholder" class="inline-field">
+			        <span>City</span>
+			        <input type="text" id="first_name" size="5" name="placeholder" class="text" placeholder="Portsmouth">
+			    </label>	
+
+				<label for="state" class="inline-field input-medium">
+					<span>State <sup class="req">*</sup></span>
+					<select id="status" name="status">
+						<option value="" selected="" disabled selected hidden>Select</option>
+						<option value="AL">Alabama</option>
+						<option value="AK">Alaska</option>
+						<option value="AZ">Arizona</option>
+						<option value="AR">Arkansas</option>
+						<option value="CA">California</option>
+						<option value="CO">Colorado</option>
+						<option value="CT">Connecticut</option>
+						<option value="DE">Delaware</option>
+						<option value="DC">District Of Columbia</option>
+						<option value="FL">Florida</option>
+						<option value="GA">Georgia</option>
+						<option value="HI">Hawaii</option>
+						<option value="ID">Idaho</option>
+						<option value="IL">Illinois</option>
+						<option value="IN">Indiana</option>
+						<option value="IA">Iowa</option>
+						<option value="KS">Kansas</option>
+						<option value="KY">Kentucky</option>
+						<option value="LA">Louisiana</option>
+						<option value="ME">Maine</option>
+						<option value="MD">Maryland</option>
+						<option value="MA">Massachusetts</option>
+						<option value="MI">Michigan</option>
+						<option value="MN">Minnesota</option>
+						<option value="MS">Mississippi</option>
+						<option value="MO">Missouri</option>
+						<option value="MT">Montana</option>
+						<option value="NE">Nebraska</option>
+						<option value="NV">Nevada</option>
+						<option value="NH">New Hampshire</option>
+						<option value="NJ">New Jersey</option>
+						<option value="NM">New Mexico</option>
+						<option value="NY">New York</option>
+						<option value="NC">North Carolina</option>
+						<option value="ND">North Dakota</option>
+						<option value="OH">Ohio</option>
+						<option value="OK">Oklahoma</option>
+						<option value="OR">Oregon</option>
+						<option value="PA">Pennsylvania</option>
+						<option value="RI">Rhode Island</option>
+						<option value="SC">South Carolina</option>
+						<option value="SD">South Dakota</option>
+						<option value="TN">Tennessee</option>
+						<option value="TX">Texas</option>
+						<option value="UT">Utah</option>
+						<option value="VT">Vermont</option>
+						<option value="VA">Virginia</option>
+						<option value="WA">Washington</option>
+						<option value="WV">West Virginia</option>
+						<option value="WI">Wisconsin</option>
+						<option value="WY">Wyoming</option>						
+					</select>
+				</label>			    		    
+
+			</div><!-- end ROW -->	
+
+			<div class="row">
+			    <label for="placeholder" class="inline-field input-medium">
+			        <span>Preferred Phone Number <sup class="req">*</sup></span>
+			        <input type="text" id="first_name" size="10" name="placeholder" class="text" placeholder="(123) 456-7890">
+			    </label>
+			</div><!-- end ROW -->	
+
+			<div class="row">
+				<button class="btn btn-primary">Save</button>
+				<button class="btn btn-secondary">Back</button>
+			</div><!-- end ROW -->	
+
+		</form>
+
+	</div>
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+	<div class="patient-form">
+		
+		<form>
+			<div class="row">
+
+				<span class="required_fields_indicator">
+					<sup class="req">*</sup> Mandatory Fields
+				</span>
+
+			    <label for="placeholder" class="inline-field input-medium">
+			        <span>First Name <sup class="req">*</sup></span>
+			        <input type="text" id="first_name" size="5" name="placeholder" class="text" placeholder="Robin">
+			    </label>
+
+			    <label for="placeholder" class="inline-field input-medium">
+			        <span>Last Name <sup class="req">*</sup></span>
+			        <input type="text" id="first_name" size="5" name="placeholder" class="text" placeholder="Bourdeau">
+			    </label>		
+
+				<label class="inline-field">
+					<span>Gender</span>
+					<ul class="radiolist">
+						<li class="inline-field">
+							<input type="radio" name="placeholder7" value="Female">
+							<label>Female</label>
+						</li>
+						<li class="inline-field">
+							<input type="radio" name="placeholder7" value="Male" />
+							<label>Male</label>
+						</li>
+					</ul>	
+				</label>
+
+			    <label for="placeholder" class="inline-field">
+			        <span>Date of Birth <sup class="req">*</sup></span>
+			        <input type="text" id="placeholder" size="5" name="placeholder" class="text" placeholder="01/01/1960">
+			    </label>						    	    
+
+			</div><!-- end ROW -->
+
+			<div class="row">
+
+			    <label for="placeholder" class="inline-field input-large">
+			        <span>Address <sup class="req">*</sup></span>
+			        <input type="text" id="placeholder" size="10" name="placeholder" class="text" placeholder="30 Congress Street">
+			    </label>	
+
+			    <label for="placeholder" class="inline-field">
+			        <span>Suite</span>
+			        <input type="text" id="placeholder" size="5" name="placeholder" class="text">
+			    </label>			    
+
+			</div><!-- end ROW -->
+
+			<div class="row">
+
+			    <label for="placeholder" class="inline-field">
+			        <span>Zip Code</span>
+			        <input type="text" id="first_name" size="5" name="placeholder" class="text" placeholder="12345">
+			    </label>
+
+			    <label for="placeholder" class="inline-field">
+			        <span>City</span>
+			        <input type="text" id="first_name" size="5" name="placeholder" class="text" placeholder="Portsmouth">
+			    </label>	
+
+				<label for="state" class="inline-field input-medium">
+					<span>State <sup class="req">*</sup></span>
+					<select id="status" name="status">
+						<option value="" selected="" disabled selected hidden>Select</option>
+						<option value="AL">Alabama</option>
+						<option value="AK">Alaska</option>
+						<option value="AZ">Arizona</option>
+						<option value="AR">Arkansas</option>
+						<option value="CA">California</option>
+						<option value="CO">Colorado</option>
+						<option value="CT">Connecticut</option>
+						<option value="DE">Delaware</option>
+						<option value="DC">District Of Columbia</option>
+						<option value="FL">Florida</option>
+						<option value="GA">Georgia</option>
+						<option value="HI">Hawaii</option>
+						<option value="ID">Idaho</option>
+						<option value="IL">Illinois</option>
+						<option value="IN">Indiana</option>
+						<option value="IA">Iowa</option>
+						<option value="KS">Kansas</option>
+						<option value="KY">Kentucky</option>
+						<option value="LA">Louisiana</option>
+						<option value="ME">Maine</option>
+						<option value="MD">Maryland</option>
+						<option value="MA">Massachusetts</option>
+						<option value="MI">Michigan</option>
+						<option value="MN">Minnesota</option>
+						<option value="MS">Mississippi</option>
+						<option value="MO">Missouri</option>
+						<option value="MT">Montana</option>
+						<option value="NE">Nebraska</option>
+						<option value="NV">Nevada</option>
+						<option value="NH">New Hampshire</option>
+						<option value="NJ">New Jersey</option>
+						<option value="NM">New Mexico</option>
+						<option value="NY">New York</option>
+						<option value="NC">North Carolina</option>
+						<option value="ND">North Dakota</option>
+						<option value="OH">Ohio</option>
+						<option value="OK">Oklahoma</option>
+						<option value="OR">Oregon</option>
+						<option value="PA">Pennsylvania</option>
+						<option value="RI">Rhode Island</option>
+						<option value="SC">South Carolina</option>
+						<option value="SD">South Dakota</option>
+						<option value="TN">Tennessee</option>
+						<option value="TX">Texas</option>
+						<option value="UT">Utah</option>
+						<option value="VT">Vermont</option>
+						<option value="VA">Virginia</option>
+						<option value="WA">Washington</option>
+						<option value="WV">West Virginia</option>
+						<option value="WI">Wisconsin</option>
+						<option value="WY">Wyoming</option>						
+					</select>
+				</label>			    		    
+
+			</div><!-- end ROW -->	
+
+			<div class="row">
+			    <label for="placeholder" class="inline-field input-medium">
+			        <span>Preferred Phone Number <sup class="req">*</sup></span>
+			        <input type="text" id="first_name" size="10" name="placeholder" class="text" placeholder="(123) 456-7890">
+			    </label>
+			</div><!-- end ROW -->	
+
+			<div class="row">
+				<button class="btn btn-primary">Save</button>
+				<button class="btn btn-secondary">Back</button>
+			</div><!-- end ROW -->	
+
+		</form>
+
+	</div>
+	</pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+/* --- Patient Form Example -------------------- */
+.patient-form .inline-field {
+  width: 200px;
+}
+.patient-form .row {
+  margin-bottom: 30px;
+}
+.patient-form .row:last-child {
+  margin-bottom: 0;
+}
+	</pre>
+</div>
+
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">/* No JavaScript Required */</pre>
+</div>
+	</div>
+</section>
+
+<section class="accordion-sg">
+	<h1>Example: Prior Authorization Form</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>This is an example of how you might use elements in the style guide to contruct a Prior Authorization Form design.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>Not applicable.</p>
+	</div>
+</div>
+ 
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+	<div class="prior-auth-form">
+		
+		<form>
+			<div class="row">
+				<div class="column">
+					<label for="placeholder" class="input-large">
+						<span>PA Status <sup class="req">*</sup></span>
+						<select id="status" name="status">
+						<option value="" selected="" disabled selected hidden>Select</option>
+						<option value="1">Status 1</option>
+						<option value="2">Status 2</option>
+						<option value="3">Status 3</option>	
+						</select>		
+					</label>	
+
+					<label for="placeholder">
+					    <span>PA Directions <sup class="req">*</sup></span>
+					    <textarea rows="4" cols="50" class="input-xlarge"></textarea>
+					</label>						
+
+
+					<div class="row">
+						<button class="btn btn-primary">Save</button>
+						<button class="btn btn-secondary">Back</button>
+					</div><!-- end ROW -->	
+
+				</div>
+
+				<div class="column">
+				<p><a href="#"><i class="fa fa-pencil-square-o"></i>Edit ePA Form</a></p>
+				<p>The patient is eligible for ePA</p>
+				<p>The practice has requested the ePA questions and they have been made available.</p>
+				<br>
+				<p>Click on ‘Fill ePA form’ to pre-fill the form for the practice.</p>				
+				</div>
+			</div>
+
+		</form>
+
+	</div>
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+TODO
+	</pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+TODO
+	</pre>
+</div>
+
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">/* No JavaScript Required */</pre>
+</div>
+	</div>
+</section>
+
+<section class="accordion-sg">
+	<h1>File Upload (Drop Zone)</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>This functionality is designed for document uploads. It is currently only used on the PA form page so that the users can add supplemental documentation to the PA request.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>The user locates the document they wish to upload and drag it over the area within the dotted line. When the user drops the file an upload bar is shown that indicates the progress of the upload. For each new document the user adds a new bar is added. The latest addition is shown last in the list.</p>
+		<p>For documentations and more options, see <a href="http://www.dropzonejs.com/#usage">http://www.dropzonejs.com/#usage</a>.</p>
+	</div>
+</div>
+
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+	<div id="patientFiles" class="drop">
+		<form action="../Scripts/vendor/dropzone/dropzone_check.php" id="patientFilesDZ" class="dropzone">
+			<p><a class="dz-message"><i class="fa fa-plus-circle"></i>Add Supporting Documents (optional)</a></p>
+			<p>Drag and drop the documents, or upload them manually. They will be included in the submission.</p>
+			<div class="fallback">
+				<input name="file" type="file" multiple />
+			</div>
+		</form>
+	</div>
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+		<div id="patientFiles" class="drop">
+		<form action="dropzone/dropzone_check.php" id="patientFilesDZ" class="dropzone">
+			<p><a href="#"><i class="fa fa-plus-circle"></i> Add Supporting Documents (optional)</a></p>
+			<p>Drag and drop the documents, or upload them manually. They will be included in the submission.</p>
+			<div class="fallback">
+				<input name="file" type="file" multiple />
+			</div>
+		</form>
+	</div></pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+		.drop {
+			background: #f8f8fa;
+			border: 2px dashed #ddd;
+			margin-bottom: 30px;
+			margin-top: 30px;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.drop .dz-fallback input[type="submit"].inactive {
+			background: #eee;
+			border-color: #ccc;
+			color: #bbb;
+			text-shadow: none;
+		}
+
+		.drop .dz-fallback input[type="submit"].inactive:hover {
+			background: #eee;
+			border-color: #ccc;
+			color: #bbb;
+		}
+
+		.drop .dz-fallback input[type="submit"] {
+			background-image: -webkit-linear-gradient($from: #ddd, $to: #bbb);
+			background-image: linear-gradient(to	 , $to: #bbb);
+			border: 1px solid #aaaaaa;
+			color: #444 !important;
+			display: inline-block;
+			font-size: 16px;
+			margin: 20px auto 0 auto;
+			margin-bottom: 0.5em;
+			margin-top: 0.5em;
+			max-width: 200px;
+			padding: 0.75em 2.5em;
+			text-align: center;
+			text-shadow: 0 1px 0 #d8d8d8;
+		}
+
+		.drop .dz-fallback input[type="submit"]:active {
+			background-image: -webkit-linear-gradient($from: #bbb, $to: #ddd);
+			background-image: linear-gradient(to	 , $to: #ddd);
+		}
+
+		.drop .dz-fallback input[type="submit"]:hover {
+			background-image: -webkit-linear-gradient($from: #ccc, $to: #999);
+			background-image: linear-gradient(to	 , $to: #999);
+			color: #444 !important;
+		}
+
+		.drop .dz-fallback input[type="submit"]:hover {	 text-decoration: none }
+		.drop .dz-fallback input[type="submit"] .fa {
+			margin-right: 8px;
+			position: relative;
+			top: 1px;
+		}
+
+		.drop .dz-fallback input[type="file"] {
+			margin: 0 auto;
+			max-width: 440px;
+		}
+
+		.drop .dz-fallback .filename,
+		.drop .dz-fallback .action {	display: none }
+		.drop .dz-error-message {	 margin-top: 8px }
+		.drop .dz-progress {
+			background: white;
+			border: 1px solid #ddd;
+			height: 32px;
+		}
+		.drop .dz-details {
+			position: relative;
+			top: 24px;
+		}
+		.drop .dz-details,
+		.drop .dz-progress,
+		.drop .dz-error-message {
+			color: #444;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 500px;
+		}
+
+		.drop .dz-error-message + .dz-remove {	display: none }
+		.drop .dz-details .fa-paperclip {
+			left: 10px;
+			position: relative;
+		}
+
+		.drop .dz-details .dz-filename {
+			position: relative;
+			text-align: left;
+		}
+
+		.drop .dz-details .dz-filename + .dz-remove {
+			position: absolute;
+			right: 8px;
+			top: -1px;
+		}
+
+		.drop .dz-details .dz-filename span {
+			left: 20px;
+			position: relative;
+		}
+
+		.drop .dz-progress .dz-upload {
+			background-color: #e6f3f8;
+			display: block;
+			height: 30px;
+			width: 0%;
+		}
+
+		.drop .dz-preview {	 font-size: 14px }
+		.drop .dz-preview .dz-size {	display: none }
+		.drop .dz-preview img {	 display: none }
+		.drop .fallback {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 500px;
+			text-align: center;
+		}
+
+		.drop .fallback input[type="file"] {
+			font-size: 14px;
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 300px;
+		}
+
+		.drop p {	color: #999 }</pre>
+</div>
+
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">dropZone();</pre>
+</div>	</div>
+</section>
+
+<section class="accordion-sg">
+	<h1>Filter Dropdowns</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>This is an example of filters with inputs stacked next to one another. They are most often used at the top of tables, to help filter the table's content.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>Not applicable. </p>
+	</div>
+</div>
+
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+
+	<div class="filter-group">
+
+			<form>
+				<label for="filter1">
+					<span>Status</span>
+					<select id="filter1" name="filter1">
+						<option value="" selected="">All (425)</option>
+						<option value="1">Enter Status</option>
+						<option value="2">Add Details</option>
+						<option value="3">Pending</option>
+						<option value="4">Completed</option>
+						<option value="5">Renewal/Resigning</option>
+					</select>
+				</label>
+
+				<label for="filter2">
+					<span>Sub Filter</span>
+					<select id="filter2" name="filter2">
+						<option value="" selected="">All (8)</option>
+						<option value="1">No Status (2)</option>
+						<option value="2">Accepted (4)</option>
+						<option value="3">Declined (2)</option>
+						<option value="4">Not Targeted (2)</option>
+					</select>
+				</label>
+			</form>		
+
+	</div>
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+<div class="filter-group">
+		<form>
+			<label for="filter1">
+				<span>Status</span>
+				<select id="filter1" name="filter1">
+					<option value="" selected="">All (425)</option>
+					<option value="1">Enter Status</option>
+					<option value="2">Add Details</option>
+					<option value="3">Pending</option>
+					<option value="4">Completed</option>
+					<option value="5">Renewal/Resigning</option>
+				</select>
+			</label>
+
+			<label for="filter2">
+				<span>Sub Filter</span>
+				<select id="filter2" name="filter2">
+					<option value="" selected="">All (8)</option>
+					<option value="1">No Status (2)</option>
+					<option value="2">Accepted (4)</option>
+					<option value="3">Declined (2)</option>
+					<option value="4">Not Targeted (2)</option>
+				</select>
+			</label>
+		</form>		
+</div>
+	</pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+/* --- Filter Select Group -------------------- */
+.filter-group {
+  overflow: auto;
+}
+.filter-group::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.filter-group label {
+  float: left;
+  margin-right: 15px;
+  min-width: 225px;
+}
+	</pre>
+</div>
+
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">$("select, input[type=text], input[type=checkbox], input[type=radio], input[type=password], input[type=search]").uniform({
+		selectAutoWidth: false
+	});</pre>
+</div>	</div>
+</section>
+
+<section class="accordion-sg">
+	<h1>Typeahead Search</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>Typeahead global search allows uers to easily find practices and prescribers by many different criteria.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>Typing in the input box will trigger suggestions for search results. For the example below, it is loading an JSON file. Type "Boston" to see how it works.</p>
+		<p>For more options, see the plugin page: <a target="_blank" href="http://twitter.github.io/typeahead.js/examples/">http://twitter.github.io/typeahead.js/examples</a></p>
+	</div>
+</div>
+ 
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+
+	<form class="typeahead-container">
+		<input class="typeahead" type="search" placeholder="Search">
+		<button type="submit" class="fa fa-search"></button>
+	</form>
+
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+	<form class="typeahead-container">
+		<input class="typeahead" type="search" placeholder="Search">
+		<button type="submit" class="fa fa-search"></button>
+	</form>	
+	</pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+/* --- Typeahead Search -------------------- */
+.search-container {
+	height: 42px;
+	position: relative;
+	width: 450px;
+
+	input.typeahead {
+		border: 2px $blue solid;
+		border-image-slice: 1;
+		border-radius: 100px;
+		box-sizing: border-box;
+		margin-bottom: 0;
+		height: 42px;
+		padding: 0.4em 1em;
+		padding-left: 36px;
+		width: 450px;
+	}
+
+	.fa-search {
+		background: transparent;
+		border: 0;
+		color: $blue;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 36px;
+	}
+}
+
+
+
+.tt-menu {
+	width: 414px;
+	margin:  0 0 12px 20px;
+	padding: 0;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+	 -moz-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+	      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+
+	.tt-suggestion {
+	  border-bottom: 1px #ddd solid;
+	  color: #999;
+	  padding: 11px 36px;
+	  font-size: 16px;
+	  line-height: 24px;
+	}
+
+	.tt-suggestion:last-child {
+		margin-bottom: 0;
+	}
+
+	.tt-suggestion:hover {
+	  cursor: pointer;
+	  color: $gray-medium-1;
+	  background-color: #f3f3f3;
+	}
+
+	.tt-suggestion.tt-cursor {
+	  color: $gray-medium-1;
+	  background-color: #f3f3f3;
+
+	}
+
+	.tt-suggestion p {
+	  margin: 0;
+	}
+
+	.tt-highlight {
+		color: $gray-medium-1;
+	}
+
+	.group-name {
+		background: $blue-light-1;
+		border-bottom: 1px #ddd solid;
+		font-size: 16px;
+		font-weight: 300;
+		margin: 0;
+		padding: 11px 15px;
+		text-transform: none;
+
+		&:last-child {
+			border-bottom: 0;
+		}
+	}          	
+}
+	</pre>
+</div>
+
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">
+// Typeahead Search 
+var initTypeahead = function() {
+
+	// Sets where the data is coming from
+	var nbaTeams = new Bloodhound({
+		datumTokenizer: Bloodhound.tokenizers.obj.whitespace('team'),
+		queryTokenizer: Bloodhound.tokenizers.whitespace,
+		prefetch: '../Scripts/vendor/typeahead.js/example_data/nba.json'
+	});
+
+	var nhlTeams = new Bloodhound({
+		datumTokenizer: Bloodhound.tokenizers.obj.whitespace('team'),
+		queryTokenizer: Bloodhound.tokenizers.whitespace,
+		prefetch: '../Scripts/vendor/typeahead.js/example_data/nba.json'
+	});
+
+	// Finds the input and inits Typeahead
+	$('.typeahead').typeahead({
+			highlight: true,
+			minLength: 3
+	},
+
+	// Defines how suggestions are displayed
+	{
+		name: 'nba-teams',
+		display: 'team',
+		source: nbaTeams,
+		templates: {
+			header: '<h3 class="group-name">NBA Teams</h3>'
+		}
+	}, {
+		name: 'nhl-teams',
+		display: 'team',
+		source: nhlTeams,
+		templates: {
+			header: '<h3 class="group-name">NHL Teams</h3>'
+		}
+	});
+};		
+	</pre>
+</div>
+	</div>
+</section>
+
+
+		</div>
+ 		<!-- jQuery -->
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+
+		<!-- Sammy -->
+		<script src="../_sg_components/sammy/lib/sammy.js"></script>
+		<script src="../_sg_components/sammy/lib/plugins/sammy.template.js"></script>
+
+		<!-- Uniform -->
+		<script src="../Scripts/vendor/jquery.uniform.min.js"></script>
+
+		<!-- jQuery Dropdown -->
+		<script src="../Scripts/vendor/jquery.dropdown.js"></script>
+
+		<!-- jQuery Date Select Boxes -->
+		<script src="../Scripts/vendor/jquery.dateSelectBoxes.js"></script>
+
+		<!-- jQuery Dropzone -->
+		<script src="../Scripts/vendor/dropzone/dropzone.js"></script>
+
+		<!-- Reveal -->
+		<script src="../Scripts/vendor/jquery.reveal.js"></script>
+
+		<!-- Datepicker -->
+		<script src="../Scripts/vendor/datepicker.js"></script>
+
+		<!-- Multiselect -->
+		<script src="../Scripts/vendor/jquery.multiselect.min.js"></script>
+
+		<!-- Typeahead -->
+		<script src="../Scripts/vendor/typeahead.js/typeahead.bundle.min.js"></script>
+
+		<!-- pDrop -->
+		<script src="../Scripts/vendor/pdrop.js"></script>
+
+		<!-- Pushy -->
+		<script src="../Scripts/vendor/pushy/js/pushy.js"></script>		
+
+		<!--[if lt IE 9]>
+		  <script src="html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->				
+
+
+		<script src="../Scripts/site/utilities.js"></script>
+		<script src="../Scripts/site/checker.js"></script>
+		<script src="../Scripts/site/app.js"></script>
+	  	<script src="../Scripts/site/styleguide.js"></script>
+
+	</body>
+</html>

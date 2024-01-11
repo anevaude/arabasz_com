@@ -33,6 +33,8 @@ module.exports = function (grunt) {
             "_source/templates/pages/project-espn-02.mustache",
           "_build/project-boa.html":
             "_source/templates/pages/project-boa.mustache",
+          "_build/project-abbvie.html":
+            "_source/templates/pages/project-abbvie.mustache",
         },
       },
     },

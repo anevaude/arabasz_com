@@ -1,0 +1,219 @@
+
+$('document').ready(function() {
+	SyntaxHighlighter.all();
+	
+	/* --- Component List Tabs (NKS) -------------------- */
+	
+	$('.cl-code-content > div').hide();
+	
+	$('.cl-tabs ul li[data-tabs="rendered"]').addClass('active');
+
+	
+	$('.cl-code-content .cl-rendered').show();
+	
+	$('.cl-tabs ul li').on('click', function() { 
+		var el = $(this),
+		selection = el.attr('data-tabs'),
+		parent = el.parents('.cl-code').children('.cl-code-content'),
+		tab = '.cl-' + selection;
+		
+		
+		if (el.hasClass('cl-disabled')) {
+			return false;
+		} else {
+			el.parent().children('li').removeClass('active');
+			el.addClass('active');
+			parent.children('div').hide();
+			parent.children(tab).show();
+		}
+		
+		
+	});
+	
+	/* --- Component List Tabs (NKS) -------------------- */
+	
+	
+
+	initCustomFormFields();
+	
+	
+	$('body').dateSelectBoxes({
+							  monthElement: $('#dob-month'),
+							  dayElement: $('#dob-day'),
+							  yearElement: $('#dob-year'),
+							  generateOptions: true,
+							  keepLabels: true
+							});
+	
+	
+	
+});
+
+
+			var now = Date.now();
+			$("#dateTBD").datepicker({
+			    isDisabled: function(date) {
+			        return date.valueOf() < now ? true : false;
+			    }
+			});
+
+
+
+		
+
+
+
+(function () {
+		
+		var availableTags = [
+      'Wanita Cappello',
+			'Beth Fitting',
+			'Karrie Carcamo',  
+			'Aja Sorber',
+			'Gladis Dunlap',  
+			'Yer Buckles',
+			'Test User Long Test User Search',
+			'Cherlyn Meunier',  
+			'Fannie Mcelwee',  
+			'Ellan Tubbs',  
+			'Randi Desrosier',  
+			'Noelia Meldrum',  
+			'Jenny Ashby',  
+			'Daine Montano',  
+			'Shellie Lubin',  
+			'Renna Andres',  
+			'Randal Hite',  
+			'Frida Petties',  
+			'Concha Mowers',  
+			'Trudy Secord',  
+			'Patience Dulle',  
+			'Joanne Manos',  
+			'Kristan Shirah',  
+			'Margaret Morra',  
+			'Ena Uyeda',  
+			'Rona Woodman',  
+			'Tamisha Kitzman',  
+			'Kermit Mortimer',  
+			'Tia Culbert',  
+			'Mable Bussiere',  
+			'Artie Infante',  
+			'Marina Purser',  
+			'Dominica Creed',  
+			'Gisela Zank',  
+			'Kathaleen Clonts',  
+			'Emily Go',  
+			'Dedra Hoke',  
+			'Belen Lucht',  
+			'Moises Lunde',  
+			'Elenora Garmany',  
+			'Yessenia Bender',  
+			'Joe Chism',  
+			'Shoshana Turley',  
+			'Vickey Sporer',  
+			'Kathern Longo',  
+			'Elsa Lovely',  
+			'Soraya Eldreth',  
+			'Tobie Saleem',  
+			'Tami Lietz',  
+			'Grant Sylvain',  
+			'Von Chaudhry'  
+    ]; 
+		
+		$('.filtering_sidebar > form input').autocomplete({
+      source: availableTags,
+      messages: {
+        noResults: '',
+        results: function() {}
+    	}
+    });
+		
+		$('.pdrop').pdrop();
+		dropZone();		
+		clearFilters();
+    accordion('.accordion');
+
+    //jqgrid
+    jQuery('#table1').jqGrid({
+        url: '../Data/participants-toComplete.json',
+        datatype: 'json',
+        loadonce: true,
+				viewrecords: false,   // disable current view record text like 'View 1-10 of 100' 
+        colNames: ['Participant Id', 'Name', 'Status', 'Start Date', 'Status Message'],
+        colModel: [
+   		{ key: true, name: 'id', index: 'id', hidden: true },
+   		{ name: 'name', index: 'name', width: 240, formatter: patientLinkFormatter },
+   		{ name: 'status', index: 'status', width: 250, formatter: statusFormatter,
+   		    sorttype: function (cell, obj) {
+   		        return cell + '_' + obj.statusMsg;
+   		    }
+   		},
+   		{ name: 'startdate', index: 'startdate', width: 240, sorttype: 'date' },
+   		{ name: 'statusMsg', index: 'statusMsg', hidden: true }
+   	],
+        rowNum: 5,
+        rowList: [5, 10, 15],
+        pager: '#pagerTable1',
+        sortname: 'id',
+        sortorder: 'desc',
+        rowList: [],
+        loadComplete: function () {
+            $(this).find(">tbody>tr.jqgrow:odd").addClass("alt_row_even");
+            //$(this).find(">tbody>tr.jqgrow:even").addClass("alt_row_odd");
+            
+           $(this).find('.pdrop').pdrop();
+            
+            
+        }
+    });
+   
+    jQuery("#table1").jqGrid('navGrid', '#pagerTable1', 
+    	{ 
+	    	edit: false, 
+	    	add: false, 
+	    	del: false,
+	    	search: false,
+	    	refresh: false,
+	    	view: false
+	    
+	    }
+    );
+
+    function patientLinkFormatter(cellvalue, options, rowObject) {
+        return '<a href="#/rheum/patient05/' + rowObject.id + '" >' + cellvalue + '</a>';
+    }
+    function statusFormatter(cellvalue, options, rowObject) {
+        var html = '', item = '';
+        
+        html = '<div class="pdrop" id="jqgrid-status-'+ options.rowId +'" data-pdrop-val="request">';
+        html += '<span class="pdrop-select"><span class="pdrop-selected-text"></span><span class="pdrop-arrow fa fa-caret-down"></span></span>';
+        html += '<div class="pdrop-dropdown">';
+       
+        item += '<span class="pdrop-item" data-pdrop-val="complete">';
+        item += '<i class="fa fa-circle"></i> Complete Onboarding</span>';
+        item += '</span>';
+        
+        item += '<span class="pdrop-item" data-pdrop-val="renew">';
+        item += '<i class="fa fa-circle"></i> Renew Prior Authorization</span>';
+        item += '</span>';
+        
+        item += '<span class="pdrop-item" data-pdrop-val="request">';
+        item += '<i class="fa fa-circle"></i> Request Prior Authorization</span>';
+        item += '</span>';
+        
+        item += '<span class="pdrop-item" data-pdrop-val="refill">';
+        item += '<i class="fa fa-circle"></i> Refill Prescription</span>';
+        item += '</span>';
+        
+        item += '<span class="pdrop-item" data-pdrop-val="send">';
+        item += '<i class="fa fa-circle"></i> Send Prescription</span>';
+        item += '</span>';
+        
+        html += item + '</div></div>';
+        return html;
+    }
+
+    
+    
+    
+
+})();

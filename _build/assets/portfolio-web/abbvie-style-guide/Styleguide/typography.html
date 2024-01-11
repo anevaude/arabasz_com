@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie9 lt-ie10"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta charset="utf-8">
+	  <title>PSM Styleguide</title>
+	  <meta name="description" content="">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  <link rel="stylesheet" href="../_sg_components/font-awesome-bower/css/font-awesome.css" />
+
+	  <link rel="stylesheet" href="../css/main.css">
+	  <link rel="stylesheet" href="../css/styleguide.css">
+
+	  <script src="../Scripts/vendor/modernizr.min.js"></script>
+
+	  <script src="../Scripts/vendor/SyntaxHighlighter/scripts/shCore.js"></script>
+	  <script src="../Scripts/vendor/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+	  <script src="../Scripts/vendor/SyntaxHighlighter/scripts/shBrushXml.js"></script>
+	  <script src="../Scripts/vendor/SyntaxHighlighter/scripts/shBrushCss.js"></script>
+
+	  <link rel="stylesheet" href="../Scripts/vendor/SyntaxHighlighter/styles/shCore.css">
+		<link rel="stylesheet" href="../Scripts/vendor/SyntaxHighlighter/styles/shThemeDefault.css">
+
+	</head>
+	<body>		
+		<header class="styleguide-navigation">
+
+			<nav class="container container-outer">
+				<a class="logo-area" href="index.html"><b>Abbvie</b> Style Guide</a>
+				<ul>
+					<li class="nav-branding"><a href="index.html">Colors & Branding</a></li>
+					<li class="nav-typography"><a href="typography.html">Typography</a></li>
+					<li class="nav-navigation"><a href="navigation.html">Navigation & Containers</a></li>					
+					<li class="nav-forms"><a href="forms.html">Forms</a></li>
+					<li class="nav-tables"><a href="tables.html">Tables</a></li>
+					<li class="nav-modals"><a href="modals.html">Modals</a></li>
+					<li class="nav-modules"><a href="modules.html">UI Modules</a></li>										
+				</ul>
+			</nav>
+		</header>
+		<div class="container container-outer">
+<section class="accordion-sg">
+	<h1>Font Family</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>The font used is Arial. Below are examples of how the font looks in different treatments.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>Not applicable.</p>
+	</div>
+</div>
+
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+	<h1>ABCDEFGHIJKLMNOPQRSTUVWXYZ</h1>
+	<h1>abcdefghijklmnopqrstuvwxyz</h1>
+	<h1>0123456789!@#$%?&</h1>
+
+	<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+	<p>abcdefghijklmnopqrstuvwxyz</p>
+	<p>0123456789!@#$%?&</p>
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+		<h1>ABCDEFGHIJKLMNOPQRSTUVWXYZ</h1>
+		<h1>abcdefghijklmnopqrstuvwxyz</h1>
+		<h1>0123456789!@#$%?&</h1>
+
+		<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+		<p>abcdefghijklmnopqrstuvwxyz</p>
+		<p>0123456789!@#$%?&</p></pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+		body { font-family: Arial, sans-serif; }</pre>
+</div>
+
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">// No JavaScript Required</pre>
+</div>
+	</div>
+</section>
+
+<section class="accordion-sg">
+	<h1>Headings</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>Headings are used to signify the start of a topic or a section.</p>
+		<p>Headings can also be given a special style using the CSS class <code>.heading-main</code>. An example of this special style is included below.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>These elements rank in importance according to the number in their name. The h1 element is said to have the highest rank, the h6 element has the lowest rank, and two elements with the same name have equal rank.</p>
+	</div>
+</div>
+
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+	<h1>H1 - This is a heading with a <a href="#">link</a>.</h1>
+	<h2>H2 - This is a heading with a <a href="#">link</a>.</h2>
+	<h3>H3 - This is a heading with a <a href="#">link</a>.</h3>
+	<h4>H4 - This is a heading with a <a href="#">link</a>.</h4>
+	<h5>H5 - This is a heading with a <a href="#">link</a>.</h5>
+	<h6>H6 - This is a heading with a <a href="#">link</a>.</h6>
+
+	<br><br>
+
+	<h1 class="heading-main">H1 - This is a heading with a style.</h1>
+	<h2 class="heading-main">H2 - This is a heading with a style.</h2>
+	<h3 class="heading-main">H3 - This is a heading with a style.</h3>
+	<h4 class="heading-main">H4 - This is a heading with a style.</h4>
+	<h5 class="heading-main">H5 - This is a heading with a a style.</h5>
+	<h6 class="heading-main">H6 - This is a heading with a a style.</h6>	
+
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">	<h1>H1 - This is a heading with a <a href="#">link</a>.</h1>
+	<h2>H2 - This is a heading with a <a href="#">link</a>.</h2>
+	<h3>H3 - This is a heading with a <a href="#">link</a>.</h3>
+	<h4>H4 - This is a heading with a <a href="#">link</a>.</h4>
+	<h5>H5 - This is a heading with a <a href="#">link</a>.</h5>
+	<h6>H6 - This is a heading with a <a href="#">link</a>.</h6>
+
+	<br><br>
+
+	<h1 class="heading-main">H1 - This is a heading with a style.</h1>
+	<h2 class="heading-main">H2 - This is a heading with a style.</h2>
+	<h3 class="heading-main">H3 - This is a heading with a style.</h3>
+	<h4 class="heading-main">H4 - This is a heading with a style.</h4>
+	<h5 class="heading-main">H5 - This is a heading with a a style.</h5>
+	<h6 class="heading-main">H6 - This is a heading with a a style.</h6></pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+	h1, h2, h3, h4, h5, h6 {
+		font-family: Arial, sans-serif;
+	}
+
+	/* Icon Spacing */ 
+	h1 .fa, h2 .fa, h3 .fa, h4 .fa, h5 .fa, h6 .fa {
+		margin-right: 5px;
+	}
+
+	.heading-main {
+		color: #6F2A81;
+		letter-spacing: 3px;
+	}</pre>
+</div>
+
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">// No JavaScript Required</pre>
+</div>
+	</div>
+</section>
+
+
+<section class="accordion-sg">
+	<h1>Paragraphs</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>The Paragraphs style is used for body copy throughout the experience. Necessary emphasis will be treated with bold type, while links will be called out in the teal link color.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>Not applicable.</p>
+	</div>
+</div>
+
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+	<p>This is one line in a paragraph.</p>
+	<p><strong>This is what a bold paragraph looks like.</strong></p>
+	<p>This is what a <a href="#">link</a> looks like.</p>
+	<p>This is what a long paragraph would look like. This is placeholder text: 'Which would NOT be an advantage,' said Alice, who felt very glad to get  an opportunity of showing off a little of her knowledge. 'Just think of  what work it would make with the day and night! You see the earth takes  <strong>twenty-four hours to turn</strong> round on its axis&mdash;' 'Talking of axes,' said the Duchess, 'chop off her head!' Alice glanced rather anxiously at the cook, to see if she meant to take  the hint; but the cook was <a href="#">busily stirring the soup</a>, and seemed not to  be listening, so she went on again: 'Twenty-four hours, I THINK; or is  it twelve? I&mdash;' 'Oh, don't bother ME,' said the Duchess; 'I never could abide figures!' And with that she began nursing her child again, singing a sort of  lullaby to it as she did so, and giving it a violent shake at the end of  every line:</p>
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+		<p>Paragraph Level</p>
+		<p><strong>Bolded Paragraph Level Elements:</strong></p>
+		<p><a href="#">Linked Paragraph Level Elements</a></p>
+		<p>'Which would NOT be an advantage,' said Alice, who felt very glad to get  an opportunity of showing off a little of her knowledge. 'Just think of  what work it would make with the day and night! You see the earth takes  <strong>twenty-four hours to turn</strong> round on its axis&mdash;' 'Talking of axes,' said the Duchess, 'chop off her head!' Alice glanced rather anxiously at the cook, to see if she meant to take  the hint; but the cook was <a href="#">busily stirring the soup</a>, and seemed not to  be listening, so she went on again: 'Twenty-four hours, I THINK; or is  it twelve? I&mdash;' 'Oh, don't bother ME,' said the Duchess; 'I never could abide figures!' And with that she began nursing her child again, singing a sort of  lullaby to it as she did so, and giving it a violent shake at the end of  every line:</p></pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">
+		p {
+			color: #444;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 1.5;
+		}
+
+		strong {
+			color: #444;
+			font-weight: 600;
+		}
+
+		a {
+			color: #5C9922;
+			cursor: pointer;
+			text-decoration: none;
+		}</pre>
+</div>
+
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">// No JavaScript Required</pre>
+</div>
+	</div>
+</section>
+
+
+<section class="accordion-sg">
+	<h1>Lists</h1>
+	<div>
+<div class="styleguide-meta">
+	<div>
+		<h2>When to Use</h2>
+		<p>Lists are used to describe a group of text objects. Below are examples of how Unordered Lists and Ordered Lists look like.</p>
+	</div>
+	<div>
+		<h2>Functionality</h2>
+		<p>Not applicable.</p>
+	</div>
+</div>
+
+
+<!-- Rendered -->
+<div class="styleguide-codeblock">
+	<span class="label">Rendered Code</span>
+	<ul>
+		<li>Alpha</li>
+		<li>Beta</li>
+		<li>Gamma</li>
+		<li>Delta</li>
+	</ul>
+
+	<br>
+	
+	<ol>
+		<li>Alpha</li>
+		<li>Beta</li>
+		<li>Gamma</li>
+		<li>Delta</li>
+	</ol>	
+</div>
+
+
+<!-- HTML Markup -->
+<div class="styleguide-codeblock">
+	<span class="label">HTML</span>
+	<pre class="brush: xml">
+	<ul>
+		<li>Alpha</li>
+		<li>Beta</li>
+		<li>Gamma</li>
+		<li>Delta</li>
+	</ul>
+
+	<br>
+	
+	<ol>
+		<li>Alpha</li>
+		<li>Beta</li>
+		<li>Gamma</li>
+		<li>Delta</li>
+	</ol>	
+	</pre>
+</div>
+
+
+<!-- CSS -->
+<div class="styleguide-codeblock">
+	<span class="label">CSS</span>
+	<pre class="brush: css">/* Default */</pre>
+</div>
+
+
+<!-- JavaScript -->
+<div class="styleguide-codeblock">
+	<span class="label">JavaScript</span>
+	<pre class="brush: js">// No JavaScript Required</pre>
+</div>
+	</div>
+</section>
+
+
+
+
+		</div>
+ 		<!-- jQuery -->
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+
+		<!-- Sammy -->
+		<script src="../_sg_components/sammy/lib/sammy.js"></script>
+		<script src="../_sg_components/sammy/lib/plugins/sammy.template.js"></script>
+
+		<!-- Uniform -->
+		<script src="../Scripts/vendor/jquery.uniform.min.js"></script>
+
+		<!-- jQuery Dropdown -->
+		<script src="../Scripts/vendor/jquery.dropdown.js"></script>
+
+		<!-- jQuery Date Select Boxes -->
+		<script src="../Scripts/vendor/jquery.dateSelectBoxes.js"></script>
+
+		<!-- jQuery Dropzone -->
+		<script src="../Scripts/vendor/dropzone/dropzone.js"></script>
+
+		<!-- Reveal -->
+		<script src="../Scripts/vendor/jquery.reveal.js"></script>
+
+		<!-- Datepicker -->
+		<script src="../Scripts/vendor/datepicker.js"></script>
+
+		<!-- Multiselect -->
+		<script src="../Scripts/vendor/jquery.multiselect.min.js"></script>
+
+		<!-- Typeahead -->
+		<script src="../Scripts/vendor/typeahead.js/typeahead.bundle.min.js"></script>
+
+		<!-- pDrop -->
+		<script src="../Scripts/vendor/pdrop.js"></script>
+
+		<!-- Pushy -->
+		<script src="../Scripts/vendor/pushy/js/pushy.js"></script>		
+
+		<!--[if lt IE 9]>
+		  <script src="html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->				
+
+
+		<script src="../Scripts/site/utilities.js"></script>
+		<script src="../Scripts/site/checker.js"></script>
+		<script src="../Scripts/site/app.js"></script>
+	  	<script src="../Scripts/site/styleguide.js"></script>
+
+	</body>
+</html>
