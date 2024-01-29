@@ -38,8 +38,16 @@ a:active {
 }
 
 .bar {
-  background: #3c0e62 url("../img/bg-mountains.jpg") no-repeat 0 bottom;
-  background-size: cover;
+  background: linear-gradient(to bottom, #3c004a 0, #664b9d 66%, #7cb7ad 100%);
+
+  @media (min-width: $medium-screen) {
+    background: linear-gradient(
+      to bottom,
+      #3c004a 0,
+      #664b9d 66%,
+      #7cb7ad 100%
+    );
+  }
   height: 21rem;
   position: absolute;
   top: 0;
@@ -72,6 +80,11 @@ header {
   color: #fff;
   padding: 1rem;
   text-transform: uppercase;
+
+  a {
+    color: #fff !important;
+    text-decoration: none;
+  }
 
   @media (min-width: $large-screen) {
     height: 16rem;
@@ -108,27 +121,39 @@ nav {
   }
 
   .links {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     list-style: none;
     margin: 0;
     padding: 0;
+
+    @media (min-width: $large-screen) {
+      display: block;
+    }
+
     li {
       color: #000;
       display: block;
       font-size: 1.25rem;
       font-weight: 700;
       line-height: 1.5rem;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0;
       overflow: hidden;
+      white-space: nowrap;
+
+      @media (min-width: $large-screen) {
+        margin-bottom: 0.75rem;
+      }
 
       &:last-child {
         margin-bottom: 0;
       }
 
       .circle {
-        background: #5bab7d;
+        background: #6dc1b3;
         border-radius: 100%;
         color: #fff;
+        display: none;
         float: left;
         font-size: 1rem;
         height: 1.5rem;
@@ -137,6 +162,10 @@ nav {
         position: relative;
         text-align: center;
         width: 1.5rem;
+
+        @media (min-width: $large-screen) {
+          display: block;
+        }
 
         &:before {
           position: relative;
@@ -157,7 +186,7 @@ nav {
         text-decoration: underline;
 
         .circle {
-          background-color: #15a652;
+          background-color: #3b887b;
         }
       }
     }
@@ -319,9 +348,10 @@ nav {
     padding: 0.5rem 1rem;
     font-style: italic;
   }
-  .add-border {
-    border: 1px #ccc solid;
-  }
+}
+
+.add-border {
+  border: 1px #ccc solid;
 }
 
 .pretty-thumbnail {
@@ -333,6 +363,10 @@ nav {
   align-items: center;
   flex-direction: column;
   margin-bottom: 2rem;
+
+  img {
+    max-width: 100%;
+  }
 }
 
 .projects-main .pretty-thumbnail {
