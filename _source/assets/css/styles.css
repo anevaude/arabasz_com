@@ -439,24 +439,33 @@ nav {
       background: transparent;
       padding: 2.5rem 0; } }
   nav .links {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     list-style: none;
     margin: 0;
     padding: 0; }
+    @media (min-width: 940px) {
+      nav .links {
+        display: block; } }
     nav .links li {
       color: #000;
       display: block;
       font-size: 1.25rem;
       font-weight: 700;
       line-height: 1.5rem;
-      margin-bottom: 0.75rem;
-      overflow: hidden; }
+      margin-bottom: 0;
+      overflow: hidden;
+      white-space: nowrap; }
+      @media (min-width: 940px) {
+        nav .links li {
+          margin-bottom: 0.75rem; } }
       nav .links li:last-child {
         margin-bottom: 0; }
       nav .links li .circle {
         background: #5bab7d;
         border-radius: 100%;
         color: #fff;
+        display: none;
         float: left;
         font-size: 1rem;
         height: 1.5rem;
@@ -465,6 +474,9 @@ nav {
         position: relative;
         text-align: center;
         width: 1.5rem; }
+        @media (min-width: 940px) {
+          nav .links li .circle {
+            display: block; } }
         nav .links li .circle:before {
           position: relative;
           left: 0;
@@ -620,6 +632,8 @@ nav {
   align-items: center;
   flex-direction: column;
   margin-bottom: 2rem; }
+  .pretty-thumbnail img {
+    max-width: 100%; }
 
 .projects-main .pretty-thumbnail {
   padding: 1rem; }
