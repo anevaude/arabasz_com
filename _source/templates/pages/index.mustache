@@ -8,21 +8,22 @@
 		{{> partials/sidebar }}
 		<div class="content">
 
-			<section class="about">
-			
-				<h2>About Me</h2>
-				<p>I'm a <strong>UX Designer/Developer</strong> in Boston with 15+ years of experience. With a background in graphic design, I enjoy bridging the gap between creative teams and engineering.</p> 
-
-				<p>I'm passionate about tech inclusion and started the Boston chapter of <a href="https://www.girldevelopit.com" target="_blank">Girl Develop It</a>, a national non-profit offering affordable coding classes for women.</p>
-
-				<p>Beyond the pixels, you'll find me navigating the fiery world of hot sauces, indulging in craft beers or hiking with my Corgi <a href="http://instagram.com/starbuck_the_corgi" target="_blank">Starbuck</a>.</p>
+			<section class="intro">
+				<div class="fancy-heading">
+					<div class="fancy-photo">
+						<img src="assets/img/pic-me.jpg" alt="Annette profile photo" />
+					</div>
+					<div>
+						<p>I'm Annette, a <strong>UX Developer</strong> who enjoys bridging the gap between design and engineering.</p> 	
+		
+					</div>
+				</div>
 			</section> 
 
-			<section class="projects">
-			  	<h2 class="h3">Brands I've Worked With</h2>
-			  	<p>Below are some of the brands I have worked with. See <a href="projects.html">Projects</a> for work examples.</p>
-			  	{{> partials/clients }}
-			</section>
+
+			<h3>Highlighted projects</h3>
+			{{> partials/projects-main }}
+
 		</div>
 
 		{{> partials/footer }}

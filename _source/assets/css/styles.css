@@ -375,15 +375,15 @@ a:active {
   color: #820d71; }
 
 .bar {
-  background: linear-gradient(to bottom, #3c004a 0, #664b9d 66%, #7cb7ad 100%);
-  height: 21rem;
+  background: linear-gradient(to bottom, #270030 0, #5a438b 66%, #7cb7ad 100%);
+  height: 120px;
   position: absolute;
   top: 0;
   z-index: -1;
   width: 100%; }
   @media (min-width: 600px) {
     .bar {
-      background: linear-gradient(to bottom, #3c004a 0, #664b9d 66%, #7cb7ad 100%); } }
+      height: 20rem; } }
 
 .wrapper {
   max-width: 1153px;
@@ -419,8 +419,8 @@ header {
     text-decoration: none; }
   @media (min-width: 940px) {
     header {
-      height: 16rem;
-      padding: 3rem 0; } }
+      height: 15rem;
+      padding: 2.5rem 0; } }
   header h1 {
     font-size: 3rem;
     font-weight: 300;
@@ -472,7 +472,7 @@ nav {
         color: #fff;
         display: none;
         float: left;
-        font-size: 1rem;
+        font-size: 16px;
         height: 1.5rem;
         margin: 0 0.75rem 0 0;
         overflow: hidden;
@@ -485,7 +485,7 @@ nav {
         nav .links li .circle:before {
           position: relative;
           left: 0;
-          top: 4px; }
+          top: 5px; }
       nav .links li a:link,
       nav .links li a:visited {
         color: #000;
@@ -493,10 +493,12 @@ nav {
       nav .links li a:hover,
       nav .links li a:active {
         color: #000;
-        text-decoration: underline; }
+        text-decoration: none; }
         nav .links li a:hover .circle,
         nav .links li a:active .circle {
-          background-color: #3b887b; }
+          background-color: #51968a;
+          transition: 0.6s;
+          transform: rotateY(180deg); }
 
 .content {
   background: #fff;
@@ -519,6 +521,41 @@ nav {
   .content > section + section {
     border-top: 1px #ccc solid;
     padding-top: 2rem; }
+
+.fancy-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem; }
+  .fancy-heading .fancy-photo {
+    height: 15%;
+    overflow: hidden;
+    width: 15%;
+    border-radius: 50%;
+    background: lightgray;
+    flex-shrink: 0;
+    margin-right: 1rem; }
+    .fancy-heading .fancy-photo img {
+      filter: grayscale(1);
+      max-width: 100%; }
+  .fancy-heading p {
+    font-size: 16px;
+    line-height: 1.25;
+    margin: 0;
+    max-width: 60ch; }
+    @media (min-width: 600px) {
+      .fancy-heading p {
+        font-size: 24px; } }
+
+.social-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .social-links a {
+    color: black; }
+
+.projects {
+  margin-bottom: 0; }
 
 .project .img-container {
   align-self: start;

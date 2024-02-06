@@ -19,6 +19,7 @@ module.exports = function (grunt) {
             "_source/templates/pages/project-espn.mustache",
           "_build/project-hxr.html":
             "_source/templates/pages/project-hxr.mustache",
+          "_build/about.html": "_source/templates/pages/about.mustache",
           "_build/resume.html": "_source/templates/pages/resume.mustache",
           "_build/connect.html": "_source/templates/pages/connect.mustache",
           "_build/nitty-gritty.html":
