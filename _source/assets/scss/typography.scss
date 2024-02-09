@@ -1,7 +1,8 @@
 $base-font-size: 18px;
 $base-font-weight: 300;
-$font-for-headers: "Droid Sans", arial, sans-serif;
-$font-for-body: "Droid Serif", Georgia, serif;
+$font-for-headers: "Noto Sans Display", arial, sans-serif;
+$font-for-body: "Noto Serif", Georgia, serif;
+$font-for-body-serif: "Noto Sans", arial, sans-serif;
 $font-for-logo: "Pathway Gothic One", arial, sans-serif;
 
 /* Typography */
@@ -29,22 +30,19 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 h4,
 .h4 {
-  font-size: 1.1rem;
-  color: #666;
+  font-size: 1.25rem;
 }
 h5,
 .h5 {
   font-size: 1.25rem;
-  color: #666;
 }
 h6,
 .h6 {
   font-size: 1rem;
-  color: #666;
 }
 
 h1,
@@ -85,7 +83,7 @@ p {
 
 .content > p {
   @media (min-width: $large-screen) {
-    max-width: 90%;
+    max-width: 70ch;
   }
 }
 
@@ -110,8 +108,24 @@ header h1 {
   font-family: $font-for-logo;
 }
 
-nav {
+nav,
+.heading {
   font-family: $font-for-headers;
+}
+
+.project-snapshot p,
+.project-snapshot li {
+  font-family: $font-for-body-serif;
+}
+
+.list-tags li {
+  font-family: arial, sans-serif;
+  font-family: $font-for-headers;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 10px;
+  text-transform: uppercase;
 }
 
 .pad-right {
